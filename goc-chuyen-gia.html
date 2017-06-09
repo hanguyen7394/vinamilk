@@ -29,7 +29,6 @@
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
@@ -393,7 +392,7 @@
             <div class="container">
                 <amp-img src="images/clinic-list-text.png" class="mb-80" width="389" height="180" alt="clinic-list" layout="responsive"></amp-img>
 
-                <amp-carousel width="500" height="700" class="mb-80" layout="responsive" type="slides">
+                <amp-carousel width="500" height="700" class="mb-50" layout="responsive" type="slides">
                     <div class="item">
                         <div class="clinic-block mb-30">
                             <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
@@ -529,7 +528,7 @@
                 <div class="clinic-register mb-30">
                     <amp-img src="images/doctor.png" width="607" height="672" alt="clinic-doctor" layout="responsive"></amp-img>
                     <div class="clinic-desc mb-20">Bác sĩ có thể đăng ký để cập nhật thông tin phòng khám vào Danh sách Phòng khám uy tín giới thiệu bởi Vinamilk Baby Care.</div>
-                    <div class="text-center"><a href="#" class="btn btn-primary">ĐĂNG KÝ</a></div>
+                    <div class="text-center"><button on="tap:register-lightbox" role="button" class="btn btn-primary">ĐĂNG KÝ</button></div>
                 </div>
 
                 <div class="clinic-direction">
@@ -550,7 +549,7 @@
                             phòng khám trên bản đồ
                         </div>
                     </div>
-                    <div class="text-center"><a href="#" class="btn btn-primary">BẮT ĐẦU TÌM KIẾM</a></div>
+                    <div class="text-center"><button class="btn btn-primary" on="tap:clinic-search-lightbox" role="button">BẮT ĐẦU TÌM KIẾM</button></div>
                 </div>
             </div>
         </div>
@@ -725,9 +724,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
     </div>
@@ -748,6 +744,7 @@
             </form>
         </div>
     </amp-lightbox>
+
     <amp-lightbox id="login-lightbox" scrollable layout="nodisplay">
         <div class="lightbox" on="tap:login-lightbox.close" role="button" tabindex="0"> </div>
 
@@ -884,6 +881,7 @@
             <div class="lightbox-close" on="tap:login-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
         </div>
     </amp-lightbox>
+
     <amp-lightbox id="question-lightbox" scrollable layout="nodisplay">
         <div class="lightbox" on="tap:question-lightbox.close" role="button"> </div>
 
@@ -938,6 +936,112 @@
             </form>
 
             <div class="lightbox-close" on="tap:question-lightbox.close" role="button"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+    <amp-lightbox id="register-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:register-lightbox.close" role="button"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>ĐĂNG KÝ THÔNG TIN PHÒNG KHÁM</span></h3>
+            <div class="popup-content mb-20">
+                Bác sĩ có thể đăng ký để cập nhật thông tin phòng khám vào Danh sách Phòng khám uy tín giới thiệu bởi Vinamilk Baby Care.<br>
+                * Truy cập phiên bản trên máy tính cá nhân (PC) để đăng ký thông tin
+            </div>
+
+            <div class="text-center"><button class="btn btn-full" on="tap:register-lightbox.close" role="button">ĐÓNG</button></div>
+
+            <div class="lightbox-close" on="tap:register-lightbox.close" role="button"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+    <amp-lightbox id="clinic-search-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:clinic-search-lightbox.close" role="button"> </div>
+
+        <div class="lightbox-content">
+            <p class="mb-5">Tìm theo bác sĩ</p>
+            <div class="search-box">
+                <input type="text" class="input-box" name="doctor-name" placeholder="Nhập tên bác sĩ">
+            </div>
+
+            <p class="mb-5">Tìm theo chuyên khoa</p>
+            <select class="mb-20 select-box yellow-box" name="theme">
+                <option value="tat-ca" selected>Tất cả chuyên khoa</option>
+                <option value="chuyen-khoa-nhi">Chuyên khoa nhi</option>
+                <option value="diung-miendich">Dị ứng - Miễn dịch - Nội tiết</option>
+            </select>
+
+            <p class="mb-5">Tìm theo địa điểm</p>
+            <select class="mb-20 select-box yellow-box" name="theme">
+                <option value="tat-ca" selected>Tất cả tỉnh thành</option>
+                <option value="dinh-duong">Tp. Hồ Chí Minh</option>
+                <option value="non-tro">Bạc Liêu</option>
+                <option value="non-tro">Biên hòa</option>
+            </select>
+
+            <div class="text-center mb-30"><a href="#" class="btn btn-primary">TÌM KIẾM</a></div>
+
+            <div class="clinic-list-content mb-30">
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center"><a href="#" class="btn btn-primary">TÌM KIẾM PHÒNG KHÁM GẦN NHẤT</a></div>
+
+            <div class="lightbox-close" on="tap:clinic-search-lightbox.close" role="button"><i class="icon-cross"></i> </div>
         </div>
     </amp-lightbox>
 

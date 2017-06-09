@@ -258,25 +258,6 @@ amp-img  { max-width: 100%; height: auto ;     display: inline-block;}
 
 
 
-/* #Select */
-select {
-
-    border:none;
-        appearance: none;
-        -webkit-appearance: none;
-    height: 35px;
-    padding: 0 15px;
-    border-radius: 50px;    
-    background-color: #fff;
-    border: 1px solid $colorPrimary;
-    background: url(images/arrow-dropdown.png) right center no-repeat;
-    background-size: 33px auto;
-    color: $colorPrimary;
-    width: 100%;
-
-
-    option { padding: 5px;}
-}
 
 .mb-50 { margin-bottom: 50px;}
 .margin-0, .mg-0 {margin:0 }

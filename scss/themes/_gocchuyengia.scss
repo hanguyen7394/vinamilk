@@ -73,56 +73,56 @@ section[expanded] > div.select-box {
                 margin-top: 6px;                
             }
         }
-        .question-list {
-            height: 250px;
-            overflow: auto;
-            .question, .answer {
-                line-height: 1.3;
-                padding: 5px 0;
-                padding-left: 20px;
-                list-style: none;
-                position: relative;
-                background: #fff;
-                border: none;
-                &:before {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    font-size: 17px;
-                }
-            }
-            .question:before {
-                content: '●';
-                color: $colorSecondary;
-            }
-            .answer:before {
-                content: '\e96a';
-                font-family: 'Icomoon';
-                color: $colorPrimary;
-            }
-            
-            &::-webkit-scrollbar-track
-            {
-                border-radius: 20px;
-                background-color: #ddd;
-            }
-
-            &::-webkit-scrollbar
-            {
-                width: 5px;
-                background-color: #ddd;
-            }
-
-            &::-webkit-scrollbar-thumb
-            {
-                border-radius: 20px;
-                background-color: $colorPrimary;
-                height: 40px;
+       
+        .question, .answer {
+            line-height: 1.3;
+            padding: 5px 0;
+            padding-left: 20px;
+            list-style: none;
+            position: relative;
+            background: #fff;
+            border: none;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 17px;
             }
         }
-        
+        .question:before {
+            content: '●';
+            color: $colorSecondary;
+        }
+        .answer:before {
+            content: '\e96a';
+            font-family: 'Icomoon';
+            color: $colorPrimary;
+        }
     }
 }
+
+ .question-list, .clinic-list-content {
+    height: 300px;
+    overflow: auto;
+    &::-webkit-scrollbar-track
+    {
+        border-radius: 20px;
+        background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar
+    {
+        width: 5px;
+        background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 20px;
+        background-color: $colorPrimary;
+        height: 40px;
+    }
+ }
 
 .clinic-block {
     .clinic-name {
@@ -191,6 +191,63 @@ section[expanded] > div.select-box {
         }
         .step-content {
             font-size: 18px;
+        }
+    }
+}
+
+#register-lightbox {
+    .lightbox-content {
+        padding: 30px 50px;
+    }
+}
+
+#clinic-search-lightbox {
+    .yellow-box {
+        border: 1px solid #eecc71;
+        border-radius: 0;
+        padding: 8px 15px;
+        font-size: 18px;
+        color: #353535;
+        font-family: 'Roboto Light', sans-serif !important;
+    }
+    .search-box {
+        position: relative;        
+        input {
+            border-radius: 0;
+            font-size: 18px;
+            padding: 8px 15px;
+            font-family: 'Roboto Light', sans-serif !important;
+        }
+        &::before {
+            content: '\e986';
+            font-family: 'Icomoon';
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            font-size: 22px;
+            color: #353535;
+        }
+    }
+    .clinic-item {
+        padding-left: 40px;
+        position: relative;
+        margin-bottom: 30px;
+        line-height: 1.2;
+        &::before {
+            content: "\e947";
+            font-family: 'Icomoon';
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $colorPrimary;
+            font-size: 34px;
+        }
+        .name {
+            font-size: 18px;
+        }
+        .desc {
+            font-size: 16px;
+            font-family: 'Roboto Light';
         }
     }
 }
