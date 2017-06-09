@@ -1,0 +1,52 @@
+.item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #bababa;
+    .item-text {
+        .item-title {
+            text-transform: uppercase;
+        }
+        .item-time {
+            font-size: 11px;
+            font-style: italic;
+            color: $color-5;
+        }
+        .item-desc {
+            color: $color-5;
+        }
+        .circle-icon {
+            color: #fff;
+            background-color: $colorPrimary;
+            padding: 6px;
+            border-radius: 100%;
+            margin-right: 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.pagination {
+    text-align: center;
+    .page-numbers {
+        color: $color-5;
+        &.current {
+            color: $color-1;
+        }
+    }
+	.prev {
+		.icon-arrow { 
+        	@include rotate(180deg);
+			display: inline-block;
+		}
+	}
+    .icon-arrow { 
+        color: $colorSecondary;
+        font-size: 48px;
+        position: relative;
+        top: 15px;
+    }
+}
+

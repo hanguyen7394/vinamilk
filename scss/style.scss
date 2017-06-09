@@ -1,0 +1,34 @@
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/* BASE
+----------------------------------------------------------------------*/
+
+@import "helpers/icomoon";
+@import "components/fonts"; 
+@import "components/base"; 
+
+
+/* HEADER
+----------------------------------------------------------------------*/
+@import "layout/headers"; 
+@import "layout/sidebar"; 
+@import "layout/responsive"; 
+
+/* THEME
+----------------------------------------------------------------------*/
+@import "themes/theme";
+
+
+/* HƠME
+----------------------------------------------------------------------*/
+// @import "themes/home";
+// @import "themes/babycare";
+// @import "themes/chuyenmucbabycare";
+@import "themes/gocchuyengia";
+
+/* FOOTER
+----------------------------------------------------------------------*/
+@import "layout/footers"; 
+

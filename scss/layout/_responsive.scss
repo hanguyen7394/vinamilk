@@ -1,0 +1,30 @@
+@media (max-width: 1199px) {
+
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 480px) {
+	.cols-2>* { width: 100% }
+	
+}
+
+@media (max-width: 375px) {
+	.block-mb {
+		display: block !important;
+		margin-bottom: 5px;
+		&.ml-10 {
+			margin-left: 0;
+		}
+	}
+}
+
+

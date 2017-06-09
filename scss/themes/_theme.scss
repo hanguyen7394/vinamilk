@@ -1,0 +1,118 @@
+
+body  { padding-top: 60px;
+
+        font-family: 'Roboto Regular';
+    	font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.6;
+    color: #000;
+}
+
+.img-mw-587 amp-img { max-width: 587px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-531 amp-img { max-width: 531px; margin: 0 auto;  }
+.img-mw-487 amp-img { max-width: 487px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+.img-mw-366 amp-img { max-width: 366px; margin: 0 auto;  }
+
+
+
+amp-lightbox {
+
+	.lightbox {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	}
+	.lightbox-content {
+    position: relative;
+    z-index: 10;
+	}
+}
+
+
+
+// Slideshow
+.row-slideshow { 
+	position: relative; 
+
+
+}
+
+
+.scrolldown{
+width: 50px;
+height: 70px;
+position: absolute;
+z-index: 9;
+left: 0;
+right: 0;
+margin: auto;
+bottom: 35px;
+text-align: center;
+
+&__circle{
+	width: 55px;
+	height: 60px;
+	background: url(images/scroll-icon.png) no-repeat center center;
+}
+&__arrow{
+	width: 50px;
+	height: 20px;
+	background: url(images/scroll-arrow-icon.png) no-repeat center center;
+	left: 1px;
+	bottom: -5px;
+	position: absolute;
+	animation: scrollDownArrow 1.5s ease infinite;
+}
+}
+
+// CSS OF HA
+
+.row-product .amp-carousel-slide .item { display: block; padding: 0 20px;}
+
+.row-bottom {
+	.widget-newsletter {   margin-top: 40px;}
+	.item { 
+		overflow: hidden;
+		.img { 
+			float: left; margin-right: 10px;
+
+		}
+		.desc { overflow: hidden;}
+		p { margin-bottom: 0;}
+		h4 { color:$colorPrimary;}
+		form {		 			margin-top: 20px; position: relative;	 	 		}
+		.input-box { color: #333; height: 34px; background-color: #fff; border-radius:50px; border: 1px solid #c8c8c8; padding-right: 120px}
+		.btn { height: 34px; width: 100px; text-align: center; border-radius:50px; position: absolute; right: 0; top: 0;}
+
+	}
+}
+
+.select-box {
+    width: 100%;
+    text-align: left;
+    padding: 6px 15px;
+    padding-right: 30px;
+    @include border-radius(17px);
+    border: 1px solid #1f56a3;
+    color: #1f56a3;
+    background: url(images/arrow-dropdown.png) right center no-repeat;
+    background-size: 33px auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.box-dashed {
+	border: 1px dashed;
+}

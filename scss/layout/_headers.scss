@@ -1,0 +1,261 @@
+
+
+#header {
+  position: relative;
+    z-index: 100;
+    background-color: #fff;  
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.3);
+
+  .container  { padding-top: 5px; padding-bottom: 5px; height: 60px; position: relative; text-align: center;}
+
+  &.fixed { position: fixed; left: 0; top: 0; right: 0;}
+
+  .search-btn {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 15px;
+      border: none;
+      font-size: 18px;
+      background-color: $colorPrimary;
+      border-radius: 100%;
+      color: #fff;
+      cursor: pointer;
+      &:before {
+        content: "\e986";
+        line-height: 30px;
+        display: inline-block;    
+        font-family: Icomoon;
+
+      }
+
+  }
+
+  .login-btn {
+      @extend .search-btn;
+      right: 50px;
+      &:before {
+        content: "\e901";
+        font-size: 20px;
+        position: relative;
+        font-family: Icomoon;
+      }
+
+  }
+
+
+
+}
+
+#logo {
+  display: inline-block;
+    position: relative;
+    top: 5px;
+  .amp-img { display: block; }
+}
+
+
+
+.hamburger {
+  position: absolute; left: 0; top: 0; 
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+    border: none;
+    height: 60px;
+    text-transform: uppercase;
+    background: none;
+    width: 60px;
+
+
+.lines {
+
+    height: 6px;
+    position: absolute;
+    border-radius: 3px;
+    left: 12px;
+    right: 12px;
+    background-color: $colorPrimary;
+    top: calc(50% - 3px);
+    transition: transform 0s ease .2s,-webkit-transform 0s ease .2s;    
+    &:after, &:before {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      position: absolute;
+      left: 0;
+      background-color: $colorPrimary;
+      content: "";
+      transition: top .2s ease .2s, transform .2s ease 0s, -webkit-transform .2s ease 0s;      
+
+    }     
+
+    &:before {    top: -12px;}   
+    &:after {     top: calc(100% - -6px); }   
+
+  }
+
+}
+
+amp-sidebar[side][open] ~ #header {
+  
+  .hamburger .lines { background: none; }
+  .hamburger .lines:after, .hamburger .lines:before {
+    transition: top .2s ease 0s,transform .2s ease .2s,-webkit-transform .2s ease .2s;
+  }
+  .hamburger .lines:before {
+    top: calc(50% - 1px);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .hamburger .lines:after {
+    top: calc(50% - 1px);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+}
+
+/* Search  */
+#search-lightbox {
+	form {
+		margin: 5px 15px;
+		position: relative;
+
+	.input-box {
+	    background-color: #fff;
+	    border-radius: 30px;
+	    height: 40px;
+	        padding: 0 40px;
+	        color: #333;
+	}		
+
+	button {
+	      position: absolute;
+	      right: 0;
+	      top: 0;
+	      height: 40px;
+	      width: 40px;
+	      border: none;
+	      font-size: 28px;
+	      color: $colorPrimary;
+	      line-height: 40px;
+	      background: none;
+	      text-align: center; 
+
+
+	  }  
+		.lightbox-close {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 40px;
+		    height: 40px;
+		    font-size: 18px; 
+		    line-height: 40px; text-align: center;
+		}
+
+
+	}
+
+}
+
+/* Login  */
+#login-lightbox, #question-lightbox  { width: 100%; max-width: 100%;}
+#login-lightbox, #question-lightbox  > div { overflow:auto  }
+
+.lightbox-content {
+
+	    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.65);
+	    width: 90%;
+	    margin: 50px auto ;
+	    background-color: #fff;
+	    border-radius: 10px;
+	    padding: 20px;
+
+-webkit-overflow-scrolling: touch; overflow-scrolling: touch; -o-overflow-scrolling: touch; -ms-overflow-scrolling: touch;	    
+
+	    .line-page { margin: 0 -20px 20px}
+
+	    .lightbox-close {
+
+	    	    border: 2px solid #fff;
+	    	        position: absolute;
+	    	            border-radius: 100%;
+	    	            width: 30px;
+	    	            height:30px;
+	    	            text-align: center;
+	    	            color: #fff;
+	    	            line-height: 30px;
+	    	            font-size: 18px;
+top: -40px;
+right: 0;
+
+	    }
+}
+
+#login-lightbox  .ampTabContainer {    
+
+	        display: flex;
+        flex-wrap: wrap;
+    
+
+    
+    &>.tabButton {
+	        list-style: none;
+	        flex-grow: 1;
+	        text-align: center;
+	        cursor: pointer;
+	        background-color: #fff;
+	        line-height: 25px;
+	        padding: 5px 0; 
+	        width: 50%;
+	        text-transform: uppercase;
+	        color: $colorPrimary;
+	        border: 1px $colorPrimary dashed;
+	        font-size: 18px;
+	        font-family: 'UVN Van';
+
+	        &.tabButton-1 { 
+	        	border-radius: 30px 0 0 30px;
+	        	border-right: none;
+
+	        }
+	        &.tabButton-2 { 
+	        	border-radius: 0 30px 30px 0;
+				border-left: none;
+	        }
+
+
+	    &[selected] {
+	        outline: none;
+	        background-color: $colorPrimary;
+	        color: #fff;
+	        border:none;
+	    }	        
+    }
+    
+    &>.tabContent {
+        display: none;
+        width: 100%;
+        order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+        padding: 15px 0;
+    }
+    
+   &> .tabButton[selected]+.tabContent {
+        display: block;
+    }
+
+
+
+
+}    
+
+
+
+
+
+
+

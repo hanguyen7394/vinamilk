@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta property="og:description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+    <meta property="og:image" content="https://www.ampproject.org/static/img/logo-og-image.jpg">
+    <meta name="description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – AMP">
+    <meta name="amp-experiments-opt-in" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Vinamilk – AMP</title>
+
+    <link rel="shortcut icon" href="https://www.ampproject.org/static/img/amp_favicon.png?v=3">
+    <link rel="canonical" href="https://www.ampproject.org/">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.ampproject.org/static/img/icons/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.ampproject.org/static/img/icons/152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://www.ampproject.org/static/img/icons/167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.ampproject.org/static/img/icons/180.png">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+    </style>
+</head>
+
+<body>
+    <amp-sidebar id="sidebar" side="right" layout="nodisplay" aria-hidden="true" role="menu" tabindex="-1">
+        <form class="menu-layer primary " action="/" target="_top" novalidate="">
+            <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items">
+
+                <a class="menu-item item-layer-1 active" href="index.html">Trang chủ</a>
+
+
+                <label class="menu-item item-layer-1 has-sub-level">
+      <input type="checkbox">
+      Câu chuyện Vinamilk
+      <div class="submenu menu-layer secondary">
+        <div class="return-button">Back</div>
+        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+        <div class="items"> <a class="menu-item item-layer-2" href="#">What is AMP?</a> <a class="menu-item item-layer-2" href="#">How AMP Works</a> <a class="menu-item item-layer-2" href="#">Design Principles</a>
+          <label class="menu-item item-layer-2 has-sub-level">
+          <input type="checkbox">
+          Who is AMP for?
+          <div class="submenu menu-layer tertiary">
+            <div class="return-button">Back</div>
+            <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items"> <a class="menu-item item-layer-3" href="#">Who is AMP for?</a> <a class="menu-item item-layer-3" href="#">AMP for Publishers</a> <a class="menu-item item-layer-3" href="#">AMP for Ad Tech Platforms</a> <a class="menu-item item-layer-3" href="#">AMP for Advertisers</a> </div>
+          </div>
+          </label>
+                <label class="menu-item item-layer-2 has-sub-level">
+          <input type="checkbox">
+          Case Studies
+          <div class="submenu menu-layer tertiary">
+            <div class="return-button">Back</div>
+            <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items"> <a class="menu-item item-layer-3" href="#">Case Studies</a> <a class="menu-item item-layer-3" href="#">Washington Post</a> <a class="menu-item item-layer-3" href="#">Gizmodo</a> </div>
+          </div>
+          </label>
+            </div>
+            </div>
+            </label>
+            <a class="menu-item item-layer-1" href="index.html">Sản Phẩm </a> <a class="menu-item item-layer-1" href="index.html">Phát triển bền vững</a>            <a class="menu-item item-layer-1" href="index.html">Tiệc ngoài</a> <a class="menu-item item-layer-1" href="index.html">Sảnh tiệc</a>            <a class="menu-item item-layer-1" href="index.html">Ưu đãi</a> <a class="menu-item item-layer-1" href="index.html">Tin tức</a>            <a class="menu-item item-layer-1" href="index.html">Liên hệ</a> </div>
+        </form>
+    </amp-sidebar>
+    <header id="header" class="header fixed">
+        <div class="container">
+            <a href="index.html" id="logo">
+                <amp-img height=74 width=170 src="images/logo.png" alt="Welcome"></amp-img>
+            </a>
+            <button class="hamburger" id="menu-button" on="tap:sidebar.toggle"><span class="lines"></span></button>
+            <button class="ampstart-btn search-btn" on="tap:search-lightbox" role="button" tabindex="0"> </button>
+            <button class="ampstart-btn login-btn " on="tap:login-lightbox" role="button" tabindex="0"></button>
+        </div>
+    </header>
+
+    <div id="goc-chuyen-gia-content" class="wrap-content">
+        <div class="banner-img mb-20">
+            <amp-img width=800 height=381 src="images/banner-goc-chuyen-gia.jpg" alt="Banner" layout="responsive"></amp-img>
+        </div>
+
+        <div class="container mb-30">
+            <amp-accordion>
+                <section>
+                    <div class="select-box mb-10">Bộ lọc tìm kiếm</div>
+                    <select class="select-box" name="theme">
+                        <option value="tat-ca" selected>Tất cả chủ đề</option>
+                        <option value="dinh-duong">Dinh dưỡng</option>
+                        <option value="non-tro">Nôn trớ</option>
+                        <option value="thai-san">Thai sản</option>
+                        <option value="the-chat">Thể chất</option>
+                        <option value="tieu-hoa">Tiêu hóa</option>
+                        <option value="tri-nao">Trí não</option>
+                    </select>
+                </section>
+            </amp-accordion>
+        </div>
+
+        <div class="expert container mb-50">
+            <h3 class="widget-title title-border mb-20"><span>CHUYÊN GIA DINH DƯỠNG</span></h3>
+            <div class="desc text-center mb-30">
+                Mẹ hãy làm quen với các chuyên gia dinh dưỡng giàu kinh nghiệm đồng hành cùng Vinamilk ngay tại đây!
+            </div>
+            <div class="expert-slide mb-30">
+                <amp-carousel width="650" height="700" layout="responsive" type="slides">
+                    <div class="item">
+                        <amp-img width=396 height=443 class="img" src="images/chuyen-gia-1.png" alt="Welcome" layout="responsive"></amp-img>
+                        <div class="name"><span class="text-normal">ThS.</span>Anke Sentko</div>
+                        <div class="title-detail">Chuyên gia dinh dưỡng</div>
+                        <div class="location">Viện nghiên cứu BENEO</div>
+                    </div>
+                    <div class="item">
+                        <amp-img width=396 height=443 class="img" src="images/chuyen-gia-2.png" alt="Welcome" layout="responsive"></amp-img>
+                        <div class="name"><span class="text-normal">BS.</span>James Bauly</div>
+                        <div class="title-detail">Giám đốc Marketing khu vực Châu Á Thái Bình Dương</div>
+                        <div class="location">Tập đoàn Sản Phẩm Dinh Dưỡng DSM</div>
+                    </div>
+                    <div class="item">
+                        <amp-img width=396 height=443 class="img" src="images/chuyen-gia-3.png" alt="Welcome" layout="responsive"></amp-img>
+                        <div class="name"><span class="text-normal">BS.</span>Nguyễn Hữu Toản</div>
+                        <div class="title-detail">Giám đốc, trưởng Trung tâm Dinh Dưỡng</div>
+                        <div class="location">Phòng khám đa khoa An Khang - Vinamilk</div>
+                    </div>
+                </amp-carousel>
+            </div>
+        </div>
+
+        <div class="share">
+            <div class="container">
+                <h3 class="widget-title title-border mb-20"><span>CHUYÊN GIA CHIA SẺ</span></h3>
+                <div class="desc text-center mb-30">
+                    Nơi bố mẹ có thể lắng nghe những kiến thức và kinh nghiệm vô cùng mới mẻ và hữu ích từ các chuyên gia
+                </div>
+                <select class="select-box mb-20" name="theme">
+                    <option value="tat-ca" disabled selected>Chọn giai đoạn</option>
+                    <option value="dinh-duong">Mang thai</option>
+                    <option value="non-tro">0-6 tháng</option>
+                    <option value="thai-san">6-12 tháng</option>
+                    <option value="the-chat">1-2 tuổi</option>
+                    <option value="tieu-hoa">2-6 tuổi</option>
+                </select>
+
+                <div class="share-slide mb-50">
+                    <amp-carousel width="450" height="900" layout="responsive" type="slides">
+                        <div class="item col-2">
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-1.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Thế nào là nôn trớ và nguyên nhân ?</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé thường trớ ra một ít sữa mỗi khi bú xong làm mẹ rất lo lắng. Đây là...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-2.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Bí quyết chọn sữa cho bé bị nôn trớ</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé yêu vẫn bị nôn trớ nhiều lần trong ngày kể cả khi mẹ đã làm đủ...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-3.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Cải thiện dinh dưỡng cho bé...</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Nôn trớ là hiện tượng thức ăn từ dạ dày chảy ngược qua thực quản ra...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-4.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Giải mã hiện tượng quấy khóc ở bé</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text">  Mặc dù khoẻ mạnh nhưng các bé của mẹ lại hay có hiện tượng khóc dai dẳng,...</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-2">
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-5.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Thế nào là nôn trớ và nguyên nhân ?</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé thường trớ ra một ít sữa mỗi khi bú xong làm mẹ rất lo lắng. Đây là...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-6.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Bí quyết chọn sữa cho bé bị nôn trớ</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé yêu vẫn bị nôn trớ nhiều lần trong ngày kể cả khi mẹ đã làm đủ...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-7.png" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Cải thiện dinh dưỡng cho bé...</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Nôn trớ là hiện tượng thức ăn từ dạ dày chảy ngược qua thực quản ra...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-8.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Giải mã hiện tượng quấy khóc ở bé</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text">  Mặc dù khoẻ mạnh nhưng các bé của mẹ lại hay có hiện tượng khóc dai dẳng,...</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-2">
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-1.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Thế nào là nôn trớ và nguyên nhân ?</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé thường trớ ra một ít sữa mỗi khi bú xong làm mẹ rất lo lắng. Đây là...</div>
+                                </div>
+                            </div>
+                            <div class="share-block mb-20">
+                                <amp-img width=300 height=300 class="img" src="images/share-2.jpg" alt="Welcome" layout="responsive"></amp-img>
+                                <div class="content">
+                                    <h4 class="title">Bí quyết chọn sữa cho bé bị nôn trớ</h4>
+                                    <div class="time">Đăng tải 4 tháng trước</div>
+                                    <div class="text"> Bé yêu vẫn bị nôn trớ nhiều lần trong ngày kể cả khi mẹ đã làm đủ...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </amp-carousel>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-answer container mb-50">
+            <h3 class="widget-title title-border mb-20"><span>HỎI ĐÁP CÙNG CHUYÊN GIA</span></h3>
+
+            <amp-accordion class="mb-20">
+                <section>
+                    <div class="select-box mb-10">Bộ lọc tìm kiếm</div>
+                    <div class="accordion-content">
+                        <select class="select-box mb-10" name="theme">
+                            <option value="tat-ca" selected>Tất cả chủ đề</option>
+                            <option value="dinh-duong">Dinh dưỡng</option>
+                            <option value="non-tro">Nôn trớ</option>
+                            <option value="thai-san">Thai sản</option>
+                            <option value="the-chat">Thể chất</option>
+                            <option value="tieu-hoa">Tiêu hóa</option>
+                            <option value="tri-nao">Trí não</option>
+                        </select>
+                        <select class="select-box mb-10" name="expert">
+                            <option value="0">Tất cả chuyên gia</option>
+                            <option value="19599">ThS Anke Sentko</option>
+                            <option value="22880">BS. James Bauly</option>
+                            <option value="2967">TS.BS Nguyễn Hữu Toản</option>
+                            <option value="517">BS.CK2 Lê Quang Thanh</option>
+                            <option value="395">PGS.TS.BS Trần Đình Toán</option>
+                            <option value="2101">BS.CK1 Nguyễn Vĩnh Hoàng Oanh</option>
+                            <option value="713">BS.CK1 Nguyễn Thu Vân</option>
+                            <option value="2089">BS.CK1 Nguyễn Thị Ngọc Thanh</option>
+                        </select>
+                        <select class="select-box mb-10" name="sort">
+                            <option value="xem nhieu nhat" selected>Xem nhiều nhất</option>
+                            <option value="moi-nhat">Mới nhất</option>
+                        </select>
+                    </div>
+                </section>
+            </amp-accordion>
+
+            <div class="question-content">
+                <div class="box-has-shadow">
+                    <h4 class="box-title">
+                        <amp-img src="images/icon-question.png" width="30" height="38" alt="icon question"></amp-img>
+                        <span class="title">CÂU HỎI</span>
+                    </h4>
+                    <div class="question-list">
+                        <amp-accordion>
+                            <section>
+                                <div class="question">
+                                    Bé ngủ rất hay ra rất nhiều mồ hôi, có phải cháu đang thiếu caxi không ạ? 
+                                    Cần phải bổ sung như thế nào để cải thiện?
+                                </div>
+                                <div class="answer">
+                                    <p>Ra mồ hôi khi ngủ ( các cụ hay gọi là đổ mồ hôi trộm) là một trong những biểu hiện của còi xương, suy dinh dưỡng cùng với các biểu hiện khác như ngủ hay giật mình, khó ngủ, quấy khóc về đêm, rụng tóc hình vành khăn, chậm liền thóp, chậm mọc răng, chậm biết đi, để lâu thì xuất hiện chuỗi hạt sườn, ngực gà…Muốn biết thiếu can xi hay vitamin D (D3) hay không, ngoài các triệu chứng khám lâm sàng cần làm xét nghiệm cho cháu mới khẳng định và có hướng điều trị được.</p>
+                                    <p>Trước mắt có thể cho cháu uống tăng sữa, nhất là sữa có bổ sung can xi D3 là được. Số lượng cụ nthể tùy theo sự đáp ứng của bé. Mỗi ngày có thể từ 500-700ml. Tuy nhiên, bé đã 2,5 tuổi thì cần tăng cường đa dạng thức ăn khác như thịt, cá, trứng, các loại rau quả để tăng chất đạm, vitamin và khoáng chất giúp bế thay đổi khẩu vị , ăn ngon miệng và ăn được nhiều hơn.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Tại sao có bé ăn nhiều nhưng không tăng cân mà lại có bé ăn ít nhưng cân nặng tăng đều,
+                                    có phải là do bé uống đúng loại sữa bé hấp thu tốt không?
+                                </div>
+                                <div class="answer">
+                                    <p>Bé ăn nhều mà không tăng cân có thể do mấy nguyên nhân sau đây:</p>
+                                    <p>1. bữa ăn thiếu cả về số và chất lượng, cần pha sữa đặc hơn, tăng số lượng bữa ăn và tăng số ml sữa mỗi bữa. Nếu đã ăn cháo, bột, nên cho thêm dầu ăn vào để tăng đậm độ calo. chú ý cho ăn thịt , cá nạc, trứng nếu bé đã trên 1 tuổi, không chỉ dựa hoàn toàn vào sữa.</p>
+                                    <p>2. Có thể do hấp thu không tốt, loại sữa không phù hợp gây rối loạn tiêu hóa, bé không hấp thu được.</p>
+                                    <p>3. Sau một đợt ốm vì một bệnh gì đó làm bé chán ăn, ăn không được nhiều và hấp thu kém.</p>
+                                    <p>4. Do đường tiêu hóa của bé có vấn đề, đơn giản như có nhiều giun sán vì lâu chưa tẩy giun và bé bị nhiễm giun sán nên chán ăn và ăn vào lại bị giun sán ăn chặn mất. Bạn nên cho bé đi khám để xác định nguyên nhân và tìm hướng giải quyêt.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Làm sao để biết sữa con đang dùng có phù hợp hay không? Nhờ chuyên gia tư vấn giúp cho 
+                                    bé tăng cân rất ít, uống sữa hay bị bón!
+                                </div>
+                                <div class="answer">
+                                    <p>Để giúp bé tăng cân tốt, bạn cần cho bé ăn đủ nhu cầu sau: ngày 3 bữa cháo, mỗi bữa 1 chén khoảng 200ml .Mỗi chén cháo có thành phần dinh dưỡng như sau: Gạo 1 nắm + 30- 35 g thịt/cá/tôm/cua. + Chất béo (dầu, mỡ) 10g tương đương 2 thìa cà phê + Rau xanh: 30 – 40g( 2 muỗng canh). Lượng sữa bé cần khoảng 600- 700ml/ngày.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Giai đoạn nào sự phát triển trí não của bé hoàn thiện nhất, làm sao để cung cấp đúng, 
+                                    đủ các vi chất cần thiết để bé phát triển toàn diện nhất thưa Bác Sĩ?
+                                </div>
+                                <div class="answer">
+                                    <p>Trí não của bé phát triển ngay từ những ngày đầu tiên của bào thai (ngày thứ 18 của phôi đã bắt đầu hình thành ống thần kinh), từ đó, trong suốt quá trình trong bụng mẹ , não của bé phát triển dần và nhu cầu các chất cũng đòi hỏi phải được cung cấp cho bà mẹ mang thai để não của bé ( bào thai) được phát triển bình thường, chẳng hạn, trong 3 tháng cuối của thai kỳ, một ngày thai nhi cần 2,2g EPA (Essential Fatty Acid- EPAs) cho sự phát triển thần kinh và mạch máu.</p>
+                                    <p>EPAs, DHA là những acid béo chưa no cần thiết, rất cần cho phát triển trí não và hệ thần kinh của trẻ. Lúc chào đời, não bé đạt khoảng 25% kích thước và trọng lượng não người lớn, gần 70% khi 1 tuổi, 80% khi 2 tuổi, đến 6 tuổi thì đạt 100%. Do đó việc bổ sung đầy đủ những chất béo có chứa nhiều EPA, DHA (Docosa Hexaenoic Acid) thường gọi tắt là nhóm omega 3 là rất cần thiết.<br>
+                                    Nhóm acid béo omega 3 có nhiều trong hải, thủy sản, ăn nhiều cá, thủy hải sản giúp cung cáp đủ acid béo chưa no cần thiết cho cơ thể, kể cả bà mẹ và trẻ em.</p>
+                                    <p>Trẻ em còn bú mẹ thì các chất này do sữa mẹ cung cấp, đủ cho nhu cầu hàng ngày nếu có đủ sữa mẹ. Những bé không đủ sữa mẹ nên bổ sung sữa công thức, loại có ghi là có bổ sung DHA, EPA… là rất cần thiết.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Bé  1 tuổi nhưng không chịu ăn bột và cháo nữa, bé đòi ăn cơm (ăn được 1/2 chén cơm/ lần). 
+                                    Bé ăn cơm sớm như vậy liệu có ảnh hưởng đến hệ tiêu hóa không?
+                                </div>
+                                <div class="answer">
+                                    <p>Bạn nên tập cho bé ăn cơm nát khi bé được 2 tuổi là thích hợp nhất vì lúc này bé đã qua giai đoạn ăn cháo, đã biết cắn nhai nghiền nát thức ăn trước khi xuống dạ dày. Nếu bạn cho bé ăn cơm sớm thì bé sẽ nuốt chửng không qua quá trình tiêu hoá bắt đầu từ miệng là nhai.</p>
+                                    <p>Nhiều nghiên cứu cho thấy lượng tinh bột không được tiêu hoá có thể làm ảnh hưởng tới sự hấp thu của các chất dinh dưỡng khác làm cho bé dễ bị còi xương, chậm lớn hoặc suy dinh dưỡng. Hơn nữa bé ăn cơm sớm khi mới 1 tuổi thì lượng thức ăn như thịt/cá/tôm, rau củ… bé sẽ ăn được rất ít, không đủ nhu cầu ở độ tuổi của bé.</p>
+                                    <p>Vì vậy bạn nên duy trì cho bé ăn cháo/bột, chế biến các món bột/cháo hợp khẩu vị của bé, đa dạng thực phẩm và thay đổi món thường xuyên để bé ăn ngon miệng và hấp thu được đầy đủ các chất dinh dưỡng.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Bé năm nay 2 tuổi rất lười ăn cơm, có cách nào để bé ăn được tốt hơn? Chỉ uống sữa thôi có được không?
+                                </div>
+                                <div class="answer">
+                                    <p>Pedia 2+ dành cho trẻ từ 2 – 10 tuổi đang gặp vấn đề biếng ăn và ăn không đủ các nhóm thực phẩm</p>
+                                    <p>Dielac Pedia đủ các dưỡng chất với hàm lương cân đối phù hợp dễ hấp thu, có các vi chất như Kẽm, Vitamin nhóm B và Lysin kích thích sự thèm ăn ở trẻ, giúp trẻ cảm thấy ăn ngon miệng hơn.</p>
+                                    <p>Sự kết hợp của các chủng lợi khuẩn BB-12 &amp; LGG với chất xơ hoà tan Inulin &amp; FOS làm ức chế sự phát triển của vi khuẩn có hại, tăng cường vi khuẩn có lợi trong hệ đường ruột, giúp hệ tiêu hoá của trẻ khoẻ mạnh, nhờ đó hấp thu các chất dinh dưỡng tốt hơn.</p>
+                                    <p>Chất béo dễ hấp thu và chuyển hoá nhanh thành năng lượng nhờ bổ sung chất béo MCT và L-carnitin. Các vitamin và khoáng chất phù hợp nhu cầu khuyến nghị RNI Việt Nam và Cholin, DHA, Taurin cần thiết cho sự phát triển về thể chất và trí não của trẻ .</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="question">
+                                    Bé sau 24 tháng tuổi thì nên cho uống sữa tươi thay vì uống sữa bột, vì sữa bột có nhiều chất bảo quản 
+                                    không tốt cho trẻ và bé hấp thu chất dinh dưỡng không còn nhiều nữa. Có đúng không?
+                                </div>
+                                <div class="answer">
+                                    <p>Điều đó là không đúng bạn nhé. Bé sau 24 tháng tuổi thì uống sữa tươi hay sữa bột đều tốt. Tuy nhiên, giai đoạn bé 2-4 tuổi thì chọn sữa công thức sẽ phù hợp hơn.</p>
+                                    <p>Việc duy trì sữa bột công thức cho trẻ từ 2-4 tuổi vẫn được khuyến khích, bởi ở độ tuổi này, bé rất cần các chất dinh dưỡng được cung cấp từ sữa nhằm phát triển thể 
+                                        chất và tinh thần tối ưu nhất, sữa bột công thức có thành phần dễ hấp thu và được bổ sung thêm các vi chất dinh dưỡng hoặc những chất hỗ trợ phát triển trí não, phát triển chiều cao…đa dạng hơn sữa tươi bạn nhé.</p>
+                                    <p>Chúc bạn có sự lựa chọn sữa phù hợp cho bé.</p>
+                                </div>
+                            </section>
+                            <section>                            
+                                <div class="question">
+                                    Những ngyên nhân thường gặp nhất của trẻ suy dinh dưỡng là gì? Khi trẻ có dấu hiệu 
+                                    suy dinh dưỡng thì việc đầu tiên phải làm gì để khắc phục?
+                                </div>
+                                <div class="answer">
+                                    <p>Dấu hiệu đầu tiên của trẻ bị suy dinh dưỡng đó là trẻ kém ăn, ăn ít hơn trước, khi ăn không cảm thấy hào hứng, nuốt chậm, hoặc ngậm rất lâu không chịu nuốt. Tiếp đến là kiểm tra cân nặng thấy bé tăng cân chậm hoặc không tăng cân. Đối chiếu cân nặng với tiêu chuẩn cân nặng theo theo tháng tuổi thì thấp hơn, các dấu hiệu khác tiếp theo có thể có như rối loạn tiêu hóa, quấy khóc khó ngủ về đêm, tóc rụng hình vành khăn phía sau gáy, chậm mọc răng, lâu liền thóp, chậm biết đứng , chậm biết đi hay chậm mọc răng…chứng tỏ bé có thể bị suy dinh dưỡng kèm theo còi xương.</p>
+                                    <p>Biện pháp khắc phục đầu tiên , và cũng là nguyên tắc là phải cải thiện ăn uống để bé ăn được nhiều hơn trước đó. Bằng cách thay đổi món ăn, loại sữa để bé thấy ngon hơn, giờ ăn, số lượng bữa ăn có thể tăng lên mà bé vẫn hào hứng chứ không phải bằng cách cố nhồi nhét vẫn món cũ, cách cũ, không gian cũ… nhồi nhét như vậy có khi khiến bé sợ ăn và lại càng ăn ít hơn thì phản tác dụng. Kinh nghiệm cho thấy thay đổi món ăn, loại sữa, không gian ăn uống sẽ có hiệu quả tốt.</p>
+                                </div>
+                            </section>
+                        </amp-accordion>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn box-dashed" on="tap:question-lightbox">GỬI CÂU HỎI CHO CHUYÊN GIA</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clinic-list">
+            <div class="container">
+                <amp-img src="images/clinic-list-text.png" class="mb-80" width="389" height="180" alt="clinic-list" layout="responsive"></amp-img>
+
+                <amp-carousel width="500" height="700" class="mb-80" layout="responsive" type="slides">
+                    <div class="item">
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Lê Thị Thanh Xuân</li>
+                                    <li>Bệnh viện phụ sản - nhi Đà Nẵng</li>
+                                    <li>330 Nguyễn Tri Phương - Tp. Đà Nẵng</li>
+                                    <li>SĐT: 0935647648</li>
+                                    <li>Thời gian làm việc: 9h - 11h. Chiều 17 - 20h</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi khoa Thái Nguyên</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Hoàng Thị Huế</li>
+                                    <li>Bộ môn nhi - đại học y được Thái Nguyên</li>
+                                    <li>LÔ 93 - khu đô thị xương rồng - Tp. Thái Nguyên</li>
+                                    <li>SĐT: (08) 682210286</li>
+                                    <li>Thời gian làm việc: Ngoài giờ hành chính</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Lê Thị Thanh Xuân</li>
+                                    <li>Bệnh viện phụ sản - nhi Đà Nẵng</li>
+                                    <li>330 Nguyễn Tri Phương - Tp. Đà Nẵng</li>
+                                    <li>SĐT: 0935647648</li>
+                                    <li>Thời gian làm việc: 9h - 11h. Chiều 17 - 20h</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi khoa Thái Nguyên</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Hoàng Thị Huế</li>
+                                    <li>Bộ môn nhi - đại học y được Thái Nguyên</li>
+                                    <li>LÔ 93 - khu đô thị xương rồng - Tp. Thái Nguyên</li>
+                                    <li>SĐT: (08) 682210286</li>
+                                    <li>Thời gian làm việc: Ngoài giờ hành chính</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Lê Thị Thanh Xuân</li>
+                                    <li>Bệnh viện phụ sản - nhi Đà Nẵng</li>
+                                    <li>330 Nguyễn Tri Phương - Tp. Đà Nẵng</li>
+                                    <li>SĐT: 0935647648</li>
+                                    <li>Thời gian làm việc: 9h - 11h. Chiều 17 - 20h</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi khoa Thái Nguyên</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Hoàng Thị Huế</li>
+                                    <li>Bộ môn nhi - đại học y được Thái Nguyên</li>
+                                    <li>LÔ 93 - khu đô thị xương rồng - Tp. Thái Nguyên</li>
+                                    <li>SĐT: (08) 682210286</li>
+                                    <li>Thời gian làm việc: Ngoài giờ hành chính</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Lê Thị Thanh Xuân</li>
+                                    <li>Bệnh viện phụ sản - nhi Đà Nẵng</li>
+                                    <li>330 Nguyễn Tri Phương - Tp. Đà Nẵng</li>
+                                    <li>SĐT: 0935647648</li>
+                                    <li>Thời gian làm việc: 9h - 11h. Chiều 17 - 20h</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi khoa Thái Nguyên</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Hoàng Thị Huế</li>
+                                    <li>Bộ môn nhi - đại học y được Thái Nguyên</li>
+                                    <li>LÔ 93 - khu đô thị xương rồng - Tp. Thái Nguyên</li>
+                                    <li>SĐT: (08) 682210286</li>
+                                    <li>Thời gian làm việc: Ngoài giờ hành chính</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi – Lê Thị Thanh Xuân</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Lê Thị Thanh Xuân</li>
+                                    <li>Bệnh viện phụ sản - nhi Đà Nẵng</li>
+                                    <li>330 Nguyễn Tri Phương - Tp. Đà Nẵng</li>
+                                    <li>SĐT: 0935647648</li>
+                                    <li>Thời gian làm việc: 9h - 11h. Chiều 17 - 20h</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clinic-block mb-30">
+                            <div class="clinic-name">Phòng khám nhi khoa Thái Nguyên</div>
+                            <div class="clinic-info">
+                                <ul>
+                                    <li>Bác sỹ Hoàng Thị Huế</li>
+                                    <li>Bộ môn nhi - đại học y được Thái Nguyên</li>
+                                    <li>LÔ 93 - khu đô thị xương rồng - Tp. Thái Nguyên</li>
+                                    <li>SĐT: (08) 682210286</li>
+                                    <li>Thời gian làm việc: Ngoài giờ hành chính</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </amp-carousel>
+
+                <div class="clinic-register mb-30">
+                    <amp-img src="images/doctor.png" width="607" height="672" alt="clinic-doctor" layout="responsive"></amp-img>
+                    <div class="clinic-desc mb-20">Bác sĩ có thể đăng ký để cập nhật thông tin phòng khám vào Danh sách Phòng khám uy tín giới thiệu bởi Vinamilk Baby Care.</div>
+                    <div class="text-center"><a href="#" class="btn btn-primary">ĐĂNG KÝ</a></div>
+                </div>
+
+                <div class="clinic-direction">
+                    <div class="direction-title mb-30">Hướng dẫn mẹ tìm kiếm phòng khám</div>
+                    <div class="direction-step text-center mb-30">
+                        <amp-img src="images/step-1.png" width="191" height="195" alt="step-1"></amp-img>
+                        <div class="step-title">BƯỚC 1</div>
+                        <div class="step-content">
+                            Tìm kiếm Phòng khám theo <br>
+                            Bác sĩ/ Chuyên khoa/ Địa điểm
+                        </div>
+                    </div>
+                    <div class="direction-step text-center mb-30">
+                        <amp-img src="images/step-2.png" width="191" height="195" alt="step-2"></amp-img>
+                        <div class="step-title">BƯỚC 2</div>
+                        <div class="step-content">
+                            Kết quả danh sách <br>
+                            phòng khám trên bản đồ
+                        </div>
+                    </div>
+                    <div class="text-center"><a href="#" class="btn btn-primary">BẮT ĐẦU TÌM KIẾM</a></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="row-section row-product">
+            <div class="container">
+
+                <h3 class="widget-title title-border mb-30"><span>Các sản phẩm thuộc ngành sữa bột</span></h3>
+
+
+                <amp-carousel height="200" layout="fixed-height" type="carousel">
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-1.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-2.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-3.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-4.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-5.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-6.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-7.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-8.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-9.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-10.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+
+
+                </amp-carousel>
+
+            </div>
+        </section>
+
+        <section class="row-section row-bottom">
+            <div class="container">
+                <div class="widget">
+                    <h3 class="widget-title title-border mb-30"><span>MẸ CẦN HỖ TRỢ?</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-phone.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Trung tâm tư vấn dinh dưỡng</p>
+                                <h4><a href="tel: 1900545425">1900545425</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <amp-img src="images/support-mail.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Viết cho chúng tôi</p>
+                                <h4>EMAIL</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget-newsletter">
+                    <h3 class="widget-title title-border mb-30"><span>ĐĂNG KÝ NHẬN TIN</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-newsletter.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p> Mẹ hãy đăng ký nhận tin để nhận những thông tin bổ ích và chương trình khuyến mãi của Vinamilk
+                                    nhé.
+                                </p>
+                                <form target="_top" action="\">
+                                    <input type="text" class="input-box" name="email" value="" placeholder="Email của mẹ">
+                                    <button type="submit" class="btn btn-primary">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-section row-menubottom">
+            <div class="container">
+
+                <div class="cols-2">
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Vinamilk Baby Care</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Mang thai </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> 0-6 tháng</a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> 6-12 tháng </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> 1-2 tuổi </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> 2-6 tuổi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Góc chuyên gia</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Đội ngũ chuyên gia </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Chuyên gia chia sẻ </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Hỏi đáp cùng chuyên gia </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Sản phẩm</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Optimum Mama </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Mama Gold </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Optimum Gold </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Dielac Alpha Gold </a> </li>
+
+                                <li> <a class="" href="#" title="2-6 tuổi"> Dielac Grow Plus Suy dinh dưỡng, thấp còi</a> </li>
+                                <li> <a class="" href="#" title="Mang thai">Dielac Grow </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Alpha </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Dielac Pedia </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Ứng dụng thông minh</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Theo dõi cân nặng thai kỳ</a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Đặt tên cho con </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Lịch tiêm phòng cho bé </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Tính ngày dự sinh </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> Theo dõi chiều cao, cân nặng cho bé</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Truyền thông CLB Mẹ và Bé</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Ưu đãi dành riêng cho mẹ </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Các hoạt động câu lạc bộ </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">Bản quyền thuộc về Vinamilk 2016</div>
+        </div>
+    </footer>
+
+    <amp-lightbox id="search-lightbox" layout="nodisplay">
+        <div class="lightbox" on="tap:search-lightbox.close" role="button" tabindex="0"> </div>
+        <div class="lightbox-content">
+            <form target="_top" action="\">
+                <input type="text" class="input-box" placeholder="Nhập từ khóa cần tìm kiếm...">
+                <button type="submit"> <i class="icon-search"></i> </button>
+                <div class="lightbox-close" on="tap:search-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+            </form>
+        </div>
+    </amp-lightbox>
+    <amp-lightbox id="login-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:login-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <amp-selector role="tablist" layout="container" class="ampTabContainer">
+                <div role="tab" class="tabButton tabButton-1" selected option="a">Đăng ký</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN</span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> NHẬP LẠI MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main">SỐ ĐIỆN THOẠI </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" checked="checked">
+                            <span class="circle"></span> Dự định 
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đang mang thai
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đã có con
+                        </label>
+                        <div class="line-page"></div>
+                        <label class="row-label"> <span> Ngày </span>
+                            <select name="baby_day" id="baby_day" >
+                                <option value="0">Ngày</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25" selected="">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Tháng </span>
+                            <select name="baby_month" id="baby_month" >
+                                <option value="0">Tháng</option>
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Năm </span>
+                            <select name="baby_year" id="baby_year" >
+                                <option value="0">Năm</option>
+                                <option value="2018">2018</option>
+                                <option value="2017" selected="">2017</option>
+                            </select>
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="newsletter" type="checkbox" >
+                            <span class="circle"></span> Tôi đồng ý nhận thông tin dinh dưỡng, chăm sóc sức khoẻ từ Vinamilk Baby Care và Chuyên gia
+                        </label>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div role="tab" class="tabButton tabButton-2" option="b">Đăng nhập</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <div class="clearfix">
+                            <a href="#" class="forgetpass  pull-right mt-6"> Quên mật khẩu </a>
+                            <label class="row-radio mb-20">
+                                <input name="newsletter" type="checkbox" >
+                                <span class="circle"></span> Duy trì đăng nhập
+                            </label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+            </amp-selector>
+
+            <div class="lightbox-close" on="tap:login-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+    <amp-lightbox id="question-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:question-lightbox.close" role="button"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>GỬI CÂU HỎI CHO CHUYÊN GIA</span></h3>
+            <div class="popup-img">
+                <amp-img src="images/popup-bacsi.jpg" width="233" height="263" alt="popup-bacsi" layout="responsive"></amp-img>
+            </div>
+
+            <form target="_top" action="\">
+                <p class="mb-10">Chọn theo</p>
+                <select class="select-box mb-20" name="theme">
+                    <option value="tat-ca" selected>Tất cả chủ đề</option>
+                    <option value="dinh-duong">Dinh dưỡng</option>
+                    <option value="non-tro">Nôn trớ</option>
+                    <option value="thai-san">Thai sản</option>
+                    <option value="the-chat">Thể chất</option>
+                    <option value="tieu-hoa">Tiêu hóa</option>
+                    <option value="tri-nao">Trí não</option>
+                </select>
+                <select class="select-box mb-20" name="expert">
+                    <option value="0">Tất cả chuyên gia</option>
+                    <option value="19599">ThS Anke Sentko</option>
+                    <option value="22880">BS. James Bauly</option>
+                    <option value="2967">TS.BS Nguyễn Hữu Toản</option>
+                    <option value="517">BS.CK2 Lê Quang Thanh</option>
+                    <option value="395">PGS.TS.BS Trần Đình Toán</option>
+                    <option value="2101">BS.CK1 Nguyễn Vĩnh Hoàng Oanh</option>
+                    <option value="713">BS.CK1 Nguyễn Thu Vân</option>
+                    <option value="2089">BS.CK1 Nguyễn Thị Ngọc Thanh</option>
+                </select>
+                <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN </span>
+                    <input type="text" id="name" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> EMAIL </span>
+                    <input type="email" id="email" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> SỐ ĐIỆN THOẠI </span>
+                    <input type="text" id="phone" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> NHẬP NỘI DUNG CÂU HỎI </span>
+                    <em class="popup-note">* Dưới 200 kí tự</em>
+                    <textarea id="content" maxlength="200" rows="3" class="input-box" ></textarea>
+                </label>
+
+                <div class="text-center">
+                    <button class="btn btn-full" type="submit"> GỬI CÂU HỎI </button>
+                </div>
+            </form>
+
+            <div class="lightbox-close" on="tap:question-lightbox.close" role="button"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+</body>
+
+</html>

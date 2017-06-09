@@ -1,0 +1,31 @@
+.row-menubottom {
+
+	a {    color: #2c2c2c; }
+
+	.cols-2>* { margin-bottom: 40px;}
+	.widget-tile {
+		font-size: 16px;    font-weight: 500;
+    	color: $colorPrimary ;
+	}
+
+
+}
+
+
+
+#footer  {
+
+background: url(images/bg_footer.jpg) top center no-repeat $colorSecondary;
+    background-size: cover;
+    padding: 25px 0;
+
+
+}
+
+
+.pt-30 { padding-top: 30px !important;}
+.mb-10 { margin-bottom: 10px !important; }
+.mb-20 { margin-bottom: 20px !important; }
+.mb-30 { margin-bottom: 30px !important; }
+.mb-40 { margin-bottom: 40px !important; }
+.mb-80 { margin-bottom: 80px !important; }

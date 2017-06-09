@@ -1,0 +1,44 @@
+#home-content {
+
+	div.img-title { 
+		max-width: 58%; margin: 0 auto 20px; text-align: center;  
+	}
+
+	.imgmk {
+	position: relative;
+	.oj { position: absolute;}
+	.oj1 {
+		left: 44.8%;   top: 31.7%; width: 15%;
+		-webkit-animation: todo 1.5s infinite;
+		animation: todo 1.5s infinite;
+	}
+	.oj2 {
+		left: 55.3%;    top: 49.4%; width: 3%;
+		-webkit-animation: tada 1.5s infinite;
+		animation: tada 1.5s infinite;
+	}
+	.oj3 {
+		left: 57.1%;    top: 52.8%; width: 2%;
+		-webkit-animation: tada 1.5s infinite;
+		animation: tada 1.5s infinite;
+	}
+	.oj4 {
+		left: 57.6%;    top: 56.5%; width: 1%;
+		-webkit-animation: tada 1.5s infinite;
+		animation: tada 1.5s infinite;
+	}
+	.oj5 {   left: 59.6%;  top: 13.2%; width: 5%;}
+	.main-oj {
+		z-index: 2;
+	}
+	}
+
+	.row-tt div.img-title { max-width: 100%}
+
+}
+
+
+
+
+
+
