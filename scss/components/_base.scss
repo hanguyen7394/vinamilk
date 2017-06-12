@@ -105,7 +105,7 @@ a.btn { height: auto; line-height: 40px;}
     height: 40px;
     border:none;
     outline: none;
-    padding:0  12px;
+    padding:0  15px;
     border-radius: 0;
     background-color: #e2e2e2;
     border: none;
@@ -337,7 +337,25 @@ amp-img  { max-width: 100%; height: auto ;     display: inline-block;}
 }
 
 textarea.input-box {
-    height: inherit !important;
+    height: inherit;
+}
+
+section[expanded] > header.select-box {
+  background: $colorPrimary;
+  color: #fff;
+}
+
+.search-box {
+    position: relative;        
+    &::before {
+        content: '\e986';
+        font-family: 'Icomoon';
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        font-size: 22px;
+        color: #353535;
+    }
 }
 
 

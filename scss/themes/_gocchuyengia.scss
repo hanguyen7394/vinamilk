@@ -1,8 +1,3 @@
-section[expanded] > div.select-box {
-  background: $colorPrimary;
-  color: #fff;
-}
-
 .expert {
     .desc {
         padding: 0 20px;
@@ -67,7 +62,7 @@ section[expanded] > div.select-box {
             color: $colorPrimary;
             font-size: 18px;
             amp-img {
-                overflow: visible !important;
+                overflow: visible;
             }
             img {
                 margin-top: 6px;                
@@ -168,7 +163,8 @@ section[expanded] > div.select-box {
     .clinic-desc {
         width: 70%;
         text-align: center;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -208,24 +204,14 @@ section[expanded] > div.select-box {
         padding: 8px 15px;
         font-size: 18px;
         color: #353535;
-        font-family: 'Roboto Light', sans-serif !important;
+        font-family: 'Roboto Light', sans-serif;
     }
     .search-box {
-        position: relative;        
         input {
             border-radius: 0;
             font-size: 18px;
             padding: 8px 15px;
-            font-family: 'Roboto Light', sans-serif !important;
-        }
-        &::before {
-            content: '\e986';
-            font-family: 'Icomoon';
-            position: absolute;
-            top: 3px;
-            right: 10px;
-            font-size: 22px;
-            color: #353535;
+            font-family: 'Roboto Light', sans-serif;
         }
     }
     .clinic-item {
