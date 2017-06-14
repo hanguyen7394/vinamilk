@@ -116,3 +116,26 @@ text-align: center;
 .box-dashed {
 	border: 1px dashed;
 }
+
+.box-shadow-radius {
+    -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -ms-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.circle-icon {
+	color: #fff;
+	background-color: $colorPrimary;
+	padding: 6px;
+	border-radius: 100%;
+	margin-left: 5px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}

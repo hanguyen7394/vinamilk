@@ -38,44 +38,101 @@
 
 <body>
   <amp-sidebar id="sidebar" side="right" layout="nodisplay" aria-hidden="true" role="menu" tabindex="-1">
-    <form class="menu-layer primary " action="/" target="_top" novalidate="">
-      <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
-      <div class="items">
+         <form   class="menu-layer primary " action="/" target="_top" novalidate="">
+            <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items"> 
+            
+                <a class="menu-item item-layer-1 active" href="index.html">Trang chủ</a>
+                
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Vinamilk Baby Care
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chuyên mục chính
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Mang thai</a>
+                                        <a class="menu-item item-layer-3" href="#">Sinh con</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng cho con</a>
+                                        <a class="menu-item item-layer-3" href="#">Nuôi dạy con</a>
+                                        <a class="menu-item item-layer-3" href="#">Những vấn đề thường gặp ở trẻ</a>
+                                    </div>
+                                </div>
+                            </label>
 
-        <a class="menu-item item-layer-1 active" href="index.html">Trang chủ</a>
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chủ đề khác mẹ quan tâm
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items">
+                                        <a class="menu-item item-layer-3" href="#">Phát triển trí não</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêu hóa hấp thu</a>
+                                        <a class="menu-item item-layer-3" href="#">Tăng cân, chiều cao</a>
+                                        <a class="menu-item item-layer-3" href="#">Sức đề kháng</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng ăn dặm</a>
+                                        <a class="menu-item item-layer-3" href="#">Nôn trớ</a>
+                                        <a class="menu-item item-layer-3" href="#">Biếng ăn</a>
+                                        <a class="menu-item item-layer-3" href="#">Giấc ngủ của con</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêm phòng</a>
+                                        <a class="menu-item item-layer-3" href="#">Bệnh thường gặp</a>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </label>
 
+                <a class="menu-item item-layer-1" href="index.html">Góc chuyên gia</a>
 
-        <label class="menu-item item-layer-1 has-sub-level">
-      <input type="checkbox">
-      Câu chuyện Vinamilk
-      <div class="submenu menu-layer secondary">
-        <div class="return-button">Back</div>
-        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
-        <div class="items"> <a class="menu-item item-layer-2" href="#">What is AMP?</a> <a class="menu-item item-layer-2" href="#">How AMP Works</a> <a class="menu-item item-layer-2" href="#">Design Principles</a>
-          <label class="menu-item item-layer-2 has-sub-level">
-          <input type="checkbox">
-          Who is AMP for?
-          <div class="submenu menu-layer tertiary">
-            <div class="return-button">Back</div>
-            <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
-            <div class="items"> <a class="menu-item item-layer-3" href="#">Who is AMP for?</a> <a class="menu-item item-layer-3" href="#">AMP for Publishers</a> <a class="menu-item item-layer-3" href="#">AMP for Ad Tech Platforms</a> <a class="menu-item item-layer-3" href="#">AMP for Advertisers</a> </div>
-          </div>
-          </label>
-        <label class="menu-item item-layer-2 has-sub-level">
-          <input type="checkbox">
-          Case Studies
-          <div class="submenu menu-layer tertiary">
-            <div class="return-button">Back</div>
-            <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
-            <div class="items"> <a class="menu-item item-layer-3" href="#">Case Studies</a> <a class="menu-item item-layer-3" href="#">Washington Post</a> <a class="menu-item item-layer-3" href="#">Gizmodo</a> </div>
-          </div>
-          </label>
-      </div>
-      </div>
-      </label>
-      <a class="menu-item item-layer-1" href="index.html">Sản Phẩm </a> <a class="menu-item item-layer-1" href="index.html">Phát triển bền vững</a>      <a class="menu-item item-layer-1" href="index.html">Tiệc ngoài</a> <a class="menu-item item-layer-1" href="index.html">Sảnh tiệc</a>      <a class="menu-item item-layer-1" href="index.html">Ưu đãi</a> <a class="menu-item item-layer-1" href="index.html">Tin tức</a>      <a class="menu-item item-layer-1" href="index.html">Liên hệ</a> </div>
-    </form>
-  </amp-sidebar>
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Sản Phẩm
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <a class="menu-item item-layer-2" href="#">Optimum mama</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Mama Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha Gold</a> 
+
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Dielac Grow Plus
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, thấp còi</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, nhẹ cân</a>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <a class="menu-item item-layer-2" href="#">Dielac Grow</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Comfort</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Pedia</a>                     
+                        </div>
+                    </div>
+                </label>
+                
+                <a class="menu-item item-layer-1" href="index.html">Ứng dụng thông minh</a>
+                <a class="menu-item item-layer-1" href="index.html">Truyền thông</a>
+                <a class="menu-item item-layer-1" href="index.html">CLB Mẹ và bé</a>
+            </div>
+        </form>
+    </amp-sidebar>
   <header id="header" class="header fixed">
     <div class="container">
       <a href="index.html" id="logo">

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta property="og:description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+    <meta property="og:image" content="https://www.ampproject.org/static/img/logo-og-image.jpg">
+    <meta name="description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – AMP">
+    <meta name="amp-experiments-opt-in" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Vinamilk – AMP</title>
+
+    <link rel="shortcut icon" href="https://www.ampproject.org/static/img/amp_favicon.png?v=3">
+    <link rel="canonical" href="https://www.ampproject.org/">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.ampproject.org/static/img/icons/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.ampproject.org/static/img/icons/152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://www.ampproject.org/static/img/icons/167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.ampproject.org/static/img/icons/180.png">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+        @keyframes scrollDownArrow{0%{bottom:-5px}25%{bottom:-10px}50%{bottom:-15px}75%{bottom:-10px}100%{bottom:-5px}}@font-face{font-family:"Icomoon";src:url("fonts/icomoon/icomoon.eot");src:url("fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"),url("fonts/icomoon/icomoon.woff") format("woff"),url("fonts/icomoon/icomoon.ttf") format("truetype"),url("fonts/icomoon/icomoon.svg") format("svg");font-weight:normal;font-style:normal}[class^="icon-"]:before,[class*=" icon-"]:before,[class^="icon-"]:after,[class*=" icon-"]:after{font-family:'Icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-right:before{content:"\e900"}.icon-woman:before{content:"\e901"}.icon-nurse:before{content:"\e902"}.icon-envelop:before{content:"\e945"}.icon-location:before{content:"\e947"}.icon-reply:before{content:"\e96a"}.icon-search:before{content:"\e986"}.icon-star-empty:before{content:"\e9d7"}.icon-cancel-circle:before{content:"\ea0d"}.icon-cross:before{content:"\ea0f"}.icon-facebook:before{content:"\ea90"}@font-face{font-family:'QX Banda regular';src:url("fonts/QX_Banda_regular.eot");src:url("fonts/QX_Banda_regular.eot?#iefix") format("embedded-opentype"),url("fonts/QX_Banda_regular.woff") format("woff"),url("fonts/QX_Banda_regular.ttf") format("truetype"),url("fonts/QX_Banda_regular.svg#QX_Banda_regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Regular';src:url("fonts/Roboto-Regular.eot");src:url("fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Regular.woff") format("woff"),url("fonts/Roboto-Regular.ttf") format("truetype"),url("fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Light';src:url("fonts/Roboto-Light.eot");src:url("fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Light.woff") format("woff"),url("fonts/Roboto-Light.ttf") format("truetype"),url("fonts/Roboto-Light.svg#Roboto-Light") format("svg");font-weight:300;font-style:normal}@font-face{font-family:'Roboto Bold';src:url("fonts/Roboto-Bold.eot");src:url("fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Bold.woff") format("woff"),url("fonts/Roboto-Bold.ttf") format("truetype"),url("fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");font-weight:600;font-style:normal}@font-face{font-family:'Roboto Medium';src:url("fonts/Roboto-Medium.eot");src:url("fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Medium.woff") format("woff"),url("fonts/Roboto-Medium.ttf") format("truetype"),url("fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");font-weight:500;font-style:normal}@font-face{font-family:'UVN Van';src:url("fonts/UVNVan.eot");src:url("fonts/UVNVan.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVan.woff") format("woff"),url("fonts/UVNVan.ttf") format("truetype"),url("fonts/UVNVan.svg#UVNVan") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'UVN Van Bold';src:url("fonts/UVNVanBold.eot");src:url("fonts/UVNVanBold.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVanBold.woff") format("woff"),url("fonts/UVNVanBold.ttf") format("truetype"),url("fonts/UVNVanBold.svg#UVNVanBold") format("svg");font-weight:700;font-style:normal}*{margin:0;padding:0;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.roboto-regular{font-family:'Roboto Regular'}.roboto-bold{font-family:'Roboto Bold'}.roboto-medium{font-family:'Roboto Medium'}.roboto-light{font-family:'Roboto Light'}.system-bold-italic{font-family:"system-bold-italic";font-weight:normal}.system-medium-italic{font-family:"system-medium-italic";font-weight:normal}.system-medium{font-family:"system-medium";font-weight:normal}.system-regular-italic{font-family:"system-regular-italic";font-weight:normal}.system-semi-bold,.btn-small{font-family:"system-semi-bold";font-weight:normal}.system-regular{font-family:"system-regular";font-weight:normal}.system-bold{font-family:"system-bold";font-weight:normal}.sfu-bookbt-bold-condensed{font-family:"sfu-bookbt-bold-condensed";font-weight:normal}.sfu-bookbt-bold-italic{font-family:"sfu-bookbt-bold-italic";font-weight:normal}.sfu-bookbt-bold,.title-box{font-family:"sfu-bookbt-bold";font-weight:normal}.sfu-bookbt-italic{font-family:"sfu-bookbt-italic";font-weight:normal}.sfu-bookbt-roman{font-family:"sfu-bookbt-roman";font-weight:normal}a{color:inherit;text-decoration:none;transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;color:#0048a4}a:focus,a:hover{color:#ebc55b;text-decoration:none}h1,.h1{font-size:42px}h2,.h2{font-size:34px}h3,.h3{font-size:26px}h4,.h4{font-size:22px}h5,.h5{font-size:16px}h6,.h6{font-size:100%}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight:500;margin:0 0 20px;line-height:normal}p{margin:0 0 10px}.line-page{display:block;height:0;border-bottom:2px dashed #e3c980;margin-bottom:20px}ul ul,ol ol{margin-left:15px}img{max-width:100%}.btn{background-color:#fff;display:inline-block;color:#fff;color:#0048a4;height:40px;border-radius:50px;padding:0 25px;border:2px solid #0048a4;font-size:14px;text-transform:uppercase}.btn:hover{background-color:#0048a4;color:#fff}.btn.btn-primary{background-color:#0048a4;color:#fff}a.btn{height:auto;line-height:40px}.btn-small{font-size:12px;line-height:15px;position:relative;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 22px 2px 13px;display:inline-block;background:url(images/icon-arr.png) #ebc55b no-repeat right center}.btn-small:hover{background-color:#0048a4;color:#fff}.input-box{height:40px;border:none;outline:none;padding:0  15px;border-radius:0;background-color:#e2e2e2;border:none;width:100%;color:#555;border-radius:20px;font-size:14px;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}textarea.input-box{padding:15px}.pull-left{float:left}.pull-right{float:right}.text-center{text-align:center}.text-right{text-align:right}.text-left{text-align:left}.container{position:relative;margin:0 auto;padding:0 15px}.container:after{display:table;content:" ";clear:both}.color-main{color:#0048a4}.color-second{color:#ebc55b}.display-table{display:table;width:100%;height:100%}.display-table .table-cell{display:table-cell;height:100%;width:100%;vertical-align:middle}.box-shadow{background:#fff;padding:5px;box-shadow:0 0 5px 0 rgba(0,0,0,0.3)}amp-accordion section{margin-bottom:1px}ul.list{list-style:none;margin:0;padding:0}ul.list li{padding-left:18px;position:relative}ul.list li:not(:first-child){margin-top:8px}ul.list li:before{content:"";width:10px;height:10px;background:#ebc55b;position:absolute;top:5px;left:0;border-radius:100%}.clearfix:after{content:"";display:table;clear:both}.row-section{padding:50px 0;margin:0}.content-section:after{content:"";display:table;clear:both}.widget-title{font-family:'UVN Van';font-size:18px;text-transform:uppercase;color:#0048a4}.title-border{text-align:center;line-height:1.4}.title-border span{border:1px solid #0048a4;border-left:none;border-right:none;display:inline-block;padding:5px 0}.title-box{font-size:25px;line-height:28px;color:#0048a4;position:relative;display:block;margin-bottom:20px}.cols-2,.col-2{margin:0 -10px;list-style:none}.cols-2>*,.col-2>*{float:left;width:50%;padding-left:10px;padding-right:10px}.cols-2>*:nth-child(2n+1),.col-2>*:nth-child(2n+1){clear:both}.cols-2:after,.col-2:after{content:"";display:table;clear:both}.col-2>*{padding-left:0;padding-right:0}.grid-space-8[class*="cols-"]{margin:0 -8px}.grid-space-8[class*="cols-"]>div{padding-left:8px;padding-right:8px}.grid-space-5[class*="cols-"]{margin:0 -5px}.grid-space-5[class*="cols-"]>div{padding-left:5px;padding-right:5px}amp-img{max-width:100%;height:auto;display:inline-block}.mb-50{margin-bottom:50px}.margin-0,.mg-0{margin:0}.padding-0,.pd-0{padding:0}.bg-gray{background:#f6f7f9}.row-label{display:block;margin-bottom:20px}.row-label>span{display:block}.row-radio{min-height:32px;padding-top:6px;position:relative;display:block;padding-left:40px;margin-bottom:5px}.row-radio input[type="radio"],.row-radio input[type="checkbox"]{visibility:hidden;position:absolute;top:0;left:0}.row-radio .circle{width:32px;height:32px;background:#fff;border:2px solid #0048a4;border-radius:50%;position:absolute;left:0;top:0}.row-radio .circle:before{opacity:0;content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:url(images/ic-checkbox.jpg) no-repeat center}.row-radio input[type=radio]:checked+.circle:before,.row-radio input[type=checkbox]:checked+.circle:before{opacity:1}.text-uppercase{text-transform:uppercase}.text-center{text-align:center}.text-normal{text-transform:none}.search-txt{text-transform:uppercase;text-align:center}.popup-img{max-width:75%;height:auto;margin:auto}.popup-note{font-size:14px;color:#000}.btn-full{width:100%}textarea.input-box{height:inherit}section[expanded]>header.select-box{background:#0048a4;color:#fff}.search-box{position:relative}.search-box::before{content:'\e986';font-family:'Icomoon';position:absolute;top:3px;right:10px;font-size:22px;color:#353535}#header{position:relative;z-index:100;background-color:#fff;box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3)}#header .container{padding-top:5px;padding-bottom:5px;height:60px;position:relative;text-align:center}#header.fixed{position:fixed;left:0;top:0;right:0}#header .search-btn,#header .login-btn{position:absolute;width:30px;height:30px;right:10px;top:15px;border:none;font-size:18px;background-color:#0048a4;border-radius:100%;color:#fff;cursor:pointer}#header .search-btn:before,#header .login-btn:before{content:"\e986";line-height:30px;display:inline-block;font-family:Icomoon}#header .login-btn{right:50px}#header .login-btn:before{content:"\e901";font-size:20px;position:relative;font-family:Icomoon}#logo{display:inline-block;position:relative;top:5px}#logo .amp-img{display:block}.hamburger{position:absolute;left:0;top:0;transition:.3s;cursor:pointer;user-select:none;color:#fff;border:none;height:60px;text-transform:uppercase;background:none;width:60px}.hamburger .lines{height:6px;position:absolute;border-radius:3px;left:12px;right:12px;background-color:#0048a4;top:calc(50% - 3px);transition:transform 0s ease .2s,-webkit-transform 0s ease .2s}.hamburger .lines:after,.hamburger .lines:before{width:100%;height:6px;border-radius:3px;position:absolute;left:0;background-color:#0048a4;content:"";transition:top .2s ease .2s, transform .2s ease 0s, -webkit-transform .2s ease 0s}.hamburger .lines:before{top:-12px}.hamburger .lines:after{top:calc(100% - -6px)}amp-sidebar[side][open] ~ #header .hamburger .lines{background:none}amp-sidebar[side][open] ~ #header .hamburger .lines:after,amp-sidebar[side][open] ~ #header .hamburger .lines:before{transition:top .2s ease 0s,transform .2s ease .2s,-webkit-transform .2s ease .2s}amp-sidebar[side][open] ~ #header .hamburger .lines:before{top:calc(50% - 1px);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}amp-sidebar[side][open] ~ #header .hamburger .lines:after{top:calc(50% - 1px);-webkit-transform:rotate(45deg);transform:rotate(45deg)}#search-lightbox form{margin:5px 15px;position:relative}#search-lightbox form .input-box{background-color:#fff;border-radius:30px;height:40px;padding:0 40px;color:#333}#search-lightbox form button{position:absolute;right:0;top:0;height:40px;width:40px;border:none;font-size:28px;color:#0048a4;line-height:40px;background:none;text-align:center}#search-lightbox form .lightbox-close{position:absolute;top:0;left:0;width:40px;height:40px;font-size:18px;line-height:40px;text-align:center}#login-lightbox,#question-lightbox{width:100%;max-width:100%}#login-lightbox,#question-lightbox>div{overflow:auto}.lightbox-content{box-shadow:0 5px 50px rgba(0,0,0,0.65);width:90%;margin:50px auto;background-color:#fff;border-radius:10px;padding:20px;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;-o-overflow-scrolling:touch;-ms-overflow-scrolling:touch}.lightbox-content .line-page{margin:0 -20px 20px}.lightbox-content .lightbox-close{border:2px solid #fff;position:absolute;border-radius:100%;width:30px;height:30px;text-align:center;color:#fff;line-height:30px;font-size:18px;top:-40px;right:0}#login-lightbox .ampTabContainer{display:flex;flex-wrap:wrap}#login-lightbox .ampTabContainer>.tabButton{list-style:none;flex-grow:1;text-align:center;cursor:pointer;background-color:#fff;line-height:25px;padding:5px 0;width:50%;text-transform:uppercase;color:#0048a4;border:1px #0048a4 dashed;font-size:18px;font-family:'UVN Van'}#login-lightbox .ampTabContainer>.tabButton.tabButton-1{border-radius:30px 0 0 30px;border-right:none}#login-lightbox .ampTabContainer>.tabButton.tabButton-2{border-radius:0 30px 30px 0;border-left:none}#login-lightbox .ampTabContainer>.tabButton[selected]{outline:none;background-color:#0048a4;color:#fff;border:none}#login-lightbox .ampTabContainer>.tabContent{display:none;width:100%;order:1;padding:15px 0}#login-lightbox .ampTabContainer>.tabButton[selected]+.tabContent{display:block}amp-sidebar{background:#fff;width:350px}amp-sidebar .submenu{background:#fff;bottom:0;box-shadow:0 3px 20px 0 rgba(0,0,0,0.075);left:0;position:fixed;right:0;top:0;transform:translateX(100%);transition:transform 233ms cubic-bezier(0, 0, 0.21, 1)}amp-sidebar input:checked+.submenu{transform:translateX(0)}amp-sidebar input[type="checkbox"]{position:absolute;visibility:hidden}amp-sidebar .menu-item{border-top:solid 1px #d8d8d8;font-size:15px;line-height:18px;color:#222222;display:block;padding:14px 0 14px 20px;position:relative;background-color:#fff}amp-sidebar .menu-item.active{color:#ebc55b}amp-sidebar .menu-layer .items{left:0;overflow-x:hidden;overflow-y:scroll;position:absolute;right:0}amp-sidebar .menu-layer.primary{height:100%;position:relative}amp-sidebar .menu-layer.primary .items{bottom:5px;top:50px}amp-sidebar .menu-layer.secondary{z-index:2}amp-sidebar .menu-layer.tertiary{z-index:3}amp-sidebar .has-sub-level::after{height:20px;position:absolute;right:30px;top:calc(50% - 10px);width:20px;line-height:20px;text-align:center;font-family:Icomoon;content:"\e900";font-size:24px;color:#ebc55b}amp-sidebar .close-button{border:0;height:50px;position:absolute;right:13px;top:0;width:68px;background:none;border:none;color:#bcbec0}amp-sidebar .close-button:after{font-family:Icomoon;content:"\ea0f";text-align:center;line-height:50px;font-size:20px;display:inline-block}amp-sidebar .return-button{color:#222;line-height:50px;font-weight:300;left:15px;position:absolute;top:0;font-size:12px}amp-sidebar .return-button::before{font-family:Icomoon;content:"\e900";transform:rotate(180deg);display:inline-block;font-size:15px;position:relative}@media (max-width: 480px){.cols-2>*{width:100%}}@media (max-width: 375px){.block-mb{display:block;margin-bottom:5px}.block-mb.ml-10{margin-left:0}}body{padding-top:60px;font-family:'Roboto Regular';font-size:14px;font-weight:400;line-height:1.6;color:#000}.img-mw-587 amp-img{max-width:587px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-531 amp-img{max-width:531px;margin:0 auto}.img-mw-487 amp-img{max-width:487px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}amp-lightbox .lightbox{position:fixed;background:rgba(0,0,0,0.5);top:0;bottom:0;left:0;right:0}amp-lightbox .lightbox-content{position:relative;z-index:10}.row-slideshow{position:relative}.scrolldown{width:50px;height:70px;position:absolute;z-index:9;left:0;right:0;margin:auto;bottom:35px;text-align:center}.scrolldown__circle{width:55px;height:60px;background:url(images/scroll-icon.png) no-repeat center center}.scrolldown__arrow{width:50px;height:20px;background:url(images/scroll-arrow-icon.png) no-repeat center center;left:1px;bottom:-5px;position:absolute;animation:scrollDownArrow 1.5s ease infinite}.row-product .amp-carousel-slide .item{display:block;padding:0 20px}.row-bottom .widget-newsletter{margin-top:40px}.row-bottom .item{overflow:hidden}.row-bottom .item .img{float:left;margin-right:10px}.row-bottom .item .desc{overflow:hidden}.row-bottom .item p{margin-bottom:0}.row-bottom .item h4{color:#0048a4}.row-bottom .item form{margin-top:20px;position:relative}.row-bottom .item .input-box{color:#333;height:34px;background-color:#fff;border-radius:50px;border:1px solid #c8c8c8;padding-right:120px}.row-bottom .item .btn{height:34px;width:100px;text-align:center;border-radius:50px;position:absolute;right:0;top:0}.select-box{width:100%;text-align:left;padding:6px 15px;padding-right:30px;border-radius:17px;-webkit-border-radius:17px;-moz-border-radius:17px;border:1px solid #1f56a3;color:#1f56a3;background:url(images/arrow-dropdown.png) right center no-repeat;background-size:33px auto;-webkit-appearance:none;-moz-appearance:none;appearance:none}.box-dashed{border:1px dashed}.box-shadow-radius{-webkit-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-moz-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-ms-box-shadow:0px 0px 18px rgba(0,0,0,0.14);box-shadow:0px 0px 18px rgba(0,0,0,0.14);-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:20px}.circle-icon{color:#fff;background-color:#0048a4;padding:6px;border-radius:100%;margin-left:5px;display:inline-block;width:30px;height:30px;text-align:center}#chi-tiet-tin-content .title-border{font-size:23px}.btn-close{float:right}.btn-close .icon-cancel-circle{color:#0048a4;font-size:40px}.news-title{color:#0048a4;text-align:left;font-size:23px}.news-time{text-align:right;font-style:italic;color:#7b7a7a}.news-content{color:#515151;text-align:justify}.news-content p{font-family:'Roboto Light', sans-serif}.news-content ul{margin-left:15px;font-family:'Roboto Light', sans-serif}.news-content h3{font-size:24px;font-weight:bold}.productbox{padding-bottom:50%;background-image:url(images/bg-mama.jpg);background-repeat:no-repeat;background-position:bottom;background-size:contain;padding-top:20px;clear:both;border:5px solid #e7ca7a;border-radius:4px;margin-left:auto;margin-right:auto;margin-top:20px;margin-bottom:20px}.productbox .productbox-text{padding:10px;font-family:'Roboto Light', sans-serif}.productbox .productbox-content{padding:20px}.productbox .productbox-content .productbox-buttons{text-align:center}.productbox .productbox-content .productbox-buttons .productbox-button{line-height:40px;height:40px;border-radius:15px;width:100%;color:#951c79;background:url(images/productbox-button-bg.png) center repeat-y;background-size:100%;border:0;display:inline-block;text-align:center;box-shadow:inset 2px -2px 2px rgba(0,0,0,0.2);position:relative;overflow:hidden;font-family:'QX Banda regular'}.block-tag{margin:60px auto 40px;padding-left:80px;text-transform:uppercase;clear:both}.block-tag a{text-align:center;margin:5px 8px;color:#515151;display:inline-block;min-width:150px;padding:8px 20px 5px;border:1px dashed #515151;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px}.news-related-block{margin-bottom:20px}.news-related-block .news-related-img{float:left;width:43%}.news-related-block .news-related-text{color:#515151;float:left;padding-left:20px;width:57%;font-family:'Roboto Light'}.row-menubottom a{color:#2c2c2c}.row-menubottom .cols-2>*{margin-bottom:40px}.row-menubottom .widget-tile{font-size:16px;font-weight:500;color:#0048a4}#footer{background:url(images/bg_footer.jpg) top center no-repeat #ebc55b;background-size:cover;padding:25px 0}strong{font-family:'Roboto Regular', sans-serif}.pt-30{padding-top:30px}.mt-6{margin-top:6px}.ml-10{margin-left:10px}.ml-20{margin-left:20px}.mb-5{margin-bottom:5px}.mb-10{margin-bottom:10px}.mb-20{margin-bottom:20px}.mb-30{margin-bottom:30px}.mb-40{margin-bottom:40px}.mb-80{margin-bottom:80px}
+    </style>
+</head>
+
+<body>
+    <amp-sidebar id="sidebar" side="right" layout="nodisplay" aria-hidden="true" role="menu" tabindex="-1">
+         <form   class="menu-layer primary " action="/" target="_top" novalidate="">
+            <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items"> 
+            
+                <a class="menu-item item-layer-1 active" href="index.html">Trang chủ</a>
+                
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Vinamilk Baby Care
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chuyên mục chính
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Mang thai</a>
+                                        <a class="menu-item item-layer-3" href="#">Sinh con</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng cho con</a>
+                                        <a class="menu-item item-layer-3" href="#">Nuôi dạy con</a>
+                                        <a class="menu-item item-layer-3" href="#">Những vấn đề thường gặp ở trẻ</a>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chủ đề khác mẹ quan tâm
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items">
+                                        <a class="menu-item item-layer-3" href="#">Phát triển trí não</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêu hóa hấp thu</a>
+                                        <a class="menu-item item-layer-3" href="#">Tăng cân, chiều cao</a>
+                                        <a class="menu-item item-layer-3" href="#">Sức đề kháng</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng ăn dặm</a>
+                                        <a class="menu-item item-layer-3" href="#">Nôn trớ</a>
+                                        <a class="menu-item item-layer-3" href="#">Biếng ăn</a>
+                                        <a class="menu-item item-layer-3" href="#">Giấc ngủ của con</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêm phòng</a>
+                                        <a class="menu-item item-layer-3" href="#">Bệnh thường gặp</a>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </label>
+
+                <a class="menu-item item-layer-1" href="index.html">Góc chuyên gia</a>
+
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Sản Phẩm
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <a class="menu-item item-layer-2" href="#">Optimum mama</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Mama Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha Gold</a> 
+
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Dielac Grow Plus
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, thấp còi</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, nhẹ cân</a>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <a class="menu-item item-layer-2" href="#">Dielac Grow</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Comfort</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Pedia</a>                     
+                        </div>
+                    </div>
+                </label>
+                
+                <a class="menu-item item-layer-1" href="index.html">Ứng dụng thông minh</a>
+                <a class="menu-item item-layer-1" href="index.html">Truyền thông</a>
+                <a class="menu-item item-layer-1" href="index.html">CLB Mẹ và bé</a>
+            </div>
+        </form>
+    </amp-sidebar>
+    <header id="header" class="header fixed">
+        <div class="container">
+            <a href="index.html" id="logo">
+                <amp-img height=74 width=170 src="images/logo.png" alt="Welcome"></amp-img>
+            </a>
+            <button class="hamburger" id="menu-button" on="tap:sidebar.toggle"><span class="lines"></span></button>
+            <button class="ampstart-btn search-btn" on="tap:search-lightbox" role="button" tabindex="0"> </button>
+            <button class="ampstart-btn login-btn " on="tap:login-lightbox" role="button" tabindex="0"></button>
+        </div>
+    </header>
+
+    <div id="chi-tiet-tin-content" class="wrap-content">
+        
+        <section class="news-top">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="btn-close"><a href="index.html"><i class="icon-cancel-circle"></i></a></div>
+                </div>
+                <h4 class="title-border news-title mb-20"><span>Thụ thai và những điều cần biết</span></h4>
+                <div class="news-social mb-20">
+                    <span class="share">
+                        <span>Chia sẻ</span>
+                        <a href="#" target="_blank" class="circle-icon"><i class="icon-facebook"></i></a>
+                        <a href="mailto:#" class="circle-icon"><i class="icon-envelop"></i></a>
+                    </span>
+                    <span class="save ml-20">
+                        <span>Lưu lại</span>
+                        <a data-href="#popupRegister" class="open-popup circle-icon"><i class="icon-star-empty"></i> </a>
+                    </span>
+                </div>
+                <p class="news-time mb-20">Đăng tải 7 tháng trước</p>
+            </div>
+        </section>
+        
+        <section class="news-content">
+            <div class="container">
+                <p>
+                    Lần đầu mang thai các bà mẹ đều không tránh khỏi những lúng túng về vấn đề làm sao biết mình đang 
+                    mang thai, thử thai như thế nào cho hiệu quả và những điều gì nên làm khi biết mình đang mang thai. 
+                    Hãy cùng tham khảo bài viết sau để có câu trả lời cho những thắc mắc trên nhé!
+                </p>
+                
+                <h3><strong>Dấu hiệu nhận biết khi mang thai</strong></h3>
+                
+                <ul class="mb-20">
+                    <li>Trễ kinh 1 -2 tuần: Đây là dấu hiệu đầu tiên thông báo bạn đang mang thai nhưng không hoàn toàn chính xác vì stress, căng thẳng, lo lắng, sinh hoạt thất thường… cũng dẫn đến trễ kinh. Vì vậy, để biết chính xác có mang thai hay không bạn nên&nbsp;dùng que thử thai&nbsp;sau ít nhất 5-7 ngày chậm kinh. Bên cạnh đó, bạn có thể đến các cơ sở y tế hoặc&nbsp;phòng khám&nbsp;uy tín&nbsp;để được siêu âm chẩn đoán chính xác.</li>
+                    <li>Cảm thấy ngực căng và đau hơn bình thường: Khác với đau tức và căng ngực trước mỗi kỳ nguyệt san, khi mang thai, đầu ti to hơn, thâm đen, quầng vú sẫm màu và trở nên nhạy cảm hơn.</li>
+                    <li>Ra máu âm đạo: Thời điểm khoảng 11-12 ngày sau khi thụ thai, có thể bạn sẽ bị chảy một ít máu âm đạo với màu sắc nhạt hơn bình thường.</li>
+                    <li>Đi tiểu thường xuyên hơn: Phụ nữ mang thai trong những tháng đầu thường đi tiểu nhiều lần do tình trạng gia tăng các mạch máu và tử cung trong hố chậu to dần lên đè vào bàng quang.</li>
+                    <li>Cảm giác cơ thể mệt mỏi: Khi mang thai, tâm trạng bạn sẽ rất thất thường do lượng hormone trong cơ thể đang có sự thay đổi mạnh mẽ. Tình trạng này sẽ chấm dứt khi cơ thể đã quen với sự xuất hiện của bé yêu.</li>
+                    <li>Đau lưng: là một trong những dấu hiệu có thai xuất hiện sớm, do dây chằng ở lưng phải giãn ra để thích nghi với sự lớn dần lên của tử cung trong bụng.</li>
+                    <li>Luôn cảm thấy nóng bức: Nếu tinh ý hoặc thường xuyên theo dõi nhiệt độ cơ thể, bạn sẽ thấy nhiệt độ cơ thể tăng cao hơn bình thường. Hiện tượng này xảy ra từ ngày thứ 6 đến ngày 12 sau khi thụ thai. Ngoài ra, bạn cũng có thể bị rôm sảy do sự tăng thân nhiệt này.</li>
+                    <li>Buồn nôn (Ốm nghén): Nếu cảm thấy buồn nôn vào bất kỳ thời điểm nào trong ngày, đó có thể là dấu hiệu cho thấy bạn đã mang thai. Tình trạng này thường xảy ra sau khi thụ thai 1 – 2 tuần và là dấu hiệu khó chịu nhất đối với các mẹ. Thông thường, những cơn ốm nghén sẽ biến mất sau 3 tháng đầu. Để giảm những cơn buồn nôn, bạn nên uống trà gừng, nước chanh hoặc ăn các loại trái cây như táo, lựu…</li>
+                </ul>
+                
+                <amp-img class="mb-20" width="500" height="333" src="images/mang-thai-1.jpg" alt="buon-non" layout="responsive"></amp-img>
+                <p class="text-center mb-20"><em>Buồn nôn, dấu hiệu mang thai đầu tiên</em></p>
+                
+                <h3><strong>Những cách thử thai chính xác nhất</strong></h3>
+                
+                <ul class="mb-20">
+                    <li>Sử dụng que thử thai: Đây là cách kiểm tra dễ dàng và nhanh chóng có kết quả nhất. Kết quả dương tính ngay sau khi thụ thai 2 tuần. Tuy nhiên, kết quả thử thai chính xác nhất là sau chậm kinh 5-7 ngày. Thời điểm tốt nhất là lần đi tiểu đầu tiên trong buổi sáng.</li>
+                    <li>Siêu âm: Cho phép chẩn đoán thai sớm từ tuần thứ 5. Đây là phương pháp có độ chính xác cao, giúp bạn xác định kết quả mà không cần khám chi tiết bên trong, cho biết tình trạng thai, số lượng thai trong tử cung và phần phụ của thai, thai thường hay thai bệnh lý, vị trí làm tổ của thai, tính tuổi thai, dự kiến ngày đẻ.</li>
+                    <li>Xét nghiệm máu hoặc nước tiểu, thử lượng beta hCG: Phương pháp này sẽ giúp phát hiện hàm lượng nội tiết tố hCG – một hormone trong thai kỳ, cho kết quả chính xác chỉ trong thời gian 2 tuần sau khi thụ thai.</li>
+                </ul>
+
+                <p>Chúc mừng! Bạn chính thức bước vào giai đoạn đếm từng ngày chờ bé con chào đời. Chần chờ gì nữa, hãy thực hiện ngay danh sách các việc cần làm sau khi phát hiện mang thai để có khởi đầu hoàn hảo nhé:</p>
+                
+                <ul class="mb-20">
+                    <li><strong>Chọn phòng khám uy tín cho 9 tháng thai kỳ</strong>. Bạn nên chọn những phòng khám hoặc bệnh viện gần nhà để tiện cho việc thăm khám và sinh nở sau này.</li>
+                    <li><strong>Khám thai và thực hiện lịch khám thai định kỳ</strong> dù có bận rộn cách mấy. Bác sĩ sẽ cho bạn những lời khuyên đúng đắn để có thai kì khỏe mạnh ngay từ bước đầu và xử lý kịp thời những vấn đề của thai nhi nếu có.</li>
+                    <li><strong>Thực hiện chế độ ăn uống đa dạng và đầy đủ dưỡng chất</strong> theo các gợi ý sau:</li>
+                </ul>
+
+                <p>– <strong>Trái cây: 400-500gr/ một ngày</strong>. Nên chọn các loại trái cây tươi, nước trái cây tự nhiên (không quá một ly mỗi ngày). Mỗi ngày ăn ít nhất một loại trái cây có múi (Cam, bưởi, quýt).</p>
+                <p>– <strong>Rau củ: 300-400gr/ ngày</strong> theo các màu xanh đậm (bông cải xanh, cải xoăn, cải bó xôi), màu cam (cà rốt, khoai lang, bí ngô, bí mùa đông), màu vàng (bắp, ớt chuông vàng), và màu đỏ (cà chua, ớt chuông đỏ).</p>
+                <p>– <strong>Thực phẩm từ sữa: 2-3 ly sữa (khoảng 500ml)/ ngày</strong>. Nên chọn các loại sữa hoặc sản phẩm từ sữa có ít hay không có chất béo.</p>
+                <p>– <strong>&nbsp;Thịt, cá, tôm, cua :200-300gr/ ngày + 1 quả trứng/ngày</strong>. Bạn có thể chọn thịt nạc, thịt gia cầm nhưng nên là loại thực phẩm ít chất béo nhất. Ngoài ra, các loại đậu và hạt cũng là nguồn cung cấp protein dồi dào bạn có thể bổ sung vào thực đơn hàng ngày.</p>
+                <p>– <strong>Ngũ cốc: 300-400gr/ ngày</strong>. Bạn nên dùng ngũ cốc nguyên hạt thay vì những loại thực phẩm làm bằng bột mì trắng. Nên ghi nhớ một vài thực phẩm ngũ cốc còn cung cấp chất xơ rất tốt cho cơ thể như bánh mì ngũ cốc, bánh quy giòn và mì ống.</p>
+                <p>– <strong>Uống thuốc bổ sung các vitamin và dưỡng chất cần thiết</strong> như viên sắt, acid folic, canxi, magiê, vitamin B6, vitamin E, polyvitamin… &nbsp;Đặc biệt, sắt, canxi, acid folic là ba thứ rất cần thiết cho các bà mẹ&nbsp;mang thai. Tuy nhiên, khi sử dụng thuốc cần theo hướng dẫn của BS mẹ nhé.</p>
+
+                <ul>
+                    <li><strong>Tập luyện thường xuyên</strong>. Vận động sẽ giúp mẹ bầu khỏe mạnh và quá trình “vượt cạn” dễ dàng hơn. Hơn thế, tập luyện giúp tinh thần phấn chấn, giảm stress và dễ lấy lại vóc dang sau sinh. Mẹ bầu có thể tập yoga, bơi, pilates, đi bộ… với cường độ phù hợp. Đặc biệt là Kegels – bài tập vùng dưới sàn cơ xương chậu, có tác dụng củng cố các cơ bắp ở bàng quang và âm đạo, giúp phòng ngừa chứng tiểu thường xuyên hay gặp ở bà bầu và hỗ trợ quá trình sinh nở “dễ thở’ hơn.</li>
+                    <li><strong>Nói “không” với bia rượu, thuốc lá</strong>. Dù bạn uống ít hay nhiều, lượng rượu hay các chất từ thuốc lá cũng sẽ đến em bé thông qua các mạch máu và nhau thai. Vì vậy, hãy đoạn tuyệt ngay nếu bạn muốn bé yêu an toàn và khỏe mạnh.</li>
+                    <li><strong>Không dùng caffeine hàng ngày</strong>. Dù các nghiên cứu đã chỉ ra 2 tách nhỏ cà phê hòa tan sẽ không ảnh hưởng đến thai nhi, nhưng để đảm bảo an toàn, bạn nên kiêng hẳn loại đồ uống này ít nhất là 3 tháng đầu của thai kỳ. Hãy nhớ là caffeine có trong soda, trà, chocolate và nhiều đồ uống khác nữa nhé.</li>
+                    <li><strong>Tham gia các lớp tiền sản</strong>. Điều này sẽ giúp bạn có thêm thông tin về toàn bộ quá trình mang thai cũng như chăm sóc bé cưng sau khi chào đời, giúp chủ động phòng tránh các rủi ro và quá trình chuyển dạ dễ dàng.</li>
+                    <li><strong>Đặt việc nghỉ ngơi và sức khỏe lên hàng đầu</strong>. Hãy luôn bảo đảm bạn ngủ đủ giấc. Nếu bị những cơn đau lưng quấy rầy, bạn hãy thử kê gối đỡ để có giấc ngủ thoải mái hơn. Tập luyện phù hợp vào ban ngày cũng giúp bạn dễ ngủ hơn.</li>
+                </ul>
+
+                <p>Trên đây là những thông tin về thụ thai và những việc cần làm ngay khi có dấu hiệu thụ thai, hy vọng sẽ giúp ích được các ông bố bà mẹ tương lai. Chúc các gia đình có thật nhiều sức khỏe và mau chóng có tin vui.</p>
+
+                <p class="text-right"><strong>BS Hồ Thị Nam Huế</strong></p>
+                <p class="text-right"><strong>Trung tâm Dinh dưỡng Vinamilk</strong></p>
+            </div>
+        </section>
+        
+        <section class="news-bottom">
+            <div class="container">
+                <div class="productbox">
+                    <div class="productbox-text">
+                        <p>Hệ thần kinh thai nhi hình thành và phát triển rất nhanh trong 20 tuần đầu của thai kỳ. Việc bổ sung đầy đủ các dưỡng chất cho trí não như Axít Folic, DHA, Sắt, … giúp bé phát triển hoàn thiện cấu trúc não bộ.</p>
+                        <p>Dielac Mama Gold với hương vị thơm ngon, uống 2 ly mỗi ngày giúp đáp ứng <span class="color-second"><b>100% nhu cầu Axit Folic</b></span> gia tăng theo khuyến nghị của VDD Quốc Gia, giảm nguy cơ dị tật ống thần kinh thai nhi, <span class="color-second"><b>thêm 30% DHA </b></span>giúp phát triển não bộ của bé. Ngoài ra Dielac Mama Gold <span class="color-second"><b>bổ sung 25% sắt , 15% Canxi, và 60% Vitamin D3</b></span>, cùng <span class="color-second"><b>chất xơ SC-FOS </b></span>thế hệ mới giúp cung cấp đủ chất dinh dưỡng cần thiết cho mẹ bầu.</p>
+                    </div>
+                    <div class="productbox-content">
+                        <div class="productbox-title mb-30">
+                            <amp-img src="images/title-mama.png" width="500" height="41" alt="bg-mama" layout="responsive"></amp-img>
+                        </div>
+                        <div class="productbox-buttons">
+                            <div class="mb-10">
+                                <a href="#" class="productbox-button">Tìm hiểu về sản phẩm</a>
+                            </div>
+                            <div>
+                                <a href="#" class="productbox-button">Đăng ký nhận mẫu thử</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-tag">
+                    <div><strong>TỪ KHÓA</strong></div>
+                    <a href="#" rel="tag">bac sy ho thi nam hue</a>
+                    <a href="#" rel="tag">Dielac Mama Gold</a>
+                    <a href="#" rel="tag">mang thai</a>
+                    <a href="#" rel="tag">phase 3 + 4</a>
+                </div>
+
+                <div class="news-social mb-20">
+                    <span class="share">
+                        <span>Chia sẻ</span>
+                        <a href="#" target="_blank" class="circle-icon"><i class="icon-facebook"></i></a>
+                        <a href="mailto:#" class="circle-icon"><i class="icon-envelop"></i></a>
+                    </span>
+                    <span class="save ml-20">
+                        <span>Lưu lại</span>
+                        <a data-href="#popupRegister" class="open-popup circle-icon"><i class="icon-star-empty"></i> </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-related box-shadow-radius mb-30">
+            <h3 class="widget-title title-border mb-30"><span>CÁC BÀI VIẾT LIÊN QUAN</span></h3>
+            <div class="news-related-block clearfix">
+                <div class="news-related-img">
+                    <amp-img width="215" height="215" src="images/related-1.jpg" layout="responsive"></amp-img>
+                </div>
+                <p class="news-related-text">
+                    Thụ thai và những điều cần biết
+                </p>
+            </div>
+            <div class="news-related-block clearfix">
+                <div class="news-related-img">
+                    <amp-img width="215" height="215" src="images/related-2.jpg" layout="responsive"></amp-img>
+                </div>
+                <p class="news-related-text">
+                    Làm gì để tăng khả năng thụ thai?
+                </p>
+            </div>
+            <div class="news-related-block clearfix">
+                <div class="news-related-img">
+                    <amp-img width="215" height="215" src="images/related-3.jpg" layout="responsive"></amp-img>
+                </div>
+                <p class="news-related-text">
+                    Tầm quan trọng của dinh dưỡng và sức khỏe đường ruột đối với bà mẹ và trẻ em
+                </p>
+            </div>
+        </section>
+
+        <section class="product-related box-shadow-radius mb-30">
+            <h3 class="widget-title title-border mb-30"><span>SẢN PHẨM LIÊN QUAN</span></h3>
+            <div class="product-related-block text-center mb-50">
+                <div class="product-related-img">
+                    <amp-img width="162" height="264" src="images/mama-gold.png"></amp-img>
+                </div>
+                <p>Dielac Mama Gold</p>
+            </div>
+            <div class="product-related-block text-center">
+                <div class="product-related-img">
+                    <amp-img width="162" height="264" src="images/mama.png"></amp-img>
+                </div>
+                <p>Dielac Mama</p>
+            </div>
+        </section>
+
+        <section class="video-list mb-30">
+            <div class="container">
+                <h3 class="widget-title title-border mb-30"><span>VIDEO HỮU ÍCH CHO MẸ</span></h3>
+
+                <amp-carousel width="450" height="300" layout="responsive" type="slides">
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive"  data-videoid="lJKsY5u1twE">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Optimum Mama</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive"  data-videoid="AXb1PqGW_6Y">
+                        </amp-youtube>
+                        <p class="text-center color-main">Optimum Gold</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive" data-videoid="LSWvzHFoEiw">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Alpha Gold</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive" data-videoid="Y1w11bhqHqk">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Alpha</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive"  data-videoid="HYP3kbumowE">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Grow Plus</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive"  data-videoid="huB3X4_GH0w">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Grow</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive" data-videoid="R48smVKeiPk">
+                        </amp-youtube>
+                        <p class="text-center color-main">Dielac Pedia</p>
+                    </div>
+                    <div class="video-block">
+                        <amp-youtube width="450" height="255" class="mb-10" layout="responsive" data-videoid="Yavfn7jePQs">
+                        </amp-youtube>
+                        <p class="text-center color-main">Khuyến mãi Tết thiếu nhi 1/6</p>
+                    </div>
+                </amp-carousel>
+            </div>
+        </section>
+
+        <section class="row-section row-product">
+            <div class="container">
+
+                <h3 class="widget-title title-border mb-30"><span>Các sản phẩm thuộc ngành sữa bột</span></h3>
+
+
+                <amp-carousel height="200" layout="fixed-height" type="carousel">
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-1.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-2.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-3.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-4.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-5.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-6.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-7.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-8.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-9.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-10.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+
+
+                </amp-carousel>
+
+            </div>
+        </section>
+
+        <section class="row-section row-bottom">
+            <div class="container">
+                <div class="widget">
+                    <h3 class="widget-title title-border mb-30"><span>MẸ CẦN HỖ TRỢ?</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-phone.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Trung tâm tư vấn dinh dưỡng</p>
+                                <h4><a href="tel: 1900545425">1900545425</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <amp-img src="images/support-mail.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Viết cho chúng tôi</p>
+                                <h4>EMAIL</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget-newsletter">
+                    <h3 class="widget-title title-border mb-30"><span>ĐĂNG KÝ NHẬN TIN</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-newsletter.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p> Mẹ hãy đăng ký nhận tin để nhận những thông tin bổ ích và chương trình khuyến mãi của Vinamilk
+                                    nhé.
+                                </p>
+                                <form target="_top" action="\">
+                                    <input type="text" class="input-box" name="email" value="" placeholder="Email của mẹ">
+                                    <button type="submit" class="btn btn-primary">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-section row-menubottom">
+            <div class="container">
+
+                <div class="cols-2">
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Vinamilk Baby Care</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Mang thai </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> 0-6 tháng</a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> 6-12 tháng </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> 1-2 tuổi </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> 2-6 tuổi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Góc chuyên gia</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Đội ngũ chuyên gia </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Chuyên gia chia sẻ </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Hỏi đáp cùng chuyên gia </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Sản phẩm</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Optimum Mama </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Mama Gold </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Optimum Gold </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Dielac Alpha Gold </a> </li>
+
+                                <li> <a class="" href="#" title="2-6 tuổi"> Dielac Grow Plus Suy dinh dưỡng, thấp còi</a> </li>
+                                <li> <a class="" href="#" title="Mang thai">Dielac Grow </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Alpha </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Dielac Pedia </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Ứng dụng thông minh</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Theo dõi cân nặng thai kỳ</a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Đặt tên cho con </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Lịch tiêm phòng cho bé </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Tính ngày dự sinh </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> Theo dõi chiều cao, cân nặng cho bé</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Truyền thông CLB Mẹ và Bé</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Ưu đãi dành riêng cho mẹ </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Các hoạt động câu lạc bộ </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">Bản quyền thuộc về Vinamilk 2016</div>
+        </div>
+    </footer>
+
+    <amp-lightbox id="search-lightbox" layout="nodisplay">
+        <div class="lightbox" on="tap:search-lightbox.close" role="button" tabindex="0"> </div>
+        <form target="_top" action="\">
+            <input type="text" class="input-box" placeholder="Nhập từ khóa cần tìm kiếm...">
+            <button type="submit"> <i class="icon-search"></i> </button>
+            <div class="lightbox-close" on="tap:search-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </form>
+    </amp-lightbox>
+
+    <amp-lightbox id="login-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:login-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <amp-selector role="tablist" layout="container" class="ampTabContainer">
+                <div role="tab" class="tabButton tabButton-1" selected option="a">Đăng ký</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN</span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> NHẬP LẠI MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main">SỐ ĐIỆN THOẠI </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" checked="checked">
+                            <span class="circle"></span> Dự định 
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đang mang thai
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đã có con
+                        </label>
+                        <div class="line-page"></div>
+                        <label class="row-label"> <span> Ngày </span>
+                            <select class="select-box" name="baby_day" id="baby_day" >
+                                <option value="0">Ngày</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25" selected="">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Tháng </span>
+                            <select class="select-box" name="baby_month" id="baby_month" >
+                                <option value="0">Tháng</option>
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Năm </span>
+                            <select class="select-box" name="baby_year" id="baby_year" >
+                                <option value="0">Năm</option>
+                                <option value="2018">2018</option>
+                                <option value="2017" selected="">2017</option>
+                            </select>
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="newsletter" type="checkbox" >
+                            <span class="circle"></span> Tôi đồng ý nhận thông tin dinh dưỡng, chăm sóc sức khoẻ từ Vinamilk Baby Care và Chuyên gia
+                        </label>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div role="tab" class="tabButton tabButton-2" option="b">Đăng nhập</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <div class="clearfix">
+                            <a href="#" class="forgetpass  pull-right mt-6"> Quên mật khẩu </a>
+                            <label class="row-radio mb-20">
+                                <input name="newsletter" type="checkbox" >
+                                <span class="circle"></span> Duy trì đăng nhập
+                            </label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+            </amp-selector>
+
+            <div class="lightbox-close" on="tap:login-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+    <amp-lightbox id="question-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:question-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>GỬI CÂU HỎI CHO CHUYÊN GIA</span></h3>
+            <div class="popup-img">
+                <amp-img src="images/popup-bacsi.jpg" width="233" height="263" alt="popup-bacsi" layout="responsive"></amp-img>
+            </div>
+
+            <form target="_top" action="\">
+                <p class="mb-10">Chọn theo</p>
+                <select class="select-box mb-20" name="theme">
+                    <option value="tat-ca" selected>Tất cả chủ đề</option>
+                    <option value="dinh-duong">Dinh dưỡng</option>
+                    <option value="non-tro">Nôn trớ</option>
+                    <option value="thai-san">Thai sản</option>
+                    <option value="the-chat">Thể chất</option>
+                    <option value="tieu-hoa">Tiêu hóa</option>
+                    <option value="tri-nao">Trí não</option>
+                </select>
+                <select class="select-box mb-20" name="expert">
+                    <option value="0">Tất cả chuyên gia</option>
+                    <option value="19599">ThS Anke Sentko</option>
+                    <option value="22880">BS. James Bauly</option>
+                    <option value="2967">TS.BS Nguyễn Hữu Toản</option>
+                    <option value="517">BS.CK2 Lê Quang Thanh</option>
+                    <option value="395">PGS.TS.BS Trần Đình Toán</option>
+                    <option value="2101">BS.CK1 Nguyễn Vĩnh Hoàng Oanh</option>
+                    <option value="713">BS.CK1 Nguyễn Thu Vân</option>
+                    <option value="2089">BS.CK1 Nguyễn Thị Ngọc Thanh</option>
+                </select>
+                <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN </span>
+                    <input type="text" id="name" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> EMAIL </span>
+                    <input type="email" id="email" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> SỐ ĐIỆN THOẠI </span>
+                    <input type="text" id="phone" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> NHẬP NỘI DUNG CÂU HỎI </span>
+                    <em class="popup-note">* Dưới 200 kí tự</em>
+                    <textarea id="content" maxlength="200" rows="3" class="input-box" ></textarea>
+                </label>
+
+                <div class="text-center">
+                    <button class="btn btn-full" type="submit"> GỬI CÂU HỎI </button>
+                </div>
+            </form>
+
+            <div class="lightbox-close" on="tap:question-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+    <amp-lightbox id="register-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:register-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>ĐĂNG KÝ THÔNG TIN PHÒNG KHÁM</span></h3>
+            <div class="popup-content mb-20">
+                Bác sĩ có thể đăng ký để cập nhật thông tin phòng khám vào Danh sách Phòng khám uy tín giới thiệu bởi Vinamilk Baby Care.<br>
+                * Truy cập phiên bản trên máy tính cá nhân (PC) để đăng ký thông tin
+            </div>
+
+            <div class="text-center"><button class="btn btn-full" on="tap:register-lightbox.close" role="button">ĐÓNG</button></div>
+
+            <div class="lightbox-close" on="tap:register-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+    <amp-lightbox id="clinic-search-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:clinic-search-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <p class="mb-5">Tìm theo bác sĩ</p>
+            <div class="search-box">
+                <input type="text" class="input-box" name="doctor-name" placeholder="Nhập tên bác sĩ">
+            </div>
+
+            <p class="mb-5">Tìm theo chuyên khoa</p>
+            <select class="mb-20 select-box yellow-box" name="theme">
+                <option value="tat-ca" selected>Tất cả chuyên khoa</option>
+                <option value="chuyen-khoa-nhi">Chuyên khoa nhi</option>
+                <option value="diung-miendich">Dị ứng - Miễn dịch - Nội tiết</option>
+            </select>
+
+            <p class="mb-5">Tìm theo địa điểm</p>
+            <select class="mb-20 select-box yellow-box" name="theme">
+                <option value="tat-ca" selected>Tất cả tỉnh thành</option>
+                <option value="dinh-duong">Tp. Hồ Chí Minh</option>
+                <option value="non-tro">Bạc Liêu</option>
+                <option value="non-tro">Biên hòa</option>
+            </select>
+
+            <div class="text-center mb-30"><a href="#" class="btn btn-primary">TÌM KIẾM</a></div>
+
+            <div class="clinic-list-content mb-30">
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+                <div class="clinic-item">
+                    <div class="name mb-10">
+                        <a target="_blank" href="https://www.google.com/maps/place/330 Nguyễn Tri Phương - Tp. Đà Nẵng">Phòng khám nhi - Lê Thị Thanh Xuân</a>
+                    </div>
+                    <div class="desc">
+                        <p>Bác sỹ Lê Thị Thanh Xuân</p>
+                        <p>Bệnh viện phụ sản - nhi Đà Nẵng</p>
+                        <p>330 Nguyễn Tri Phương - Tp. Đà Nẵng </p>
+                        <p>SDT: 0935647648</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center"><a href="#" class="btn btn-primary">TÌM PHÒNG KHÁM GẦN NHẤT</a></div>
+
+            <div class="lightbox-close" on="tap:clinic-search-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+
+</body>
+
+</html>

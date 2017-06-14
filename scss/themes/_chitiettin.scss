@@ -1,0 +1,111 @@
+#chi-tiet-tin-content {
+    .title-border {
+        font-size: 23px;
+    }
+}
+.btn-close {
+    float: right; 
+    .icon-cancel-circle {
+        color: $colorPrimary;
+        font-size: 40px; 
+    }
+}
+.news-title {
+    color: $colorPrimary;
+    text-align: left;
+    font-size: 23px;
+}
+.news-time {
+    text-align: right;
+    font-style: italic;
+    color: #7b7a7a;
+}
+
+.news-content {
+    color: #515151;
+    text-align: justify;
+    p {
+        font-family: 'Roboto Light', sans-serif; 
+    }
+    ul {
+        margin-left: 15px;
+        font-family: 'Roboto Light', sans-serif; 
+    }
+    h3 {
+        font-size: 24px; font-weight: bold
+    }
+}
+
+.productbox {
+    padding-bottom: 50%;
+    background-image: url(images/bg-mama.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-top: 20px;
+    clear: both;
+    border: 5px solid #e7ca7a;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .productbox-text {
+        padding: 10px;
+        font-family: 'Roboto Light', sans-serif;
+    }
+    .productbox-content {
+        padding: 20px;
+        .productbox-buttons {
+            text-align: center;
+            .productbox-button {
+                line-height: 40px;
+                height: 40px;
+                border-radius: 15px;
+                width: 100%;
+                color: #951c79;
+                background: url(images/productbox-button-bg.png) center repeat-y;
+                background-size: 100%;
+                border: 0;
+                display: inline-block;
+                text-align: center;
+                box-shadow: inset 2px -2px 2px rgba(0,0,0,0.2);
+                position: relative;
+                overflow: hidden;
+                font-family: 'QX Banda regular';
+            }
+        }
+    }
+}
+
+.block-tag {
+    margin: 60px auto 40px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    clear: both;
+    a {
+        text-align: center;
+        margin: 5px 8px;
+        color: #515151;
+        display: inline-block;
+        min-width: 150px;
+        padding: 8px 20px 5px;
+        border: 1px dashed #515151;
+        @include border-radius(30px);
+    }
+}
+
+.news-related-block {
+    margin-bottom: 20px;
+    .news-related-img {
+        float: left;
+        width: 43%;
+    }
+    .news-related-text {
+        color: #515151;
+        float: left;
+        padding-left: 20px;
+        width: 57%;
+        font-family: 'Roboto Light';
+    }
+}
