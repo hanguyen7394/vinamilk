@@ -1,0 +1,35 @@
+.box-shadow-radius {
+    -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -ms-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.14);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.clb-block {
+    .time {
+        font-size: 11px;
+        font-style: italic;
+        color: $color-5;
+        margin-bottom: 10px;
+    }
+    .title {
+            color: $colorPrimary;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 5px;
+    }
+}
+
+
+.title-mevabe {
+    width: 45%;
+    margin: auto;
+}
+
+.title-uudai {
+    width: 60%;
+    margin: auto;
+}

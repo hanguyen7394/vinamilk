@@ -14,7 +14,6 @@
 ----------------------------------------------------------------------*/
 @import "layout/headers"; 
 @import "layout/sidebar"; 
-@import "layout/responsive"; 
 
 /* THEME
 ----------------------------------------------------------------------*/
@@ -25,12 +24,16 @@
 ----------------------------------------------------------------------*/
 // @import "themes/home";
 // @import "themes/babycare";
-// @import "themes/chuyenmucbabycare";
+@import "themes/chuyenmucbabycare";
 // @import "themes/gocchuyengia";
 // @import "themes/truyenthong";
-@import "themes/chitiettin";
+// @import "themes/chitiettin";
+// @import "themes/ungdungthongminh";
+// @import "themes/clbmevabe";
+// @import "themes/gdmangthai";
 
 /* FOOTER
 ----------------------------------------------------------------------*/
 @import "layout/footers"; 
+@import "layout/responsive"; 
 

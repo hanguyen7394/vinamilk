@@ -1,0 +1,105 @@
+.ung-dung-title {
+    max-width: 72%;
+    margin: 0 auto;
+}
+
+.app-block {
+    .app-block-top {
+        .top-img {
+            max-width: 80%;
+            margin: 0 auto 30px;
+        }
+        .top-text {
+            text-transform: uppercase;
+            color: $colorSecondary;
+            text-align: center;
+        }
+    }
+    .app-block-bottom {
+        background: #f6f6f6;
+        padding-top: 20px;
+        height: 650px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            border-width: 15px 15px 0 15px;
+            border-color: #fff transparent;
+            border-style: solid;
+            display: block;
+            width: 0;
+            z-index: 2;
+        }
+    }
+}
+#tinh-ngay-sinh-lightbox {
+    .select-box {
+        width: inherit;
+    }
+    .bg-calendar {
+        text-align: center;
+        background-image: url(images/lich.png);
+        background-size: contain;
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        .calendar {
+            top: 25%;
+            position: relative;
+            line-height: normal;
+            padding-right: 18px;
+            .calendar-day {
+                color: #2057A4;
+                font-family: 'Roboto Bold', sans-serif;
+                font-size: 60px;
+                line-height: 1;
+            }
+            .calendar-month {
+                color: #2057A4;
+                font-family: 'Roboto Medium', sans-serif;
+                font-size: 16px;
+            }
+        }
+    }
+    .hanh-trinh-mang-thai {
+        background-color: #f7f7f7;
+        margin: 20px -15px;
+        padding: 15px;
+    }
+}
+
+#can-nang-thai-ky-lightbox, #dat-ten-lightbox {
+    .select-box, .input-box {
+        width: 90px;
+        height: 30px;
+    }
+    .label-inline {
+        width: 55%;
+        display: inline-block;
+    }
+}
+ #can-nang-cho-be-lightbox {
+     .select-box, .input-box {
+        width: 85px;
+        height: 30px;
+    }
+    .label-inline {
+        width: 45%;
+        display: inline-block;
+    }
+ }
+ #lich-tiem-phong-lightbox {
+     .select-box {
+         width: inherit;
+     }
+ }
+
+.form-group {
+    margin-bottom: 10px;
+}
+.inline-block {
+    display: inline-block;
+}
