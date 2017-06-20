@@ -358,4 +358,25 @@ amp-carousel {
     max-width: 100%;
 }
 
+.scroll-list {
+    overflow: auto;
+    &::-webkit-scrollbar-track
+    {
+        border-radius: 20px;
+        background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar
+    {
+        width: 5px;
+        background-color: #ddd;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 20px;
+        background-color: $colorPrimary;
+        height: 40px;
+    }
+ }
 

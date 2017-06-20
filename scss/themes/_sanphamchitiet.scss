@@ -1,0 +1,279 @@
+.img-90 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+.color-red {
+    color: $color-red;
+}
+
+.color-green {
+    color: $color-green;
+}
+
+.color-violet {
+    color: $color-violet;
+}
+
+//title
+.product-title {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'UVN Van';
+}
+.big-title {
+    text-transform: uppercase;
+    padding: 0 10%;
+}
+
+.title-border-blue span {
+    border-color: $color-blue;
+    font-size: 20px;
+    color: $color-blue;
+    font-family: 'UVN Van';
+}
+
+.title-border-red span {
+    border-color: $color-red;
+    font-size: 20px;
+    color: $color-red;
+    font-family: 'UVN Van';
+}
+
+.title-border-green span {
+    border-color: $color-green;
+    font-size: 20px;
+    color: $color-green;
+    font-family: 'UVN Van';
+}
+
+.title-border-violet span {
+    border-color: $color-violet;
+    font-size: 20px;
+    color: $color-green;
+    font-family: 'UVN Van';
+}
+
+//icon
+
+.i-circle {
+    position: relative;
+}
+
+.i-circle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+} 
+
+.i-blue:before {
+    background: $color-blue;    
+}
+
+.i-green:before {
+    background: $color-green;   
+}
+
+.i-red:before {
+    background: $color-red;    
+}
+
+.i-violet:before {
+    background: $color-violet;    
+}
+
+//table component
+.component-list {
+    height: 400px;
+}
+
+.scrollbar-blue {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-blue;
+    }
+}
+
+.scrollbar-red {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-red;
+    }
+}
+
+.scrollbar-green {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-green;
+    }
+}
+
+.scrollbar-violet {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-violet;
+    }
+}
+
+.table-border-blue {
+    border-bottom: 1px solid $color-blue;
+}
+
+.table-border-red {
+    border-bottom: 1px solid $color-red;
+}
+
+.table-border-green {
+    border-bottom: 1px solid $color-green;
+}
+
+.table-border-violet {
+    border-bottom: 1px solid $color-violet;
+}
+
+.ampTabContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.tabButton-blue[selected] {
+    background: $color-blue; 
+    color: white;
+}
+.tabButton-red[selected] {
+    background: $color-red; 
+    color: white;
+}
+.tabButton-green[selected] {
+    background: $color-green; 
+    color: white;
+}
+.tabButton-violet[selected] {
+    background: $color-violet; 
+    color: white;
+}
+
+.tabButton[option][selected] {
+    outline: none;
+}
+    
+.tabButton {
+    color: #636466;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background: #e8e5e5;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 2px;
+}
+
+.tabButton strong {
+    font-size: 14px;
+}
+    
+.tabContent {
+    margin: 0 2px;
+    padding: 20px 10px;
+    display: none;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+    border: 1px solid #ccc;
+}
+    
+.tabButton[selected]+.tabContent {
+        display: block;
+}
+
+    /* For example below (not required) */
+.itemCustom {
+        border: 1px solid #000;
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        padding-top: 140px;
+}
+amp-selector {
+    padding: 0;
+    margin: 0;
+}
+
+.w1{
+    width: 40%;
+}
+.w2{
+    width: 22%;
+}
+.w3{
+    width: 16%;
+}
+
+.tabContent{
+		background: #e3e3e3; 
+		background: -webkit-linear-gradient(left, #e3e3e3 , #f5f5f5, #e3e3e3);
+		background: -o-linear-gradient(right, #e3e3e3, #f5f5f5, #e3e3e3); 
+		background: -moz-linear-gradient(right, #e3e3e3, #f5f5f5, #e3e3e3); 
+		background: linear-gradient(to right, #e3e3e3, #f5f5f5, #e3e3e3); 
+        background: -webkit-linear-gradient(to right, #e3e3e3, #f5f5f5, #e3e3e3);
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.3);
+}
+
+.component-content {
+	position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        background: url(images/shadow-bottom.png) center top no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+        height: 26px;
+    }
+}
+
+.component-list td {
+    table-layout: fixed;
+    font-weight: normal;
+    border-image: none;
+    border-bottom: 1px solid #acacac;
+    padding: 9px 4px 9px;
+    text-align: center;
+}
+
+.component-list td:nth-child(1) {
+        text-align: left;
+}
+
+.pack-content {
+    li {
+        padding-left: 20px;
+        list-style: none;
+        position: relative;
+        &:before {
+            content: '●';
+            color: $colorSecondary;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 17px;
+        }
+    }
+}

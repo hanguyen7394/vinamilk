@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html amp>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+        <meta property="og:description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+        <meta property="og:image" content="https://www.ampproject.org/static/img/logo-og-image.jpg">
+        <meta name="description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – AMP">
+        <meta name="amp-experiments-opt-in" content="">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        
+        <title>Vinamilk - AMP</title>
+        
+        <link rel="shortcut icon" href="https://www.ampproject.org/static/img/amp_favicon.png?v=3">
+		<link rel="canonical" href="https://www.ampproject.org/">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://www.ampproject.org/static/img/icons/120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://www.ampproject.org/static/img/icons/152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="https://www.ampproject.org/static/img/icons/167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.ampproject.org/static/img/icons/180.png">
+
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+		<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+		<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+		<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+		<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+		<!-- <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script> -->
+		<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+		<!-- <link href="style.css" rel="stylesheet"> -->
+
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+		<style amp-custom>
+@keyframes scrollDownArrow{0%{bottom:-5px}25%{bottom:-10px}50%{bottom:-15px}75%{bottom:-10px}100%{bottom:-5px}}@font-face{font-family:"Icomoon";src:url("fonts/icomoon/icomoon.eot");src:url("fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"),url("fonts/icomoon/icomoon.woff") format("woff"),url("fonts/icomoon/icomoon.ttf") format("truetype"),url("fonts/icomoon/icomoon.svg") format("svg");font-weight:normal;font-style:normal}[class^="icon-"]:before,[class*=" icon-"]:before,[class^="icon-"]:after,[class*=" icon-"]:after{font-family:'Icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-right:before{content:"\e900"}.icon-woman:before{content:"\e901"}.icon-nurse:before{content:"\e902"}.icon-envelop:before{content:"\e945"}.icon-location:before{content:"\e947"}.icon-reply:before{content:"\e96a"}.icon-search:before{content:"\e986"}.icon-star-empty:before{content:"\e9d7"}.icon-cross:before{content:"\ea0f"}.icon-facebook:before{content:"\ea90"}@font-face{font-family:'QX Banda regular';src:url("fonts/QX_Banda_regular.eot");src:url("fonts/QX_Banda_regular.eot?#iefix") format("embedded-opentype"),url("fonts/QX_Banda_regular.woff") format("woff"),url("fonts/QX_Banda_regular.ttf") format("truetype"),url("fonts/QX_Banda_regular.svg#QX_Banda_regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Regular';src:url("fonts/Roboto-Regular.eot");src:url("fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Regular.woff") format("woff"),url("fonts/Roboto-Regular.ttf") format("truetype"),url("fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Light';src:url("fonts/Roboto-Light.eot");src:url("fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Light.woff") format("woff"),url("fonts/Roboto-Light.ttf") format("truetype"),url("fonts/Roboto-Light.svg#Roboto-Light") format("svg");font-weight:300;font-style:normal}@font-face{font-family:'Roboto Bold';src:url("fonts/Roboto-Bold.eot");src:url("fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Bold.woff") format("woff"),url("fonts/Roboto-Bold.ttf") format("truetype"),url("fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");font-weight:600;font-style:normal}@font-face{font-family:'Roboto Medium';src:url("fonts/Roboto-Medium.eot");src:url("fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Medium.woff") format("woff"),url("fonts/Roboto-Medium.ttf") format("truetype"),url("fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");font-weight:500;font-style:normal}@font-face{font-family:'UVN Van';src:url("fonts/UVNVan.eot");src:url("fonts/UVNVan.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVan.woff") format("woff"),url("fonts/UVNVan.ttf") format("truetype"),url("fonts/UVNVan.svg#UVNVan") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'UVN Van Bold';src:url("fonts/UVNVanBold.eot");src:url("fonts/UVNVanBold.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVanBold.woff") format("woff"),url("fonts/UVNVanBold.ttf") format("truetype"),url("fonts/UVNVanBold.svg#UVNVanBold") format("svg");font-weight:700;font-style:normal}*{margin:0;padding:0;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.roboto-regular{font-family:'Roboto Regular'}.roboto-bold{font-family:'Roboto Bold'}.roboto-medium{font-family:'Roboto Medium'}.roboto-light{font-family:'Roboto Light'}.system-bold-italic{font-family:"system-bold-italic";font-weight:normal}.system-medium-italic{font-family:"system-medium-italic";font-weight:normal}.system-medium{font-family:"system-medium";font-weight:normal}.system-regular-italic{font-family:"system-regular-italic";font-weight:normal}.system-semi-bold,.btn-small{font-family:"system-semi-bold";font-weight:normal}.system-regular{font-family:"system-regular";font-weight:normal}.system-bold{font-family:"system-bold";font-weight:normal}.sfu-bookbt-bold-condensed{font-family:"sfu-bookbt-bold-condensed";font-weight:normal}.sfu-bookbt-bold-italic{font-family:"sfu-bookbt-bold-italic";font-weight:normal}.sfu-bookbt-bold,.title-box{font-family:"sfu-bookbt-bold";font-weight:normal}.sfu-bookbt-italic{font-family:"sfu-bookbt-italic";font-weight:normal}.sfu-bookbt-roman{font-family:"sfu-bookbt-roman";font-weight:normal}a{color:inherit;text-decoration:none;transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;color:#0048a4}a:focus,a:hover{color:#ebc55b;text-decoration:none}h1,.h1{font-size:42px}h2,.h2{font-size:34px}h3,.h3{font-size:26px}h4,.h4{font-size:22px}h5,.h5{font-size:16px}h6,.h6{font-size:100%}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight:500;margin:0 0 20px;line-height:normal}p{margin:0 0 10px}.line-page{display:block;height:0;border-bottom:2px dashed #e3c980;margin-bottom:20px}ul ul,ol ol{margin-left:15px}img{max-width:100%}.btn{background-color:#fff;display:inline-block;color:#fff;color:#0048a4;height:40px;border-radius:50px;padding:0 25px;border:2px solid #0048a4;font-size:14px;text-transform:uppercase}.btn:hover{background-color:#0048a4;color:#fff}.btn.btn-primary{background-color:#0048a4;color:#fff}a.btn{height:auto;line-height:40px}.btn-small{font-size:12px;line-height:15px;position:relative;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 22px 2px 13px;display:inline-block;background:url(images/icon-arr.png) #ebc55b no-repeat right center}.btn-small:hover{background-color:#0048a4;color:#fff}.input-box{height:40px;border:none;outline:none;padding:0  15px;border-radius:0;background-color:#e2e2e2;border:none;width:100%;color:#555;border-radius:20px;font-size:14px;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}textarea.input-box{padding:15px}.pull-left{float:left}.pull-right{float:right}.text-center{text-align:center}.text-right{text-align:right}.text-left{text-align:left}.container{position:relative;margin:0 auto;padding:0 15px}.container:after{display:table;content:" ";clear:both}.color-main{color:#0048a4}.color-second{color:#ebc55b}.display-table{display:table;width:100%;height:100%}.display-table .table-cell{display:table-cell;height:100%;width:100%;vertical-align:middle}.box-shadow{background:#fff;padding:5px;box-shadow:0 0 5px 0 rgba(0,0,0,0.3)}amp-accordion section{margin-bottom:1px}ul.list{list-style:none;margin:0;padding:0}ul.list li{padding-left:18px;position:relative}ul.list li:not(:first-child){margin-top:8px}ul.list li:before{content:"";width:10px;height:10px;background:#ebc55b;position:absolute;top:5px;left:0;border-radius:100%}.clearfix:after{content:"";display:table;clear:both}.row-section{padding:50px 0;margin:0}.content-section:after{content:"";display:table;clear:both}.widget-title{font-family:'UVN Van';font-size:18px;text-transform:uppercase;color:#0048a4}.title-border{text-align:center;line-height:1.4}.title-border span{border:1px solid #0048a4;border-left:none;border-right:none;display:inline-block;padding:5px 0}.title-box{font-size:25px;line-height:28px;color:#0048a4;position:relative;display:block;margin-bottom:20px}.cols-2,.col-2{margin:0 -10px;list-style:none}.cols-2>*,.col-2>*{float:left;width:50%;padding-left:10px;padding-right:10px}.cols-2>*:nth-child(2n+1),.col-2>*:nth-child(2n+1){clear:both}.cols-2:after,.col-2:after{content:"";display:table;clear:both}.col-2>*{padding-left:0;padding-right:0}.grid-space-8[class*="cols-"]{margin:0 -8px}.grid-space-8[class*="cols-"]>div{padding-left:8px;padding-right:8px}.grid-space-5[class*="cols-"]{margin:0 -5px}.grid-space-5[class*="cols-"]>div{padding-left:5px;padding-right:5px}amp-img{max-width:100%;height:auto;display:inline-block}.mb-50{margin-bottom:50px}.margin-0,.mg-0{margin:0}.padding-0,.pd-0{padding:0}.bg-gray{background:#f6f7f9}.row-label{display:block;margin-bottom:20px}.row-label>span{display:block}.row-radio{min-height:32px;padding-top:6px;position:relative;display:block;padding-left:40px;margin-bottom:5px}.row-radio input[type="radio"],.row-radio input[type="checkbox"]{visibility:hidden;position:absolute;top:0;left:0}.row-radio .circle{width:32px;height:32px;background:#fff;border:2px solid #0048a4;border-radius:50%;position:absolute;left:0;top:0}.row-radio .circle:before{opacity:0;content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:url(images/ic-checkbox.jpg) no-repeat center}.row-radio input[type=radio]:checked+.circle:before,.row-radio input[type=checkbox]:checked+.circle:before{opacity:1}.text-uppercase{text-transform:uppercase}.text-center{text-align:center}.text-normal{text-transform:none}.search-txt{text-transform:uppercase;text-align:center}.popup-img{max-width:75%;height:auto;margin:auto}.popup-note{font-size:14px;color:#000}.btn-full{width:100%}textarea.input-box{height:inherit}section[expanded]>header.select-box{background:#0048a4;color:#fff}.search-box{position:relative}.search-box::before{content:'\e986';font-family:'Icomoon';position:absolute;top:3px;right:10px;font-size:22px;color:#353535}#header{position:relative;z-index:100;background-color:#fff;box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3)}#header .container{padding-top:5px;padding-bottom:5px;height:60px;position:relative;text-align:center}#header.fixed{position:fixed;left:0;top:0;right:0}#header .search-btn,#header .login-btn{position:absolute;width:30px;height:30px;right:10px;top:15px;border:none;font-size:18px;background-color:#0048a4;border-radius:100%;color:#fff;cursor:pointer}#header .search-btn:before,#header .login-btn:before{content:"\e986";line-height:30px;display:inline-block;font-family:Icomoon}#header .login-btn{right:50px}#header .login-btn:before{content:"\e901";font-size:20px;position:relative;font-family:Icomoon}#logo{display:inline-block;position:relative;top:5px}#logo .amp-img{display:block}.hamburger{position:absolute;left:0;top:0;transition:.3s;cursor:pointer;user-select:none;color:#fff;border:none;height:60px;text-transform:uppercase;background:none;width:60px}.hamburger .lines{height:6px;position:absolute;border-radius:3px;left:12px;right:12px;background-color:#0048a4;top:calc(50% - 3px);transition:transform 0s ease .2s,-webkit-transform 0s ease .2s}.hamburger .lines:after,.hamburger .lines:before{width:100%;height:6px;border-radius:3px;position:absolute;left:0;background-color:#0048a4;content:"";transition:top .2s ease .2s, transform .2s ease 0s, -webkit-transform .2s ease 0s}.hamburger .lines:before{top:-12px}.hamburger .lines:after{top:calc(100% - -6px)}amp-sidebar[side][open] ~ #header .hamburger .lines{background:none}amp-sidebar[side][open] ~ #header .hamburger .lines:after,amp-sidebar[side][open] ~ #header .hamburger .lines:before{transition:top .2s ease 0s,transform .2s ease .2s,-webkit-transform .2s ease .2s}amp-sidebar[side][open] ~ #header .hamburger .lines:before{top:calc(50% - 1px);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}amp-sidebar[side][open] ~ #header .hamburger .lines:after{top:calc(50% - 1px);-webkit-transform:rotate(45deg);transform:rotate(45deg)}#search-lightbox form{margin:5px 15px;position:relative}#search-lightbox form .input-box{background-color:#fff;border-radius:30px;height:40px;padding:0 40px;color:#333}#search-lightbox form button{position:absolute;right:0;top:0;height:40px;width:40px;border:none;font-size:28px;color:#0048a4;line-height:40px;background:none;text-align:center}#search-lightbox form .lightbox-close{position:absolute;top:0;left:0;width:40px;height:40px;font-size:18px;line-height:40px;text-align:center}#login-lightbox,#question-lightbox{width:100%;max-width:100%}#login-lightbox,#question-lightbox>div{overflow:auto}.lightbox-content{box-shadow:0 5px 50px rgba(0,0,0,0.65);width:90%;margin:50px auto;background-color:#fff;border-radius:10px;padding:20px;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;-o-overflow-scrolling:touch;-ms-overflow-scrolling:touch}.lightbox-content .line-page{margin:0 -20px 20px}.lightbox-content .lightbox-close{border:2px solid #fff;position:absolute;border-radius:100%;width:30px;height:30px;text-align:center;color:#fff;line-height:30px;font-size:18px;top:-40px;right:0}#login-lightbox .ampTabContainer{display:flex;flex-wrap:wrap}#login-lightbox .ampTabContainer>.tabButton{list-style:none;flex-grow:1;text-align:center;cursor:pointer;background-color:#fff;line-height:25px;padding:5px 0;width:50%;text-transform:uppercase;color:#0048a4;border:1px #0048a4 dashed;font-size:18px;font-family:'UVN Van'}#login-lightbox .ampTabContainer>.tabButton.tabButton-1{border-radius:30px 0 0 30px;border-right:none}#login-lightbox .ampTabContainer>.tabButton.tabButton-2{border-radius:0 30px 30px 0;border-left:none}#login-lightbox .ampTabContainer>.tabButton[selected]{outline:none;background-color:#0048a4;color:#fff;border:none}#login-lightbox .ampTabContainer>.tabContent{display:none;width:100%;order:1;padding:15px 0}#login-lightbox .ampTabContainer>.tabButton[selected]+.tabContent{display:block}amp-sidebar{background:#fff;width:350px}amp-sidebar .submenu{background:#fff;bottom:0;box-shadow:0 3px 20px 0 rgba(0,0,0,0.075);left:0;position:fixed;right:0;top:0;transform:translateX(100%);transition:transform 233ms cubic-bezier(0, 0, 0.21, 1)}amp-sidebar input:checked+.submenu{transform:translateX(0)}amp-sidebar input[type="checkbox"]{position:absolute;visibility:hidden}amp-sidebar .menu-item{border-top:solid 1px #d8d8d8;font-size:15px;line-height:18px;color:#222222;display:block;padding:14px 0 14px 20px;position:relative;background-color:#fff}amp-sidebar .menu-item.active{color:#ebc55b}amp-sidebar .menu-layer .items{left:0;overflow-x:hidden;overflow-y:scroll;position:absolute;right:0}amp-sidebar .menu-layer.primary{height:100%;position:relative}amp-sidebar .menu-layer.primary .items{bottom:5px;top:50px}amp-sidebar .menu-layer.secondary{z-index:2}amp-sidebar .menu-layer.tertiary{z-index:3}amp-sidebar .has-sub-level::after{height:20px;position:absolute;right:30px;top:calc(50% - 10px);width:20px;line-height:20px;text-align:center;font-family:Icomoon;content:"\e900";font-size:24px;color:#ebc55b}amp-sidebar .close-button{border:0;height:50px;position:absolute;right:13px;top:0;width:68px;background:none;border:none;color:#bcbec0}amp-sidebar .close-button:after{font-family:Icomoon;content:"\ea0f";text-align:center;line-height:50px;font-size:20px;display:inline-block}amp-sidebar .return-button{color:#222;line-height:50px;font-weight:300;left:15px;position:absolute;top:0;font-size:12px}amp-sidebar .return-button::before{font-family:Icomoon;content:"\e900";transform:rotate(180deg);display:inline-block;font-size:15px;position:relative}@media (max-width: 480px){.cols-2>*{width:100%}}body{padding-top:60px;font-family:'Roboto Regular';font-size:14px;font-weight:400;line-height:1.6;color:#000}.img-mw-587 amp-img{max-width:587px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-531 amp-img{max-width:531px;margin:0 auto}.img-mw-487 amp-img{max-width:487px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}amp-lightbox .lightbox{position:fixed;background:rgba(0,0,0,0.5);top:0;bottom:0;left:0;right:0}amp-lightbox .lightbox-content{position:relative;z-index:10}.row-slideshow{position:relative}.scrolldown{width:50px;height:70px;position:absolute;z-index:9;left:0;right:0;margin:auto;bottom:35px;text-align:center}.scrolldown__circle{width:55px;height:60px;background:url(images/scroll-icon.png) no-repeat center center}.scrolldown__arrow{width:50px;height:20px;background:url(images/scroll-arrow-icon.png) no-repeat center center;left:1px;bottom:-5px;position:absolute;animation:scrollDownArrow 1.5s ease infinite}.row-product .amp-carousel-slide .item{display:block;padding:0 20px}.row-bottom .widget-newsletter{margin-top:40px}.row-bottom .item{overflow:hidden}.row-bottom .item .img{float:left;margin-right:10px}.row-bottom .item .desc{overflow:hidden}.row-bottom .item p{margin-bottom:0}.row-bottom .item h4{color:#0048a4}.row-bottom .item form{margin-top:20px;position:relative}.row-bottom .item .input-box{color:#333;height:34px;background-color:#fff;border-radius:50px;border:1px solid #c8c8c8;padding-right:120px}.row-bottom .item .btn{height:34px;width:100px;text-align:center;border-radius:50px;position:absolute;right:0;top:0}.select-box{width:100%;text-align:left;padding:6px 15px;padding-right:30px;border-radius:17px;-webkit-border-radius:17px;-moz-border-radius:17px;border:1px solid #1f56a3;color:#1f56a3;background:url(images/arrow-dropdown.png) right center no-repeat;background-size:33px auto;-webkit-appearance:none;-moz-appearance:none;appearance:none}.box-dashed{border:1px dashed}.item{padding-bottom:20px;margin-bottom:20px;border-bottom:1px dashed #bababa}.item .item-text .item-title{text-transform:uppercase}.item .item-text .item-time{font-size:11px;font-style:italic;color:#515151}.item .item-text .item-desc{color:#515151}.item .item-text .circle-icon{color:#fff;background-color:#0048a4;padding:6px;border-radius:100%;margin-right:10px;display:inline-block;width:30px;height:30px;text-align:center}.pagination{text-align:center}.pagination .page-numbers{color:#515151}.pagination .page-numbers.current{color:#000}.pagination .prev .icon-arrow{transform:rotate(180deg);-webkit-transform:rotate(180deg);display:inline-block}.pagination .icon-arrow{color:#ebc55b;font-size:48px;position:relative;top:15px}.news-list,.sale-list{-webkit-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-moz-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-ms-box-shadow:0px 0px 18px rgba(0,0,0,0.14);box-shadow:0px 0px 18px rgba(0,0,0,0.14);-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:20px}.news-list .search-box ::-webkit-input-placeholder{font-style:italic}.news-list .search-box ::-moz-placeholder{font-style:italic}.news-list .search-box :-ms-input-placeholder{font-style:italic}.news-list .search-box :-moz-placeholder{font-style:italic}.news-list .search-box:before{color:#0048a4;font-size:20px}.news-list .featured-article{border-bottom:1px dashed #ebc55b}.news-list .featured-article .title{font-family:'UVN Van';color:#0048a4;text-transform:uppercase;font-size:18px}.news-list .article-list{height:300px;overflow:auto}.news-list .article-list::-webkit-scrollbar-track{border-radius:20px;background-color:#ddd}.news-list .article-list::-webkit-scrollbar{width:5px;background-color:#ddd}.news-list .article-list::-webkit-scrollbar-thumb{border-radius:20px;background-color:#0048a4;height:40px}.news-block .title{font-family:'UVN Van';color:#0048a4;text-transform:uppercase;font-size:16px}.news-block .time{font-size:11px;font-style:italic;color:#515151}.news-block .content{font-size:13px}.box-shadow-radius{-webkit-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-moz-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-ms-box-shadow:0px 0px 18px rgba(0,0,0,0.14);box-shadow:0px 0px 18px rgba(0,0,0,0.14);-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:20px}.text-center{text-align:center;margin-top:15px;margin-bottom:40px}.text-right{text-align:right}.text-left{text-align:left}.banner-img{margin-left:100px;margin-right:100px}.time{font-size:11px;font-style:italic;color:#515151;margin-bottom:10px}.title{color:#0048a4;text-transform:uppercase;font-size:16px;margin-top:5px}.img-title{max-width:95%;margin-top:10px;margin-bottom:10px;text-align:center}.img-m{max-width:80%;margin:auto}.img-s{max-width:65%;margin:auto}.img-ss{max-width:45%;margin:auto}.font-s{margin-top:20px;margin-bottom:3px;font-size:15px;font-family:'UVN Van bold', san-serif;font-weight:bold;line-height:1.35;color:#1f56a3;text-transform:uppercase;position:relative;z-index:10}.font-b-b{color:blue;font-weight:bold}.row-menubottom a{color:#2c2c2c}.row-menubottom .cols-2>*{margin-bottom:40px}.row-menubottom .widget-tile{font-size:16px;font-weight:500;color:#0048a4}#footer{background:url(images/bg_footer.jpg) top center no-repeat #ebc55b;background-size:cover;padding:25px 0}.pt-30{padding-top:30px}.ml-10{margin-left:10px}.mb-5{margin-bottom:5px}.mb-10{margin-bottom:10px}.mb-20{margin-bottom:20px}.mb-30{margin-bottom:30px}.mb-40{margin-bottom:40px}.mb-80{margin-bottom:80px}.block-mb{display:inline-block}@media (max-width: 360px){.block-mb{display:block;margin-bottom:5px}.block-mb.ml-10{margin-left:0}}
+            
+		</style>
+</head>
+<body>
+<amp-sidebar id="sidebar" side="right" layout="nodisplay" aria-hidden="true" role="menu" tabindex="-1">
+         <form   class="menu-layer primary " action="/" target="_top" novalidate="">
+            <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
+            <div class="items"> 
+            
+                <a class="menu-item item-layer-1 active" href="index.html">Trang chủ</a>
+                
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Vinamilk Baby Care
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chuyên mục chính
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Mang thai</a>
+                                        <a class="menu-item item-layer-3" href="#">Sinh con</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng cho con</a>
+                                        <a class="menu-item item-layer-3" href="#">Nuôi dạy con</a>
+                                        <a class="menu-item item-layer-3" href="#">Những vấn đề thường gặp ở trẻ</a>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Chủ đề khác mẹ quan tâm
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items">
+                                        <a class="menu-item item-layer-3" href="#">Phát triển trí não</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêu hóa hấp thu</a>
+                                        <a class="menu-item item-layer-3" href="#">Tăng cân, chiều cao</a>
+                                        <a class="menu-item item-layer-3" href="#">Sức đề kháng</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng</a>
+                                        <a class="menu-item item-layer-3" href="#">Dinh dưỡng ăn dặm</a>
+                                        <a class="menu-item item-layer-3" href="#">Nôn trớ</a>
+                                        <a class="menu-item item-layer-3" href="#">Biếng ăn</a>
+                                        <a class="menu-item item-layer-3" href="#">Giấc ngủ của con</a>
+                                        <a class="menu-item item-layer-3" href="#">Tiêm phòng</a>
+                                        <a class="menu-item item-layer-3" href="#">Bệnh thường gặp</a>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </label>
+
+                <a class="menu-item item-layer-1" href="index.html">Góc chuyên gia</a>
+
+                <label class="menu-item item-layer-1 has-sub-level">
+                    <input type="checkbox">
+                    Sản Phẩm
+                    <div class="submenu menu-layer secondary">
+                        <div class="return-button">Back</div>
+                        <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                        <div class="items"> 
+                            <a class="menu-item item-layer-2" href="#">Optimum mama</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Mama Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Gold</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha Gold</a> 
+
+                            <label class="menu-item item-layer-2 has-sub-level">
+                                <input type="checkbox">
+                                Dielac Grow Plus
+                                <div class="submenu menu-layer tertiary">
+                                    <div class="return-button">Back</div>
+                                    <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                    <div class="items"> 
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, thấp còi</a>
+                                        <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, nhẹ cân</a>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <a class="menu-item item-layer-2" href="#">Dielac Grow</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Alpha</a> 
+                            <a class="menu-item item-layer-2" href="#">Optimum Comfort</a> 
+                            <a class="menu-item item-layer-2" href="#">Dielac Pedia</a>                     
+                        </div>
+                    </div>
+                </label>
+                
+                <a class="menu-item item-layer-1" href="index.html">Ứng dụng thông minh</a>
+                <a class="menu-item item-layer-1" href="index.html">Truyền thông</a>
+                <a class="menu-item item-layer-1" href="index.html">CLB Mẹ và bé</a>
+            </div>
+        </form>
+</amp-sidebar>  
+<header id="header" class="header fixed">
+        <div class="container">
+            <a href="index.html" id="logo">
+                <amp-img height=74 width=170 src="images/logo.png" alt="Welcome"></amp-img>
+            </a>
+            <button class="hamburger" id="menu-button" on="tap:sidebar.toggle"><span class="lines"></span></button>
+            <button class="ampstart-btn search-btn" on="tap:search-lightbox" role="button" tabindex="0"> </button>
+            <button class="ampstart-btn login-btn " on="tap:login-lightbox" role="button" tabindex="0"></button>
+        </div>
+</header>
+<!-- --------------------------------------------- -->
+<amp-lightbox id="login-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:login-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <amp-selector role="tablist" layout="container" class="ampTabContainer">
+                <div role="tab" class="tabButton tabButton-1" selected option="a">Đăng ký</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN</span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main"> NHẬP LẠI MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-label"> <span class="color-main">SỐ ĐIỆN THOẠI </span>
+                            <input type="text" class="input-box" >
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" checked="checked">
+                            <span class="circle"></span> Dự định 
+                        </label>
+                        <label class="row-radio">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đang mang thai
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="user_status" type="radio" >
+                            <span class="circle"></span> Đã có con
+                        </label>
+                        <div class="line-page"></div>
+                        <label class="row-label"> <span> Ngày </span>
+                            <select class="select-box" name="baby_day" id="baby_day" >
+                                <option value="0">Ngày</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25" selected="">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Tháng </span>
+                            <select class="select-box" name="baby_month" id="baby_month" >
+                                <option value="0">Tháng</option>
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </label>
+                        <label class="row-label"> <span> Năm </span>
+                            <select class="select-box" name="baby_year" id="baby_year" >
+                                <option value="0">Năm</option>
+                                <option value="2018">2018</option>
+                                <option value="2017" selected="">2017</option>
+                            </select>
+                        </label>
+                        <label class="row-radio mb-20">
+                            <input name="newsletter" type="checkbox" >
+                            <span class="circle"></span> Tôi đồng ý nhận thông tin dinh dưỡng, chăm sóc sức khoẻ từ Vinamilk Baby Care và Chuyên gia
+                        </label>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div role="tab" class="tabButton tabButton-2" option="b">Đăng nhập</div>
+
+                <div role="tabpanel" class="tabContent">
+                    <form target="_top" action="\">
+                        <label class="row-label"> <span class="color-main"> EMAIL </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                            <input type="text" class="input-box" >
+                        </label>
+
+                        <div class="clearfix">
+                            <a href="#" class="forgetpass  pull-right mt-6"> Quên mật khẩu </a>
+                            <label class="row-radio mb-20">
+                                <input name="newsletter" type="checkbox" >
+                                <span class="circle"></span> Duy trì đăng nhập
+                            </label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+                        </div>
+                    </form>
+                </div>
+            </amp-selector>
+
+            <div class="lightbox-close" on="tap:login-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+    </amp-lightbox>
+<!-- ------------------------------------- -->
+<div id="giai-doan-1-2t-content" class="wrap-content">
+    <section class="row-slideshow">
+     	<amp-carousel width="800" height="381" layout="responsive" type="slides">
+        	<amp-img width=800 height=381 src="images/img-1.jpg" alt="Welcome" layout="responsive"></amp-img>
+       	 	<amp-img width=800 height=381 src="images/img-2.jpg" alt="Welcome" layout="responsive"></amp-img>
+      	 	<amp-img width=800 height=381 src="images/img-3.jpg" alt="Welcome" layout="responsive"></amp-img>
+     	</amp-carousel>
+	</section>
+	<br>
+    <section class="share">
+    	<div class="container">
+        	<div>
+        	</div>
+    	</div>
+	</section>
+    <section class="share">
+        <div class="container">
+            <div class="mb-30">
+            	<amp-img width=527 height=233 src="images/2-6-tuoi-title-2.png" alt="Welcome" layout="responsive"></amp-img>
+				<amp-img width=746 height=665 src="images/2-6-tuoi-img.jpg" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="img-m mb-20">
+				<amp-img width=366 height=84 src="images/tongquan-title-vi.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="text-left mb-10">
+                <p>“Vì sao con phải uống sữa vậy mẹ?” <br> 
+                    “Vì sao bầu trời lại có màu xanh? Con thích bầu trời màu tím cơ!”</p>
+                <p>Ái dà da, chắc hẳn mẹ đã không ít lần bối rối vì gặp những câu hỏi đầy bất chợt này của con rồi. Hì hì con bật mí xíu nha, con đang giai đoạn vô cùng hiếu kì, tìm hiểu và thích thú với thế giới xung quanh & kiến thức mới mẻ để bước vào năm tháng đến trường đó. Mẹ hãy khuyến khích con trò chuyện với mọi người, tiếp xúc thế giới bên ngoài, quan sát và chơi đùa sáng tạo để giúp con phát triển hành vi, cảm xúc và trí thông minh. Đừng bối rối mẹ à, các Chuyên gia Vinamilk luôn ở đây giúp mẹ nè!</p>
+			</div>
+            <div class="text-center">
+                <div class="block-mb"><a href="#" class="btn">Tìm hiểu thêm</a></div>
+                <div class="block-mb ml-10"><a href="#" class="btn" on="tap:login-lightbox">Đăng ký ngay</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="share">
+        <div class="container">
+            <h3 class="widget-title title-border mb-20"><span>NHỮNG ĐIỀU MẸ CẦN LƯU Ý</span></h3>
+            <div class="img-s">
+				<amp-img width=308 height=192 src="images/2-6-tuoi-luuy-dacdiem.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="font-s">
+				<p>Đặc điểm nổi bật
+					<br>
+				   về sự phát triển</p>
+			</div>
+            <div class="text-left mb-30">
+                <p>Biết nói thành câu ngắn và hiểu, sử dụng được ngôn ngữ. Giai đoạn này là mốc phát triển về tâm lý, ngôn ngữ, kỹ năng vận động và xã hội.</p>
+			</div>
+            <div class="img-s mb-10">
+				<amp-img width=230 height=181 src="images/2-6-tuoi-luuy-dinhduong.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="font-s">
+				<p>Dinh dưỡng
+					<br>
+				   cần bổ sung</p>
+			</div>
+            <div class="text-left mb-30">
+                <p>Ăn đủ 3 bữa, đủ các nhóm chất vitamin, khoáng, sắt, canxi, đạm , đường bột, béo. Bổ sung canxi cho xương, chiều cao, các dưỡng chất trí não (DHA, lutein, choline,..) Tăng cường bữa phụ như yaourt, bánh chè, trái cây.</p>
+            </div>
+            <div class="img-s mb-10">
+				<amp-img width=223 height=170 src="images/2-6-tuoi-luuy-meo.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="font-s">
+				<p>Mẹo chăm sóc bé</p>
+			</div>
+            <div class="text-left mb-30">
+                <p>Tạo thêm nhiều cơ hội để nói chuyện  với bé, khuyến khích bé tiếp xúc bên ngoài với các bé đồng tuổi.</p>
+			</div>
+            <div class="img-s mb-10">
+				<amp-img width=273 height=212 src="images/2-6-tuoi-luuy-tuongtac.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="font-s">
+				<p>Tương tác 
+                    <br>
+                    giữa mẹ và con</p>
+			</div>
+            <div class="text-left mb-30">
+                <p>Giao tiếp với trẻ để  hình thành thói quen sinh hoạt, một cách thoải mái, tích cực. Đưa bé ra ngoài chơi để khám phá thế giới xung quanh, hình thành thái độ và hành vi sống.</p>
+			</div>
+            <div class="img-s mb-10">
+				<amp-img width=223 height=233 src="images/2-6-tuoi-luuy-cantranh.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+            <div class="font-s">
+				<p>Cần tránh</p>
+			</div>
+            <div class="text-left mb-30">
+                <p>Áp đặt trẻ trong cách suy nghĩ, hành động làm hạn chế sự sáng tạo &#38 phát triển tự nhiên.
+					Không ăn quá nhiều đồ ngọt, mặn vì dễ mắc bệnh thận, béo phì.</p>
+			</div>
+        </div>
+    </section>
+    <section class="share">
+		<div class="container">
+			<div class="img-m mb-10">
+				<amp-img width=790 height=590 src="images/uudai_790x590_acf_cropped.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+			<div class="img-ss mb-20">
+				<amp-img width=384 height=271 src="images/Vector-Smart-Object.png" alt="Welcome" layout="responsive"></amp-img>
+			</div>
+			<div class="text-center mb-30">
+				<p>Tham gia các hoạt động và sự kiện đặc biệt của Vinamilk chưa bao giờ dễ dàng hơn thế! Mẹ sẽ <br> được hưởng những quyền lợi đặc biệt khi tham <br> gia cộng đồng mẹ và bé Vinamilk. Nào, hãy <br> nhanh tay đăng ký ngay hôm nay mẹ nhé!</p>	
+			</div>
+			<div class="text-center"><a href="#" class="btn">Tham gia ngay</a>
+			</div>
+		</div>
+	</section>
+<!-- ---------------------------------------- -->
+</div>
+<!-- ---------------------------------------- -->
+<section class="row-section row-product">
+	<div class="container">
+        <h3 class="widget-title title-border mb-30"><span>CÁC SẢN PHẨM THUỘC NGÀNH SỮA BỘT</span></h3>
+        <amp-carousel height="200" layout="fixed-height" type="carousel">
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-1.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-2.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-3.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-4.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-5.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-6.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-7.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-8.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-9.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="item">
+				<amp-img src="images/products/product-10.png" width="120" height="200" alt="a sample image"></amp-img>
+				</a>
+			</div>
+        </amp-carousel>
+     </div>
+</section>
+<!-- -------------------------------------- -->
+<section class="row-section row-bottom">
+		<div class="container">
+			<div class="widget">
+				<h3 class="widget-title title-border mb-30"><span>MẸ CẦN HỖ TRỢ?</span></h3>
+					<div class="widget-content">
+						<div class="item">
+							<amp-img src="images/support-phone.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+						<div class="desc">
+							<p>Trung tâm tư vấn dinh dưỡng</p>
+							<h4><a href="tel: 1900545425">1900545425</a></h4>
+						</div>
+						</div>
+						<div class="item">
+							<amp-img src="images/support-mail.png" width="50" 	height="50" class="img" alt="a sample image"></amp-img>
+						<div class="desc">
+							<p>Viết cho chúng tôi</p>
+							<h4>EMAIL</h4>
+						</div>
+						</div>
+					</div>
+			</div>
+        <div class="widget widget-newsletter">
+			<h3 class="widget-title title-border mb-30"><span>ĐĂNG KÝ NHẬN TIN</span></h3>
+			<div class="widget-content">
+				<div class="item">
+					<amp-img src="images/support-newsletter.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+				<div class="desc">
+					<p> Mẹ hãy đăng ký nhận tin để nhận những thông tin bổ ích và chương trình khuyến mãi của Vinamilk nhé.</p>
+                <form target="_top" action="\">
+					<input type="text" class="input-box" name="email" value="" placeholder="Email của mẹ">
+					<button type="submit" class="btn btn-primary">Gửi</button>
+                </form>
+				</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+<!-- -------------------------------------- -->
+<section class="row-section row-menubottom">
+	<div class="container">
+        <div class="cols-2">
+			<div class="widget widget-menu">
+				<h3 class="widget-tile">Vinamilk Baby Care</h3>
+            <div class="widget-content">
+				<ul class="list">
+                <li> <a class="" href="#" title="Mang thai"> Mang thai </a> </li>
+                <li> <a class="" href="#" title="0-6 tháng"> 0-6 tháng</a> </li>
+                <li> <a class="" href="#" title="6-12 tháng"> 6-12 tháng </a> </li>
+                <li> <a class="" href="#" title="1-2 tuổi"> 1-2 tuổi </a> </li>
+                <li> <a class="" href="#" title="2-6 tuổi"> 2-6 tuổi</a> </li>
+				</ul>
+            </div>
+			</div>
+				<div class="widget widget-menu">
+					<h3 class="widget-tile">Góc chuyên gia</h3>
+						<div class="widget-content">
+							<ul class="list">
+							<li> <a class="" href="#" title="Mang thai">Đội ngũ chuyên gia </a> </li>
+							<li> <a class="" href="#" title="0-6 tháng"> Chuyên gia chia sẻ </a> </li>
+							<li> <a class="" href="#" title="6-12 tháng"> Hỏi đáp cùng chuyên gia </a> </li>
+							</ul>
+						</div>
+				</div>
+				<div class="widget widget-menu">
+					<h3 class="widget-tile">Sản phẩm</h3>
+						<div class="widget-content">
+							<ul class="list">
+							<li> <a class="" href="#" title="Mang thai">Optimum Mama </a> </li>
+							<li> <a class="" href="#" title="0-6 tháng"> Dielac Mama Gold </a> </li>
+							<li> <a class="" href="#" title="6-12 tháng"> Optimum Gold </a> </li>
+							<li> <a class="" href="#" title="1-2 tuổi"> Dielac Alpha Gold </a> </li>
+							<li> <a class="" href="#" title="2-6 tuổi"> Dielac Grow Plus Suy dinh dưỡng, thấp còi</a> </li>
+							<li> <a class="" href="#" title="Mang thai">Dielac Grow </a> </li>
+							<li> <a class="" href="#" title="0-6 tháng"> Dielac Alpha </a> </li>
+							<li> <a class="" href="#" title="6-12 tháng"> Dielac Pedia </a> </li>
+							</ul>
+						</div>
+				</div>
+			<div class="widget widget-menu">
+				<h3 class="widget-tile">Ứng dụng thông minh</h3>
+					<div class="widget-content">
+						<ul class="list">
+					<li> <a class="" href="#" title="Mang thai"> Theo dõi cân nặng thai kỳ</a> </li>
+					<li> <a class="" href="#" title="0-6 tháng"> Đặt tên cho con </a> </li>
+					<li> <a class="" href="#" title="6-12 tháng"> Lịch tiêm phòng cho bé </a> </li>
+					<li> <a class="" href="#" title="1-2 tuổi"> Tính ngày dự sinh </a> </li>
+					<li> <a class="" href="#" title="2-6 tuổi"> Theo dõi chiều cao, cân nặng cho bé</a> </li>
+						</ul>
+					</div>
+			</div>
+			<div class="widget widget-menu">
+				<h3 class="widget-tile">Truyền thông CLB Mẹ và Bé</h3>
+					<div class="widget-content">
+						<ul class="list">
+					<li> <a class="" href="#" title="Mang thai"> Ưu đãi dành riêng cho mẹ </a> </li>
+					<li> <a class="" href="#" title="0-6 tháng"> Các hoạt động câu lạc bộ </a> </li>
+						</ul>
+					</div>
+			</div>
+        </div>
+    </div>
+</section>
+<!-- -------------------------------------- -->
+<footer id="footer">
+        <div class="container">
+            <div class="copyright">Bản quyền thuộc về Vinamilk 2016</div>
+        </div>
+</footer>
+<!-- -------------------------------------- -->
+
+
+
+
+
+</body>
