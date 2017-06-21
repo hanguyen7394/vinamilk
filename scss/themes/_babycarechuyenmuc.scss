@@ -9,10 +9,10 @@
         .item-time {
             font-size: 11px;
             font-style: italic;
-            color: $color-5;
+            color: $color-gray;
         }
         .item-desc {
-            color: $color-5;
+            color: $color-gray;
         }
     }
 }
@@ -20,22 +20,16 @@
 .pagination {
     text-align: center;
     .page-numbers {
-        color: $color-5;
+        color: $color-gray;
         &.current {
-            color: $color-1;
+            color: $color-black;
         }
     }
-	.prev {
-		.icon-arrow { 
-        	@include rotate(180deg);
-			display: inline-block;
-		}
-	}
-    .icon-arrow { 
+    .icon-arrow-right, .icon-arrow-left { 
         color: $colorSecondary;
-        font-size: 48px;
+        font-size: 40px;
         position: relative;
-        top: 15px;
+        top: 12px;
     }
 }
 
