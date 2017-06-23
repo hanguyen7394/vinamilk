@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta property="og:description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+  <meta property="og:image" content="https://www.ampproject.org/static/img/logo-og-image.jpg">
+  <meta name="description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – AMP">
+  <meta name="amp-experiments-opt-in" content="">
+  <title>Vinamilk – AMP</title>
+  <link rel="shortcut icon" href="https://www.ampproject.org/static/img/amp_favicon.png?v=3">
+  <link rel="canonical" href="https://www.ampproject.org/">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.ampproject.org/static/img/icons/120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.ampproject.org/static/img/icons/152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="https://www.ampproject.org/static/img/icons/167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.ampproject.org/static/img/icons/180.png">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+  <!--<link href="style.css" rel="stylesheet"> -->
+
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <style amp-custom>
+      @keyframes scrollDownArrow{0%{bottom:-5px}25%{bottom:-10px}50%{bottom:-15px}75%{bottom:-10px}100%{bottom:-5px}}@font-face{font-family:"Icomoon";src:url("fonts/icomoon/icomoon.eot");src:url("fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"),url("fonts/icomoon/icomoon.woff") format("woff"),url("fonts/icomoon/icomoon.ttf") format("truetype"),url("fonts/icomoon/icomoon.svg") format("svg");font-weight:normal;font-style:normal}[class^="icon-"]:before,[class*=" icon-"]:before,[class^="icon-"]:after,[class*=" icon-"]:after{font-family:'Icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-down:before{content:"\e903"}.icon-arrow-up:before{content:"\e904"}.icon-arrow-left:before{content:"\e905"}.icon-arrow-right:before{content:"\e900"}.icon-woman:before{content:"\e901"}.icon-nurse:before{content:"\e902"}.icon-envelop:before{content:"\e945"}.icon-location:before{content:"\e947"}.icon-reply:before{content:"\e96a"}.icon-search:before{content:"\e986"}.icon-star-empty:before{content:"\e9d7"}.icon-cancel-circle:before{content:"\ea0d"}.icon-cross:before{content:"\ea0f"}.icon-facebook:before{content:"\ea90"}@font-face{font-family:'QX Banda regular';src:url("fonts/QX_Banda_regular.eot");src:url("fonts/QX_Banda_regular.eot?#iefix") format("embedded-opentype"),url("fonts/QX_Banda_regular.woff") format("woff"),url("fonts/QX_Banda_regular.ttf") format("truetype"),url("fonts/QX_Banda_regular.svg#QX_Banda_regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Regular';src:url("fonts/Roboto-Regular.eot");src:url("fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Regular.woff") format("woff"),url("fonts/Roboto-Regular.ttf") format("truetype"),url("fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Roboto Light';src:url("fonts/Roboto-Light.eot");src:url("fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Light.woff") format("woff"),url("fonts/Roboto-Light.ttf") format("truetype"),url("fonts/Roboto-Light.svg#Roboto-Light") format("svg");font-weight:300;font-style:normal}@font-face{font-family:'Roboto Bold';src:url("fonts/Roboto-Bold.eot");src:url("fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Bold.woff") format("woff"),url("fonts/Roboto-Bold.ttf") format("truetype"),url("fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");font-weight:600;font-style:normal}@font-face{font-family:'Roboto Medium';src:url("fonts/Roboto-Medium.eot");src:url("fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),url("fonts/Roboto-Medium.woff") format("woff"),url("fonts/Roboto-Medium.ttf") format("truetype"),url("fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");font-weight:500;font-style:normal}@font-face{font-family:'UVN Van';src:url("fonts/UVNVan.eot");src:url("fonts/UVNVan.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVan.woff") format("woff"),url("fonts/UVNVan.ttf") format("truetype"),url("fonts/UVNVan.svg#UVNVan") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'UVN Van Bold';src:url("fonts/UVNVanBold.eot");src:url("fonts/UVNVanBold.eot?#iefix") format("embedded-opentype"),url("fonts/UVNVanBold.woff") format("woff"),url("fonts/UVNVanBold.ttf") format("truetype"),url("fonts/UVNVanBold.svg#UVNVanBold") format("svg");font-weight:700;font-style:normal}*{margin:0;padding:0;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.roboto-regular{font-family:'Roboto Regular'}.roboto-bold{font-family:'Roboto Bold'}.roboto-medium{font-family:'Roboto Medium'}.roboto-light{font-family:'Roboto Light'}.system-bold-italic{font-family:"system-bold-italic";font-weight:normal}.system-medium-italic{font-family:"system-medium-italic";font-weight:normal}.system-medium{font-family:"system-medium";font-weight:normal}.system-regular-italic{font-family:"system-regular-italic";font-weight:normal}.system-semi-bold,.btn-small{font-family:"system-semi-bold";font-weight:normal}.system-regular{font-family:"system-regular";font-weight:normal}.system-bold{font-family:"system-bold";font-weight:normal}.sfu-bookbt-bold-condensed{font-family:"sfu-bookbt-bold-condensed";font-weight:normal}.sfu-bookbt-bold-italic{font-family:"sfu-bookbt-bold-italic";font-weight:normal}.sfu-bookbt-bold,.title-box{font-family:"sfu-bookbt-bold";font-weight:normal}.sfu-bookbt-italic{font-family:"sfu-bookbt-italic";font-weight:normal}.sfu-bookbt-roman{font-family:"sfu-bookbt-roman";font-weight:normal}a{color:inherit;text-decoration:none;transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;color:#0048a4}a:focus,a:hover{color:#ebc55b;text-decoration:none}h1,.h1{font-size:42px}h2,.h2{font-size:34px}h3,.h3{font-size:26px}h4,.h4{font-size:22px}h5,.h5{font-size:16px}h6,.h6{font-size:100%}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight:500;margin:0 0 20px;line-height:normal}p{margin:0 0 10px}.line-page{display:block;height:0;border-bottom:2px dashed #e3c980;margin-bottom:20px}li{padding-left:20px;list-style:none;position:relative}li:before{content:'●';color:#ebc55b;position:absolute;left:0;top:0;font-size:17px}ul ul,ol ol{margin-left:15px}img{max-width:100%}.btn{background-color:#fff;display:inline-block;color:#fff;color:#0048a4;height:40px;border-radius:50px;padding:0 25px;border:2px solid #0048a4;font-size:14px;text-transform:uppercase}.btn:hover{background-color:#0048a4;color:#fff}.btn.btn-primary{background-color:#0048a4;color:#fff}a.btn{height:auto;line-height:40px}.btn-small{font-size:12px;line-height:15px;position:relative;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 22px 2px 13px;display:inline-block;background:url(images/icon-arr.png) #ebc55b no-repeat right center}.btn-small:hover{background-color:#0048a4;color:#fff}.input-box{height:40px;border:none;outline:none;padding:0  15px;border-radius:0;background-color:#e2e2e2;border:none;width:100%;color:#555;border-radius:20px;font-size:14px;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}textarea.input-box{padding:15px}.pull-left{float:left}.pull-right{float:right}.text-center{text-align:center}.text-right{text-align:right}.text-left{text-align:left}.container{position:relative;margin:0 auto;padding:0 15px}.container:after{display:table;content:" ";clear:both}.color-main{color:#0048a4}.color-second{color:#ebc55b}.color-black{color:#000}.color-white{color:#fff}.color-gray{color:#515151}.display-table{display:table;width:100%;height:100%}.display-table .table-cell{display:table-cell;height:100%;width:100%;vertical-align:middle}.box-shadow{background:#fff;padding:5px;box-shadow:0 0 5px 0 rgba(0,0,0,0.3)}amp-accordion section{margin-bottom:1px}ul.list{list-style:none;margin:0;padding:0}ul.list li{padding-left:18px;position:relative}ul.list li:not(:first-child){margin-top:8px}ul.list li:before{content:"";width:10px;height:10px;background:#ebc55b;position:absolute;top:5px;left:0;border-radius:100%}.clearfix:after{content:"";display:table;clear:both}.row-section{padding:50px 0;margin:0}.content-section:after{content:"";display:table;clear:both}.widget-title{font-family:'UVN Van';font-size:18px;text-transform:uppercase;color:#0048a4}.title-border{text-align:center;line-height:1.4}.title-border span{border:1px solid #0048a4;border-left:none;border-right:none;display:inline-block;padding:5px 0}.title-box{font-size:25px;line-height:28px;color:#0048a4;position:relative;display:block;margin-bottom:20px}.cols-2,.col-2{margin:0 -10px;list-style:none}.cols-2>*,.col-2>*{float:left;width:50%;padding-left:10px;padding-right:10px}.cols-2>*:nth-child(2n+1),.col-2>*:nth-child(2n+1){clear:both}.cols-2:after,.col-2:after{content:"";display:table;clear:both}.col-2>*{padding-left:0;padding-right:0}.grid-space-8[class*="cols-"]{margin:0 -8px}.grid-space-8[class*="cols-"]>div{padding-left:8px;padding-right:8px}.grid-space-5[class*="cols-"]{margin:0 -5px}.grid-space-5[class*="cols-"]>div{padding-left:5px;padding-right:5px}amp-img{max-width:100%;height:auto;display:inline-block}.mb-50{margin-bottom:50px}.margin-0,.mg-0{margin:0}.padding-0,.pd-0{padding:0}.bg-gray{background:#f6f7f9}.row-label{display:block;margin-bottom:20px}.row-label>span{display:block}.row-radio{min-height:32px;padding-top:6px;position:relative;display:block;padding-left:40px;margin-bottom:5px}.row-radio input[type="radio"],.row-radio input[type="checkbox"]{visibility:hidden;position:absolute;top:0;left:0}.row-radio .circle{width:32px;height:32px;background:#fff;border:2px solid #0048a4;border-radius:50%;position:absolute;left:0;top:0}.row-radio .circle:before{opacity:0;content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:url(images/ic-checkbox.jpg) no-repeat center}.row-radio input[type=radio]:checked+.circle:before,.row-radio input[type=checkbox]:checked+.circle:before{opacity:1}.text-uppercase{text-transform:uppercase}.text-center{text-align:center}.text-normal{text-transform:none}.search-txt{text-transform:uppercase;text-align:center}.popup-img{max-width:75%;height:auto;margin:auto}.popup-note{font-size:14px;color:#000}.btn-full{width:100%}textarea.input-box{height:inherit}section[expanded]>header.select-box{background:#0048a4;color:#fff}.search-box{position:relative}.search-box::before{content:'\e986';font-family:'Icomoon';position:absolute;top:3px;right:10px;font-size:22px;color:#353535}amp-carousel{max-width:100%}.scroll-list{overflow:auto}.scroll-list::-webkit-scrollbar-track{border-radius:20px;background-color:#ddd}.scroll-list::-webkit-scrollbar{width:5px;background-color:#ddd}.scroll-list::-webkit-scrollbar-thumb{border-radius:20px;background-color:#0048a4;height:40px}.box-has-shadow{padding:20px;width:100%;margin-bottom:30px;border-radius:20px;box-shadow:0px 0px 18px rgba(0,0,0,0.14);-moz-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-ms-box-shadow:0px 0px 18px rgba(0,0,0,0.14)}.news-block .title{color:#0048a4;text-transform:uppercase;font-size:16px}.news-block .time{font-size:11px;font-style:italic;color:#515151}.news-block .content{font-size:13px}.question-content .question-list{height:300px}.question-content .box-title{color:#0048a4;font-size:18px}.question-content .box-title amp-img{overflow:visible}.question-content .box-title img{margin-top:6px}.question-content .question,.question-content .answer{line-height:1.3;padding:5px 0;padding-left:20px;list-style:none;position:relative;background:#fff;border:none}.question-content .question:before,.question-content .answer:before{position:absolute;left:0;top:0;font-size:17px}.question-content .question:before{content:'●';color:#ebc55b}.question-content .answer:before{content:'\e96a';font-family:'Icomoon';color:#0048a4}#header{position:relative;z-index:100;background-color:#fff;box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3)}#header .container{padding-top:5px;padding-bottom:5px;height:60px;position:relative;text-align:center}#header.fixed{position:fixed;left:0;top:0;right:0}#header .search-btn,#header .login-btn{position:absolute;width:30px;height:30px;right:10px;top:15px;border:none;font-size:18px;background-color:#0048a4;border-radius:100%;color:#fff;cursor:pointer}#header .search-btn:before,#header .login-btn:before{content:"\e986";line-height:30px;display:inline-block;font-family:Icomoon}#header .login-btn{right:50px}#header .login-btn:before{content:"\e901";font-size:20px;position:relative;font-family:Icomoon}#logo{display:inline-block;position:relative;top:5px}#logo .amp-img{display:block}.hamburger{position:absolute;left:0;top:0;transition:.3s;cursor:pointer;user-select:none;color:#fff;border:none;height:60px;text-transform:uppercase;background:none;width:60px}.hamburger .lines{height:6px;position:absolute;border-radius:3px;left:12px;right:12px;background-color:#0048a4;top:calc(50% - 3px);transition:transform 0s ease .2s,-webkit-transform 0s ease .2s}.hamburger .lines:after,.hamburger .lines:before{width:100%;height:6px;border-radius:3px;position:absolute;left:0;background-color:#0048a4;content:"";transition:top .2s ease .2s, transform .2s ease 0s, -webkit-transform .2s ease 0s}.hamburger .lines:before{top:-12px}.hamburger .lines:after{top:calc(100% - -6px)}amp-sidebar[side][open] ~ #header .hamburger .lines{background:none}amp-sidebar[side][open] ~ #header .hamburger .lines:after,amp-sidebar[side][open] ~ #header .hamburger .lines:before{transition:top .2s ease 0s,transform .2s ease .2s,-webkit-transform .2s ease .2s}amp-sidebar[side][open] ~ #header .hamburger .lines:before{top:calc(50% - 1px);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}amp-sidebar[side][open] ~ #header .hamburger .lines:after{top:calc(50% - 1px);-webkit-transform:rotate(45deg);transform:rotate(45deg)}#search-lightbox form{margin:5px 15px;position:relative}#search-lightbox form .input-box{background-color:#fff;border-radius:30px;height:40px;padding:0 40px;color:#333}#search-lightbox form button{position:absolute;right:0;top:0;height:40px;width:40px;border:none;font-size:28px;color:#0048a4;line-height:40px;background:none;text-align:center}#search-lightbox form .lightbox-close{position:absolute;top:0;left:0;width:40px;height:40px;font-size:18px;line-height:40px;text-align:center}#login-lightbox,#question-lightbox{width:100%;max-width:100%}#login-lightbox,#question-lightbox>div{overflow:auto}.lightbox-content{box-shadow:0 5px 50px rgba(0,0,0,0.65);width:90%;margin:50px auto;background-color:#fff;border-radius:10px;padding:20px;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;-o-overflow-scrolling:touch;-ms-overflow-scrolling:touch}.lightbox-content .line-page{margin:0 -20px 20px}.lightbox-content .lightbox-close{border:2px solid #fff;position:absolute;border-radius:100%;width:30px;height:30px;text-align:center;color:#fff;line-height:30px;font-size:18px;top:-40px;right:0}#login-lightbox .ampTabContainer{display:flex;flex-wrap:wrap}#login-lightbox .ampTabContainer>.tabButton{list-style:none;flex-grow:1;text-align:center;cursor:pointer;background-color:#fff;line-height:25px;padding:5px 0;width:50%;text-transform:uppercase;color:#0048a4;border:1px #0048a4 dashed;font-size:18px;font-family:'UVN Van'}#login-lightbox .ampTabContainer>.tabButton.tabButton-1{border-radius:30px 0 0 30px;border-right:none}#login-lightbox .ampTabContainer>.tabButton.tabButton-2{border-radius:0 30px 30px 0;border-left:none}#login-lightbox .ampTabContainer>.tabButton[selected]{outline:none;background-color:#0048a4;color:#fff;border:none}#login-lightbox .ampTabContainer>.tabContent{display:none;width:100%;order:1;padding:15px 0}#login-lightbox .ampTabContainer>.tabButton[selected]+.tabContent{display:block}amp-sidebar{background:#fff;width:350px}amp-sidebar .submenu{background:#fff;bottom:0;box-shadow:0 3px 20px 0 rgba(0,0,0,0.075);left:0;position:fixed;right:0;top:0;transform:translateX(100%);transition:transform 233ms cubic-bezier(0, 0, 0.21, 1)}amp-sidebar input:checked+.submenu{transform:translateX(0)}amp-sidebar input[type="checkbox"]{position:absolute;visibility:hidden}amp-sidebar .menu-item{border-top:solid 1px #d8d8d8;font-size:15px;line-height:18px;color:#222222;display:block;padding:14px 0 14px 20px;position:relative;background-color:#fff}amp-sidebar .menu-item.active{color:#ebc55b}amp-sidebar .menu-layer .items{left:0;overflow-x:hidden;overflow-y:scroll;position:absolute;right:0}amp-sidebar .menu-layer.primary{height:100%;position:relative}amp-sidebar .menu-layer.primary .items{bottom:5px;top:50px}amp-sidebar .menu-layer.secondary{z-index:2}amp-sidebar .menu-layer.tertiary{z-index:3}amp-sidebar .has-sub-level::after{height:20px;position:absolute;right:30px;top:calc(50% - 10px);width:20px;line-height:20px;text-align:center;font-family:Icomoon;content:"\e900";font-size:30px;color:#ebc55b}amp-sidebar .close-button{border:0;height:50px;position:absolute;right:13px;top:0;width:68px;background:none;border:none;color:#bcbec0}amp-sidebar .close-button:after{font-family:Icomoon;content:"\ea0f";text-align:center;line-height:50px;font-size:20px;display:inline-block}amp-sidebar .return-button{color:#222;line-height:50px;font-weight:300;left:15px;position:absolute;top:0;font-size:12px}amp-sidebar .return-button::before{font-family:Icomoon;content:"\e905";font-size:20px;position:relative;top:3px;left:-3px}body{padding-top:60px;font-family:'Roboto Regular';font-size:14px;font-weight:400;line-height:1.6;color:#000}.img-mw-587 amp-img{max-width:587px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-531 amp-img{max-width:531px;margin:0 auto}.img-mw-487 amp-img{max-width:487px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}.img-mw-366 amp-img{max-width:366px;margin:0 auto}amp-lightbox .lightbox{position:fixed;background:rgba(0,0,0,0.5);top:0;bottom:0;left:0;right:0}amp-lightbox .lightbox-content{position:relative;z-index:10}.row-slideshow{position:relative}.scrolldown{width:50px;height:70px;position:absolute;z-index:9;left:0;right:0;margin:auto;bottom:35px;text-align:center}.scrolldown__circle{width:55px;height:60px;background:url(images/scroll-icon.png) no-repeat center center}.scrolldown__arrow{width:50px;height:20px;background:url(images/scroll-arrow-icon.png) no-repeat center center;left:1px;bottom:-5px;position:absolute;animation:scrollDownArrow 1.5s ease infinite}.row-product .amp-carousel-slide .item{display:block;padding:0 20px}.row-bottom .widget-newsletter{margin-top:40px}.row-bottom .item{overflow:hidden}.row-bottom .item .img{float:left;margin-right:10px}.row-bottom .item .desc{overflow:hidden}.row-bottom .item p{margin-bottom:0}.row-bottom .item h4{color:#0048a4}.row-bottom .item form{margin-top:20px;position:relative}.row-bottom .item .input-box{color:#333;height:34px;background-color:#fff;border-radius:50px;border:1px solid #c8c8c8;padding-right:120px}.row-bottom .item .btn{height:34px;width:100px;text-align:center;border-radius:50px;position:absolute;right:0;top:0}.select-box{width:100%;text-align:left;padding:6px 15px;padding-right:30px;border-radius:17px;-webkit-border-radius:17px;-moz-border-radius:17px;border:1px solid #1f56a3;color:#1f56a3;background:url(images/arrow-dropdown.png) right center no-repeat;background-size:33px auto;-webkit-appearance:none;-moz-appearance:none;appearance:none}.box-dashed{border:1px dashed}.box-shadow-radius{-webkit-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-moz-box-shadow:0px 0px 18px rgba(0,0,0,0.14);-ms-box-shadow:0px 0px 18px rgba(0,0,0,0.14);box-shadow:0px 0px 18px rgba(0,0,0,0.14);-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:20px}.circle-icon{color:#fff;background-color:#0048a4;padding:6px;border-radius:100%;margin-left:5px;display:inline-block;width:30px;height:30px;text-align:center}.block-mb{display:inline-block}.img-90{max-width:90%;margin-left:auto;margin-right:auto}.img-95{max-width:95%;margin-left:auto;margin-right:auto}.img-65{max-width:65%;margin-left:auto;margin-right:auto}.img-85{max-width:85%;margin-left:auto;margin-right:auto}.color-blue{color:#1217AE}.color-red{color:#dd2521}.color-green{color:#468e29}.color-violet{color:#A02380}.product-title{text-align:center;font-size:22px;font-family:'UVN Van'}.big-title{text-transform:uppercase;padding:0 10%}.title-border-blue span{border-color:#1217AE;font-size:20px;color:#1217AE;font-family:'UVN Van'}.title-border-red span{border-color:#dd2521;font-size:20px;color:#dd2521;font-family:'UVN Van'}.title-border-green span{border-color:#468e29;font-size:20px;color:#468e29;font-family:'UVN Van'}.title-border-violet span{border-color:#A02380;font-size:20px;color:#A02380;font-family:'UVN Van'}.i-circle{position:relative}.i-circle:before{content:"";position:absolute;top:0;left:0;border-radius:100%;width:50px;height:50px}.i-blue:before{background:#1217AE}.i-green:before{background:#468e29}.i-red:before{background:#dd2521}.i-violet:before{background:#A02380}.component-list{height:400px}.scrollbar-blue::-webkit-scrollbar-thumb{background-color:#1217AE}.scrollbar-red::-webkit-scrollbar-thumb{background-color:#dd2521}.scrollbar-green::-webkit-scrollbar-thumb{background-color:#468e29}.scrollbar-violet::-webkit-scrollbar-thumb{background-color:#A02380}.table-border-blue{border-bottom:1px solid #1217AE}.table-border-red{border-bottom:1px solid #dd2521}.table-border-green{border-bottom:1px solid #468e29}.table-border-violet{border-bottom:1px solid #A02380}.ampTabContainer{display:flex;flex-wrap:wrap}.tabButton-blue[selected]{background:#1217AE;color:white}.tabButton-red[selected]{background:#dd2521;color:white}.tabButton-green[selected]{background:#468e29;color:white}.tabButton-violet[selected]{background:#A02380;color:white}.tabButton[option][selected]{outline:none}.tabButton{color:#636466;list-style:none;flex-grow:1;text-align:center;cursor:pointer;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;background:#e8e5e5;box-shadow:0px 0px 5px rgba(0,0,0,0.5);font-size:9px;text-transform:uppercase;padding:20px;margin:0 2px}.tab-col-4{padding:8px;width:calc(25% - 4px)}.tabButton strong{font-size:14px}.tabContent{margin:0 2px;padding:20px 10px;display:none;width:100%;order:1;border:1px solid #ccc}.tabButton[selected]+.tabContent{display:block}.itemCustom{border:1px solid #000;height:100%;width:100%;margin:10px;text-align:center;padding-top:140px}amp-selector{padding:0;margin:0}.w1{width:36%}.w2{width:24%}.w3{width:16%}.tabContent{background:#e3e3e3;background:-webkit-linear-gradient(left, #e3e3e3, #f5f5f5, #e3e3e3);background:-o-linear-gradient(right, #e3e3e3, #f5f5f5, #e3e3e3);background:-moz-linear-gradient(right, #e3e3e3, #f5f5f5, #e3e3e3);background:linear-gradient(to right, #e3e3e3, #f5f5f5, #e3e3e3);background:-webkit-linear-gradient(to right, #e3e3e3, #f5f5f5, #e3e3e3);width:100%;margin-bottom:0px;border-radius:0px;box-shadow:3px 3px 3px rgba(51,51,51,0.3)}.component-content{position:relative}.component-content:after{content:"";display:block;width:100%;background:url(images/shadow-bottom.png) center top no-repeat;background-size:100% 100%;position:absolute;left:0;bottom:-26px;height:26px}.component-list td{table-layout:fixed;font-weight:normal;border-image:none;border-bottom:1px solid #acacac;padding:9px 2px;text-align:center}.component-list td:nth-child(1){text-align:left}.pack-content li{padding-left:20px;list-style:none;position:relative}.pack-content li:before{content:'●';color:#ebc55b;position:absolute;left:0;top:0;font-size:17px}.visible{display:block}.row-menubottom a{color:#2c2c2c}.row-menubottom .cols-2>*{margin-bottom:40px}.row-menubottom .widget-tile{font-size:16px;font-weight:500;color:#0048a4}#footer{background:url(images/bg_footer.jpg) top center no-repeat #ebc55b;background-size:cover;padding:25px 0}strong{font-family:'Roboto Regular', sans-serif}.fs-18{font-size:18px}.fs-20{font-size:20px}.fs-22{font-size:22px}.fs-23{font-size:23px}.pt-30{padding-top:30px}.pd-2{padding:2px}.mt-6{margin-top:6px}.mt-30{margin-top:30px}.ml-5{margin-left:5px}.ml-10{margin-left:10px}.ml-20{margin-left:20px}.mr-10{margin-right:10px}.mb-5{margin-bottom:5px}.mb-10{margin-bottom:10px}.mb-20{margin-bottom:20px}.mb-30{margin-bottom:30px}.mb-40{margin-bottom:40px}.mb-80{margin-bottom:80px}@media (max-width: 480px){.cols-2>*{width:100%}}@media (max-width: 360px){#can-nang-thai-ky-lightbox .label-inline{width:100%}.block-mb{display:block;margin-bottom:5px}.block-mb.ml-10{margin-left:0}}
+  </style>
+</head>
+
+<body>
+  <amp-sidebar id="sidebar" side="right" layout="nodisplay" aria-hidden="true" role="menu" tabindex="-1">
+        <form   class="menu-layer primary " action="/" target="_top" novalidate="">
+          <button type="reset" class="close-button user-valid valid" id="menu-button" on="tap:sidebar.toggle"></button>
+          <div class="items"> 
+          
+              <a class="menu-item item-layer-1 active" href="home.html">Trang chủ</a>
+              
+              <label class="menu-item item-layer-1 has-sub-level">
+                  <input type="checkbox">
+                  Vinamilk Baby Care
+                  <div class="submenu menu-layer secondary">
+                      <div class="return-button">Back</div>
+                      <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                      <div class="items"> 
+                          <a class="menu-item item-layer-2" href="baby-care.html">Vinamilk Baby Care</a> 
+                          <label class="menu-item item-layer-2 has-sub-level">
+                              <input type="checkbox">
+                              Chuyên mục chính
+                              <div class="submenu menu-layer tertiary">
+                                  <div class="return-button">Back</div>
+                                  <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                  <div class="items"> 
+                                      <a class="menu-item item-layer-3" href="babycare-mang-thai.html">Mang thai</a>
+                                      <a class="menu-item item-layer-3" href="babycare-sinh-con.html">Sinh con</a>
+                                      <a class="menu-item item-layer-3" href="babycare-dinh-duong-cho-con.html">Dinh dưỡng cho con</a>
+                                      <a class="menu-item item-layer-3" href="babycare-nuoi-day-con">Nuôi dạy con</a>
+                                      <a class="menu-item item-layer-3" href="babycare-nhung-van-de-thuong-gap-o-tre.html">Những vấn đề thường gặp ở trẻ</a>
+                                  </div>
+                              </div>
+                          </label>
+
+                          <label class="menu-item item-layer-2 has-sub-level">
+                              <input type="checkbox">
+                              Chủ đề khác mẹ quan tâm
+                              <div class="submenu menu-layer tertiary">
+                                  <div class="return-button">Back</div>
+                                  <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                  <div class="items">
+                                      <a class="menu-item item-layer-3" href="babycare-phat-trien-tri-nao.html">Phát triển trí não</a>
+                                      <a class="menu-item item-layer-3" href="babycare-tieu-hoa-hap-thu.html">Tiêu hóa hấp thu</a>
+                                      <a class="menu-item item-layer-3" href="babycare-tang-can-chieu-cao.html">Tăng cân, chiều cao</a>
+                                      <a class="menu-item item-layer-3" href="babycare-suc-de-khang.html">Sức đề kháng</a>
+                                      <a class="menu-item item-layer-3" href="babycare-suy-dinh-duong.html">Suy dinh dưỡng</a>
+                                      <a class="menu-item item-layer-3" href="babycare-dinh-duong-an-dam.html">Dinh dưỡng ăn dặm</a>
+                                      <a class="menu-item item-layer-3" href="babycare-non-tro.html">Nôn trớ</a>
+                                      <a class="menu-item item-layer-3" href="babycare-bieng-an.html">Biếng ăn</a>
+                                      <a class="menu-item item-layer-3" href="babycare-giac-ngu-cua-con.html">Giấc ngủ của con</a>
+                                      <a class="menu-item item-layer-3" href="babycare-tiem-phong.html">Tiêm phòng</a>
+                                      <a class="menu-item item-layer-3" href="babycare-benh-thuong-gap.html">Bệnh thường gặp</a>
+                                  </div>
+                              </div>
+                          </label>
+                      </div>
+                  </div>
+              </label>
+              <a class="menu-item item-layer-1" href="goc-chuyen-gia.html">Góc chuyên gia</a>
+
+              <label class="menu-item item-layer-1 has-sub-level">
+                  <input type="checkbox">
+                  Sản Phẩm
+                  <div class="submenu menu-layer secondary">
+                      <div class="return-button">Back</div>
+                      <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                      <div class="items">
+                          <a class="menu-item item-layer-2" href="san-pham.html">Sản Phẩm</a>                            
+                          <a class="menu-item item-layer-2" href="#">Optimum mama</a> 
+                          <a class="menu-item item-layer-2" href="#">Dielac Mama Gold</a> 
+                          <a class="menu-item item-layer-2" href="#">Optimum Gold</a> 
+                          <a class="menu-item item-layer-2" href="#">Dielac Alpha Gold</a> 
+
+                          <label class="menu-item item-layer-2 has-sub-level">
+                              <input type="checkbox">
+                              Dielac Grow Plus
+                              <div class="submenu menu-layer tertiary">
+                                  <div class="return-button">Back</div>
+                                  <button type="reset" class="close-button" id="menu-button" on="tap:sidebar.toggle"></button>
+                                  <div class="items"> 
+                                      <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, thấp còi</a>
+                                      <a class="menu-item item-layer-3" href="#">Suy dinh dưỡng, nhẹ cân</a>
+                                  </div>
+                              </div>
+                          </label>
+
+                          <a class="menu-item item-layer-2" href="#">Dielac Grow</a> 
+                          <a class="menu-item item-layer-2" href="#">Dielac Alpha</a> 
+                          <a class="menu-item item-layer-2" href="#">Optimum Comfort</a> 
+                          <a class="menu-item item-layer-2" href="#">Dielac Pedia</a>                     
+                      </div>
+                  </div>
+              </label>
+              
+              <a class="menu-item item-layer-1" href="ung-dung-thong-minh.html">Ứng dụng thông minh</a>
+              <a class="menu-item item-layer-1" href="truyen-thong.html">Truyền thông</a>
+              <a class="menu-item item-layer-1" href="clb-me-va-be.html">CLB Mẹ và bé</a>
+          </div>
+      </form>
+  </amp-sidebar>
+  <header id="header" class="header fixed">
+    <div class="container">
+      <a href="home.html" id="logo">
+        <amp-img height=74 width=170 src="images/logo.png" alt="Welcome"></amp-img>
+      </a>
+      <button class="hamburger" id="menu-button" on="tap:sidebar.toggle"><span class="lines"></span></button>
+      <button class="ampstart-btn search-btn" on="tap:search-lightbox" role="button" tabindex="0"> </button>
+      <button class="ampstart-btn login-btn " on="tap:login-lightbox" role="button" tabindex="0"></button>
+    </div>
+  </header>
+
+  <div id="pedia-content" class="wrap-content">
+    <amp-youtube width="480" height="270" layout="responsive" data-videoid="lJKsY5u1twE"></amp-youtube>
+
+    <div class="container">
+        <section class="product-introduce mb-50">
+            <div class="mb-20">
+                <amp-img width=1020 height=883 src="images/OptimumMama-top-img.jpg" alt="Welcome" layout="responsive"></amp-img>
+            </div>
+            <div class="mb-20 ">
+                <amp-img width=630 height=336 src="images/OptimumMama-top-title.png" alt="Welcome" layout="responsive"></amp-img>
+            </div>
+
+            <div class="top-text text-center mb-30">
+                <p>Dielac Optimum Mama là sản phẩm dinh dưỡng cao cấp với công thức Opti-Immune giúp tăng cường sức khỏe hệ tiêu hóa &amp; đề kháng cho mẹ, cung cấp đầy đủ các dưỡng chất thiết yếu đáp ứng nhu cầu dinh dưỡng tăng cao trong thời kỳ mang thai và cho con bú; giúp mẹ khoẻ mạnh thoải mái, từ đó tạo nền tảng cho sự phát triển toàn diện của bé.</p>   
+            </div>
+
+            <div class="mb-20 img-90">
+                <amp-img width=688 height=501 src="images/OptimumMama-circle1.png" alt="Welcome" layout="responsive"></amp-img>
+            </div>
+            <p class="color-violet product-title big-title">tối ưu sức đề kháng cho mẹ</p>
+
+            <div class="mb-20 img-90">
+                <amp-img width=688 height=501 src="images/OptimumMama-circle2-1.png" alt="Welcome" layout="responsive"></amp-img>
+            </div>
+            <p class="color-violet product-title big-title">thai kỳ khỏe mạnh cùng chuyên gia</p>
+        </section>
+        
+        <section class="product-miracle mb-30">
+            <h3 class="title-border mb-20 title-border-violet"><span>ĐIỀU KÌ DIỆU TỪ OPTINUM GOLD</span></h3>
+
+            <div class="mb-20">
+                <amp-img width=542 height=826 src="images/KV-phu-Optimum-mama.png" alt="Welcome" layout="responsive"></amp-img>
+            </div>
+            <div class="miracle-block text-center">
+                <div class="miracle-img mb-20">
+                    <amp-img width=50 height=50 class="i-circle i-violet" src="images/dieukidieu-icon10.png" alt="icon-1"></amp-img>
+                </div>
+                <p class="color-violet product-title mb-20">Tăng cường sức khoẻ <br> hệ tiêu hoá cho mẹ</p>
+                <p><strong><span class="color-violet">Chất xơ hòa tan FOS và hệ men vi sinh BB-12 TM &amp; LGGTM</span></strong>giúp cân bằng hệ vi sinh đường ruột, ức chế vi khuẩn có hại, giúp hệ tiêu hóa khỏe mạnh, tăng khả năng hấp thu các dưỡng chất, đồng thời giúp nhuận trường, ngăn ngừa chứng táo bón hay gặp trong thai kỳ</p>  
+            </div>
+
+            <div class="miracle-block text-center">
+                <div class="miracle-img mb-20">
+                    <amp-img width=50 height=50 class="i-circle i-violet" src="images/dieukidieu-icon11.png" alt="icon-1"></amp-img>
+                </div>
+                <p class="color-violet product-title mb-20">Tăng cường sức đề kháng <br> và miễn dịch cho mẹ</p>
+                <p><strong><span class="color-violet">vitamin A,C,D và khoáng chất như Kẽm, Selen</span></strong> giúp tăng cường sức đề kháng, hỗ trợ hệ miễn dịch cho mẹ, hạn chế bệnh tật trong suốt thai kỳ</p>
+            </div>
+
+            <div class="miracle-block text-center">
+                <div class="miracle-img mb-20">
+                    <amp-img width=50 height=50 class="i-circle i-violet" src="images/dieukidieu-icon7.png" alt="icon-1"></amp-img>
+                </div>
+                <p class="color-violet product-title mb-20">Hỗ trợ và phát triển thể chất <br> và trí não của bé</p>
+
+                <p>Hàm lượng <strong><span class="color-violet">DHA</span></strong>, <strong><span class="color-violet">Taurin</span></strong> và <strong><span class="color-violet">Cholin</span></strong> cao trong Dielac Optimum Mama giúp cho quá trình hình thành và hoàn thiện trí não, thị lực và tế bào võng mạc mắt cho bé.</p>
+                      <p><strong><span class="color-violet"> Acid Folic</span></strong> ngăn ngừa nguy cơ dị tật ống thần kinh ở thai nhi.</p>
+                      <p><strong><span class="color-violet">Sắt</span></strong> giúp giảm nguy cơ thiếu máu trong suốt thai kỳ của bà mẹ. Ngoài ra, hàm lượng Canxi cao cùng với các vi lượng tốt cho xương như <strong><span class="color-violet">Phospho, Magiê, Kẽm, vitamin D, K</span></strong> giúp cho hệ xương và răng chắc khỏe </p>
+            </div>
+
+            
+                
+        </section>
+
+        <section class="product-component mb-80">
+            <h3 class="title-border mb-20 title-border-violet"><span>THÀNH PHẦN DINH DƯỠNG</span></h3>
+            <div class="">
+              <div class="tabContent visible">
+                    <!-- Tab one content --> 
+                    <span class="widget-title color-violet">OPTINUM MAMA</span>                            
+                    <p><span class="widget-title color-violet">MẸ MANG THAI VÀ CHO CON BÚ</span></p>
+                    <table class="mr-5 table-border-violet">
+                        <tbody>
+                            <tr class="color-violet"> 
+                                <td class="mr-10 ">Thành phần trung bình</td>
+                                <td class="text-center mr-10 ">Trong 100g bột</td>
+                                <td class="text-center mr-10 ">Trong 1 ly đã pha</td>
+                                <td class="text-center mr-10 ">Đơn vị</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="scroll-list component-list scrollbar-violet">
+                        <table cellspacing="0">
+                            <col class="w1">
+                            <col class="w2">
+                            <col class="ml-10 w2">
+                            <col class="ml-10 w3">
+                        <tbody>
+                            <tr>
+                            <td>Năng lượng</td>
+                            <td>415</td>
+                            <td>186,8</td>
+                            <td>kCal</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>chất đạm</td>
+                            <td>23</td>
+                            <td>10,4</td>
+                            <td>g</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>chất béo</td>
+                            <td>12</td>
+                            <td>5,4</td>
+                            <td>g</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>DHA (Docosahexaenoic acid)</td>
+                            <td>89</td>
+                            <td>40</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Hydrat Carbon</td>
+                            <td>52</td>
+                            <td>23,4</td>
+                            <td>g</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Chất xơ hòa tan</td>
+                            <td>4,5</td>
+                            <td>2,0</td>
+                            <td>g</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Taurin</td>
+                            <td>40</td>
+                            <td>18</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>L - cartinin</td>
+                            <td>40</td>
+                            <td>18</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Độ ẩm</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>g</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Khoáng chất</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Natri</td>
+                            <td>300</td>
+                            <td>135</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Kali</td>
+                            <td>1200</td>
+                            <td>540</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Clorid</td>
+                            <td>600</td>
+                            <td>270</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Canxi</td>
+                            <td>1200</td>
+                            <td>540</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Phốt Pho</td>
+                            <td>800</td>
+                            <td>360</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Magie</td>
+                            <td>165</td>
+                            <td>74</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Mangan</td>
+                            <td>200</td>
+                            <td>90</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>SẮt</td>
+                            <td>15</td>
+                            <td>6,75</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>I ốt</td>
+                            <td>120</td>
+                            <td>54</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Kẽm</td>
+                            <td>4</td>
+                            <td>1,8</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Selen</td>
+                            <td>32</td>
+                            <td>14,4</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Đồng</td>
+                            <td>80</td>
+                            <td>36</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Molybden</td>
+                            <td>45</td>
+                            <td>20,3</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Chrom</td>
+                            <td>35</td>
+                            <td>15,8</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamins</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin A</td>
+                            <td>2600</td>
+                            <td>1170</td>
+                            <td>I,U</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin D3</td>
+                            <td>400</td>
+                            <td>180</td>
+                            <td>I,U</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin E</td>
+                            <td>15</td>
+                            <td>6,8</td>
+                            <td>I,U</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin K1</td>
+                            <td>90</td>
+                            <td>40,5</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin C</td>
+                            <td>120</td>
+                            <td>54</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin B1</td>
+                            <td>0,9</td>
+                            <td>0,4</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin B2</td>
+                            <td>1,5</td>
+                            <td>0,7</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin PP</td>
+                            <td>9</td>
+                            <td>4,1</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin B6</td>
+                            <td>2</td>
+                            <td>0,9</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Acid folic</td>
+                            <td>600</td>
+                            <td>270</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Acid pantothetic</td>
+                            <td>6</td>
+                            <td>2,7</td>
+                            <td>mg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Vitamin B12</td>
+                            <td>2,8</td>
+                            <td>1,3</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Biotin</td>
+                            <td>30</td>
+                            <td>13,5</td>
+                            <td>mcg</td>
+                            </tr>
+
+                        
+                            <tr>
+                            <td>Cholin</td>
+                            <td>300</td>
+                            <td>135</td>
+                            <td>mg</td>
+                            </tr>
+
+
+
+                        
+                        </tbody>
+                        </table>
+                    </div>                      
+              </div>
+            </div>  
+        </section>
+
+        <section class="product-pack">
+            <h3 class="title-border mb-20 title-border-violet"><span>CHỦNG LOẠI VÀ QUY CÁCH ĐÓNG GÓI</span></h3>
+            <div class="pack-content">
+                <p>Optinum Mama gồm các chủng loại bao bì sau:</p>
+                <div>Sữa Bột</div>
+                <ul>
+                    <li>Hộp thiếc 400 g</li>                   
+                    <li>Hộp thiếc 900 g</li>
+                </ul>
+
+                
+                <div class="mb-20">
+                    <amp-img width=587 height=396 src="images/OptimumMama-chungloai.png" alt="OPTINUM GOLD" layout="responsive"></amp-img>
+                </div>
+                <div class="text-center"><a href="#" class="btn">MUA NGAY</a></div>
+            </div>
+        </section>
+
+        <section class="row-section row-product">
+            <div class="container">
+
+                <h3 class="widget-title title-border mb-30"><span>Các sản phẩm thuộc ngành sữa bột</span></h3>
+
+
+                <amp-carousel height="200" layout="fixed-height" type="carousel">
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-1.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-2.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-3.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-4.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-5.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-6.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-7.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-8.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-9.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="item">
+                    <amp-img src="images/products/product-10.png" width="120" height="200" alt="a sample image"></amp-img>
+                    </a>
+                </div>
+
+
+                </amp-carousel>
+
+            </div>
+        </section>
+
+        <section class="row-section row-bottom">
+            <div class="container">
+                <div class="widget">
+                    <h3 class="widget-title title-border mb-30"><span>MẸ CẦN HỖ TRỢ?</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-phone.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Trung tâm tư vấn dinh dưỡng</p>
+                                <h4><a href="tel: 1900545425">1900545425</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <amp-img src="images/support-mail.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p>Viết cho chúng tôi</p>
+                                <h4><a on="tap:email-lightbox" role="button" tabindex="0">EMAIL</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget-newsletter">
+                    <h3 class="widget-title title-border mb-30"><span>ĐĂNG KÝ NHẬN TIN</span></h3>
+                    <div class="widget-content">
+                        <div class="item">
+                            <amp-img src="images/support-newsletter.png" width="50" height="50" class="img" alt="a sample image"></amp-img>
+                            <div class="desc">
+                                <p> Mẹ hãy đăng ký nhận tin để nhận những thông tin bổ ích và chương trình khuyến mãi của Vinamilk
+                                    nhé.
+                                </p>
+                                <form target="_top" action="\">
+                                    <input type="text" class="input-box" name="email" value="" placeholder="Email của mẹ">
+                                    <button type="submit" class="btn btn-primary">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-section row-menubottom">
+            <div class="container">
+
+                <div class="cols-2">
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Vinamilk Baby Care</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Mang thai </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> 0-6 tháng</a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> 6-12 tháng </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> 1-2 tuổi </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> 2-6 tuổi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Góc chuyên gia</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Đội ngũ chuyên gia </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Chuyên gia chia sẻ </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Hỏi đáp cùng chuyên gia </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Sản phẩm</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai">Optimum Mama </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Mama Gold </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Optimum Gold </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Dielac Alpha Gold </a> </li>
+
+                                <li> <a class="" href="#" title="2-6 tuổi"> Dielac Grow Plus Suy dinh dưỡng, thấp còi</a> </li>
+                                <li> <a class="" href="#" title="Mang thai">Dielac Grow </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Dielac Alpha </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Dielac Alpha Gold </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Ứng dụng thông minh</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Theo dõi cân nặng thai kỳ</a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Đặt tên cho con </a> </li>
+                                <li> <a class="" href="#" title="6-12 tháng"> Lịch tiêm phòng cho bé </a> </li>
+                                <li> <a class="" href="#" title="1-2 tuổi"> Tính ngày dự sinh </a> </li>
+                                <li> <a class="" href="#" title="2-6 tuổi"> Theo dõi chiều cao, cân nặng cho bé</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-menu">
+                        <h3 class="widget-tile">Truyền thông CLB Mẹ và Bé</h3>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li> <a class="" href="#" title="Mang thai"> Ưu đãi dành riêng cho mẹ </a> </li>
+                                <li> <a class="" href="#" title="0-6 tháng"> Các hoạt động câu lạc bộ </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+  </div>
+  
+  <footer id="footer">
+    <div class="container">
+
+      <div class="copyright">Bản quyền thuộc về Vinamilk 2016</div>
+
+    </div>
+  </footer>
+
+  <amp-lightbox id="search-lightbox" layout="nodisplay">
+    <div class="lightbox" on="tap:search-lightbox.close" role="button" tabindex="0"> </div>
+    <div class="lightbox-content">
+      <form target="_top" action="\">
+        <input type="text" class="input-box" placeholder="Nhập từ khóa cần tìm kiếm...">
+        <button type="submit"> <i class="icon-search"></i> </button>
+        <div class="lightbox-close" on="tap:search-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+      </form>
+    </div>
+  </amp-lightbox>
+
+  <amp-lightbox id="login-lightbox" scrollable layout="nodisplay">
+    <div class="lightbox" on="tap:login-lightbox.close" role="button" tabindex="0"> </div>
+
+    <div class="lightbox-content">
+      <amp-selector role="tablist" layout="container" class="ampTabContainer">
+        <div role="tab" class="tabButton tabButton-1" selected option="a">Đăng ký</div>
+
+        <div role="tabpanel" class="tabContent">
+          <form target="_top" action="\">
+            <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN</span>
+                <input type="text" class="input-box" >
+            </label>
+            <label class="row-label"> <span class="color-main"> EMAIL </span>
+                <input type="text" class="input-box" >
+            </label>
+            <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                <input type="text" class="input-box" >
+            </label>
+            <label class="row-label"> <span class="color-main"> NHẬP LẠI MẬT KHẨU </span>
+                <input type="text" class="input-box" >
+            </label>
+            <label class="row-label"> <span class="color-main">SỐ ĐIỆN THOẠI </span>
+                <input type="text" class="input-box" >
+            </label>
+            <label class="row-radio">
+                <input name="user_status" type="radio" checked="checked">
+            <span class="circle"></span> Dự định </label>
+            <label class="row-radio">
+                <input name="user_status" type="radio" >
+            <span class="circle"></span> Đang mang thai </label>
+            <label class="row-radio mb-20">
+                <input name="user_status" type="radio" >
+            <span class="circle"></span> Đã có con </label>
+            <div class="line-page"></div>
+            <label class="row-label"> <span> Ngày </span>
+                <select class="select-box" name="baby_day" id="baby_day" >
+                <option value="0">Ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25" selected="">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                </select>
+            </label>
+            <label class="row-label"> <span> Tháng </span>
+                <select class="select-box" name="baby_month" id="baby_month" >
+                <option value="0">Tháng</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                </select>
+            </label>
+            <label class="row-label"> <span> Năm </span>
+                <select class="select-box" name="baby_year" id="baby_year" >
+                <option value="0">Năm</option>
+                <option value="2018">2018</option>
+                <option value="2017" selected="">2017</option>
+                </select>
+            </label>
+            <label class="row-radio mb-20">
+                <input name="newsletter" type="checkbox" >
+                <span class="circle"></span> Tôi đồng ý nhận thông tin dinh dưỡng, chăm sóc sức khoẻ từ Vinamilk Baby Care và Chuyên gia </label>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+            </div>
+          </form>
+        </div>
+
+        <div role="tab" class="tabButton tabButton-2" option="b">Đăng nhập</div>
+
+        <div role="tabpanel" class="tabContent">
+          <form target="_top" action="\">
+            <label class="row-label"> <span class="color-main"> EMAIL </span>
+                <input type="text" class="input-box" >
+            </label>
+
+            <label class="row-label"> <span class="color-main"> MẬT KHẨU </span>
+                <input type="text" class="input-box" >
+            </label>
+
+            <div class="clearfix">
+              <a href="#" class="forgetpass  pull-right mt-6"> Quên mật khẩu </a>
+              <label class="row-radio mb-20">
+                <input name="newsletter" type="checkbox" >
+                <span class="circle"></span> Duy trì đăng nhập </label>
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit"> ĐĂNG KÝ </button>
+            </div>
+          </form>
+        </div>
+      </amp-selector>
+
+      <div class="lightbox-close" on="tap:login-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+    </div>
+  </amp-lightbox>
+
+  <amp-lightbox id="email-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:email-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>GỬI CÂU HỎI CHO CHÚNG TÔI</span></h3>
+            <div class="popup-img mb-20">
+                <amp-img src="images/popup-email.png" width="234" height="197" alt="popup-email" layout="responsive"></amp-img>
+            </div>
+
+            <form target="_top" action="\">
+            
+                <label class="row-label"> <span class="color-main"> HỌ VÀ TÊN </span>
+                    <input type="text" id="name" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> EMAIL </span>
+                    <input type="email" id="email" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> SỐ ĐIỆN THOẠI </span>
+                    <input type="text" id="phone" class="input-box" >
+                </label>
+
+                <label class="row-label"> <span class="color-main"> NHẬP NỘI DUNG CÂU HỎI </span>
+                    <em class="popup-note">* Dưới 200 kí tự</em>
+                    <textarea id="content" maxlength="200" rows="3" class="input-box" ></textarea>
+                </label>
+
+                <div class="text-center">
+                    <button class="btn btn-full" type="submit"> GỬI CÂU HỎI </button>
+                </div>
+            </form>
+
+            <div class="lightbox-close" on="tap:email-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+  </amp-lightbox>
+
+  <amp-lightbox id="tab-lightbox" scrollable layout="nodisplay">
+        <div class="lightbox" on="tap:tab-lightbox.close" role="button" tabindex="0"> </div>
+
+        <div class="lightbox-content">
+            <h3 class="widget-title title-border mb-10"><span>Xác nhận thông tin</span></h3>
+            <div class="tab-lightbox-content mb-20">
+                <ul class="list">
+					<li>Thông tin sản phẩm này chỉ dành cho Nhân viên Y tế</li>
+					<li>Thông tin này chỉ dành cho người có nhu cầu tìm hiểu, nghiên cứu về sản phẩm</li>
+                </ul>
+                <p class="emf">* Vui lòng gọi số hotline 1900545425 để được tư vấn thêm về thông tin sản phẩm. </p>
+                <br>
+                <label class="row-radio mb-20">
+                    <input name="accept" type="checkbox" >
+                    <span class="circle"></span> 
+						Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin sản phẩm						
+                </label>
+            </div>
+                <div class="text-center mb-10"><button class="btn btn-full" on="tap:tab-lightbox.close" role="button">BỎ QUA</button></div>
+                <div class="text-center"><button class="btn btn-full" on="tap:tab-lightbox.close" role="button">XÁC NHẬN</button></div>
+        </div>
+            <div class="lightbox-close" on="tap:tab-lightbox.close" role="button" tabindex="0"><i class="icon-cross"></i> </div>
+        </div>
+</amp-lightbox>
+
+</body>
+
+</html>

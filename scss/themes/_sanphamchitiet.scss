@@ -4,6 +4,22 @@
     margin-right: auto;
 }
 
+.img-95 { 
+	max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-65 {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-85 {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .color-blue {
     color: $color-blue;
 }
@@ -20,6 +36,14 @@
     color: $color-violet;
 }
 
+.color-pink {
+    color: $color-pink;
+}
+
+.color-cyan {
+    color: $color-cyan;
+}
+
 //title
 .product-title {
     text-align: center;
@@ -32,6 +56,7 @@
 }
 
 .title-border-blue span {
+    text-transform: uppercase;
     border-color: $color-blue;
     font-size: 20px;
     color: $color-blue;
@@ -39,6 +64,7 @@
 }
 
 .title-border-red span {
+    text-transform: uppercase;
     border-color: $color-red;
     font-size: 20px;
     color: $color-red;
@@ -46,6 +72,7 @@
 }
 
 .title-border-green span {
+    text-transform: uppercase;
     border-color: $color-green;
     font-size: 20px;
     color: $color-green;
@@ -53,9 +80,26 @@
 }
 
 .title-border-violet span {
+    text-transform: uppercase;
     border-color: $color-violet;
     font-size: 20px;
-    color: $color-green;
+    color: $color-violet;
+    font-family: 'UVN Van';
+}
+
+.title-border-pink span {
+    text-transform: uppercase;
+    border-color: $color-pink;
+    font-size: 20px;
+    color: $color-pink;
+    font-family: 'UVN Van';
+}
+
+.title-border-cyan span {
+    text-transform: uppercase;
+    border-color: $color-cyan;
+    font-size: 20px;
+    color: $color-cyan;
     font-family: 'UVN Van';
 }
 
@@ -92,6 +136,14 @@
     background: $color-violet;    
 }
 
+.i-pink:before {
+    background: $color-pink;    
+}
+
+.i-cyan:before {
+    background: $color-cyan;    
+}
+
 //table component
 .component-list {
     height: 400px;
@@ -121,6 +173,18 @@
     }
 }
 
+.scrollbar-pink {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-pink;
+    }
+}
+
+.scrollbar-cyan {
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-cyan;
+    }
+}
+
 .table-border-blue {
     border-bottom: 1px solid $color-blue;
 }
@@ -135,6 +199,14 @@
 
 .table-border-violet {
     border-bottom: 1px solid $color-violet;
+}
+
+.table-border-pink {
+    border-bottom: 1px solid $color-pink;
+}
+
+.table-border-cyan {
+    border-bottom: 1px solid $color-cyan;
 }
 
 .ampTabContainer {
@@ -158,6 +230,14 @@
     background: $color-violet; 
     color: white;
 }
+.tabButton-cyan[selected] {
+    background: $color-cyan; 
+    color: white;
+}
+.tabButton-pink[selected] {
+    background: $color-pink; 
+    color: white;
+}
 
 .tabButton[option][selected] {
     outline: none;
@@ -178,6 +258,11 @@
     text-transform: uppercase;
     padding: 20px;
     margin: 0 2px;
+}
+
+.tab-col-4 {
+    padding: 8px;
+    width: calc(25% - 4px);
 }
 
 .tabButton strong {
@@ -212,10 +297,10 @@ amp-selector {
 }
 
 .w1{
-    width: 40%;
+    width: 36%;
 }
 .w2{
-    width: 22%;
+    width: 24%;
 }
 .w3{
     width: 16%;
@@ -254,7 +339,7 @@ amp-selector {
     font-weight: normal;
     border-image: none;
     border-bottom: 1px solid #acacac;
-    padding: 9px 4px 9px;
+    padding: 9px 2px;
     text-align: center;
 }
 
@@ -277,3 +362,21 @@ amp-selector {
         }
     }
 }
+
+.visible {
+    display: block;
+}
+
+.bg-mama-gold{  
+    background-image: url(images/slider-bg.png);
+    background-size:200% 100%;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+.orange-border{
+    border-style:solid;
+    border-width:3px;
+    border-color:$colorSecondary;
+    border-radius:25px;
+ }
